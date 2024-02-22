@@ -56,9 +56,9 @@ class Position(Enum):
 class Officer:
     def __init__(self, fullname: str, rank: Rank, experience: int, unavailable_until: datetime.datetime):
         self.name = fullname
-        self.rank = rank
-        self.experience = experience
-        self.unavailable_until = unavailable_until
+        self.rank: Rank = rank
+        self.experience: int = experience
+        self.unavailable_until: datetime.datetime = unavailable_until
 
     def __str__(self):
         return "{:<10} {:<20} {:<20} {:<10} {:<10}".format("  Officer        ",
@@ -74,7 +74,7 @@ class Detective(Officer):
         return "{:<10} {:<20} {:<20} {:<10} {:<10}".format("🕵️Detective      ",
                                                            self.name,
                                                            str(self.rank),
-                                                           f"★{str(self.experience)}",
+                                                            f"★{str(self.experience)}",
                                                            str(self.unavailable_until)
                                                            )
 

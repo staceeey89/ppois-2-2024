@@ -18,7 +18,7 @@ class Investigation:
     def investigate(self, timenow: datetime.datetime):
         delta = 20 * time_calculation(self.crime.difficulty, self.officers)
         timenow = timenow + datetime.timedelta(hours=delta)
-        self.until = timenow
+        self.until: datetime.datetime = timenow
 
         for i in self.officers:
             i.unavailable_until = timenow
