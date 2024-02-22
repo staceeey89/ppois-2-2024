@@ -1,0 +1,18 @@
+# Игнорировать все файлы и директории
+1.png
+4.png
+7.png
+2.png
+5.png
+8.png
+venv/
+3.png
+6.png
+9.png
+pyreverse/
+uml.py
+.idea/
+puml/exaple.puml
+
+# Игнорировать __pycache__ во всех директориях
+__pycache__/
