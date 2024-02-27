@@ -19,6 +19,10 @@ class MyTestCase(unittest.TestCase):
     def test_add_saturationn(self):
         TV2 = Television("LG", "3400", "Green")
         self.assertEqual(TV2.add_saturation(43), 43)
+        
+if __name__ == '__main__':
+    unittest.main()
+
 
 
 
