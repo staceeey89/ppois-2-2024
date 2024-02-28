@@ -18,7 +18,7 @@ class MyTestCase(unittest.TestCase):
         PULT2 = Remote_control('Samsung', '250$', 'Black', TV2)
         PULT2.turn_tv_on()
         PULT2.choose_new_channel('Entertainment')
-        self.assertTrue(TV2.check_channel())
+        self.assertTrue(TV2._protected_check_channel())
 
 
 if __name__ == '__main__':

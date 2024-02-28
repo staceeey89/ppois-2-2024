@@ -8,7 +8,7 @@ if __name__ == "__main__":
     TV1 = Television('LG', '2500$', 'Grey')
     TV1.set_software('webOS', '3.41')
     PULT1 = Remote_control('Samsung', '250$', 'Black', TV1)
-    TC = Technic_charact('17 inches', 'LED', '1280x720')
+    TC = Technic_charact('17 inches', '1280x720', 'LED')
 
     while True:
         print("\n1. Print TV info\n2. Print Remote controle info\n3. Turn TV On\n4. Turn TV Off")

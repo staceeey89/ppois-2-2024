@@ -2,25 +2,25 @@ from Screen import *
 from Sound_system import *
 from Technical_characteristics import *
 class Television:
-    connected: bool = False
-    device: str = 'No devices connected!'
+    _connected: bool = False
+    _device: str = 'No devices connected!'
     operation_system: str = ''
     software_version: str = ''
     tv_channel: str = ''
 
-    def device_connected(self, device: str, connected: bool) -> bool:
-        self.connected = connected
-        if self.connected is False and device != '' or self.connected is True:
-            self.device = device
+    def device_connected(self, _device: str, _connected: bool) -> bool:
+        self._connected = _connected
+        if self._connected is False and _device != '' or self._connected is True:
+            self._device = _device
             return True
         else:
-            self.device = 'No devices connected!'
+            self._device = 'No devices connected!'
             return False
 
-    def __init__(self, model: str, price: str, color: str):
-        self.model = model
-        self.price = price
-        self.color = color
+    def __init__(self, _model: str, _price: str, _color: str):
+        self._model = _model
+        self._price = _price
+        self._color = _color
         self.is_on = False
         self.screen = Screen()
         self.sound = Sound_system()
@@ -41,17 +41,17 @@ class Television:
             print('Incorrect software!')
             return False
 
-    def turn_on(self) -> bool:
+    def _protected_turn_on(self) -> bool:
         self.is_on: bool = True
         print('TV is turned on!')
         return self.is_on
 
-    def turn_off(self) -> bool:
+    def _protected_turn_off(self) -> bool:
         self.is_on: bool = False
         print('TV is turned off!')
         return self.is_on
 
-    def check_channel(self) -> bool:
+    def _protected_check_channel(self) -> bool:
         if self.tv_channel == '':
             print('You are not watching a channel!')
             return False
@@ -59,11 +59,11 @@ class Television:
             print('You are watching a', self.tv_channel, 'channel!')
             return True
 
-    def choose_channel(self, tv_channel: str):
-        self.check_channel()
+    def _protected_choose_channel(self, _tv_channel: str):
+        self._protected_check_channel()
         if self.is_on == True:
-            if tv_channel == 'Childrens' or tv_channel == 'Entertainment' or tv_channel == 'Sport' or tv_channel == 'Culinary' or tv_channel == 'Music':
-                self.tv_channel = tv_channel
+            if _tv_channel == 'Childrens' or _tv_channel == 'Entertainment' or _tv_channel == 'Sport' or _tv_channel == 'Culinary' or _tv_channel == 'Music':
+                self.tv_channel = _tv_channel
                 print('Now you are watching a', self.tv_channel, 'channel!')
             else:
                 print('Incorrect channel entered!')
@@ -93,7 +93,7 @@ class Television:
     def print_data(self):
         print('Television info')
         print('_' * 66)
-        print('|Model:', self.model, '|Color:', self.color, '|Price:', self.price, '|Device connected:', self.device)
+        print('|Model:', self._model, '|Color:', self._color, '|Price:', self._price, '|Device connected:', self._device)
         print('_' * 66)
         print('|Type of software:', self.operation_system, '|Version:', self.software_version)
         print('_' * 66)
