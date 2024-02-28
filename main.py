@@ -3,6 +3,7 @@ from Sound_system import *
 from Remote_controle import *
 from Technical_characteristics import *
 from Screen import *
+import pickle
 if __name__ == "__main__":
     TV1 = Television('LG', '2500$', 'Grey')
     TV1.set_software('webOS', '3.41')
@@ -11,8 +12,8 @@ if __name__ == "__main__":
 
     while True:
         print("\n1. Print TV info\n2. Print Remote controle info\n3. Turn TV On\n4. Turn TV Off")
-        print("5.Select Channel\n6.Adjust image(britness,contrast and saturat\n7.Connect devices\n8.Update Software")
-        print("9.Print technical info\n10.Change sound level\n11.Exit")
+        print("5.Select Channel\n6.Adjust image(britness,contrast and saturat)\n7.Connect devices\n8.Update Software")
+        print("9.Print technical info\n10.Change sound level\n11.Save data\n12.Open data\n13.Exit")
         choice = input("Enter your choice: ")
 
         if choice == "1":
@@ -40,6 +41,13 @@ if __name__ == "__main__":
         elif choice == "10":
             TV1.change_sound_level(42)
         elif choice == "11":
+            with open("Television.pickle", "wb") as file:
+                pickle.dump(TV1, file)
+        elif choice == "12":
+            with open("Television.pickle", "rb") as file:
+                data = pickle.load(file)
+                TV1 = data
+        elif choice == "13":
             print("Exiting...")
             break
         else:
