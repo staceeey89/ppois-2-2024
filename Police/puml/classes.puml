@@ -1,0 +1,121 @@
+@startuml classes
+set namespaceSeparator none
+class "Call" as pyreverse.merged_file.Call {
+  address : str
+  difficulty : str
+}
+class "Crime" as pyreverse.merged_file.Crime {
+  difficulty : str
+  law
+}
+class "Detective" as pyreverse.merged_file.Detective {
+}
+class "Duty" as pyreverse.merged_file.Duty {
+  detective : list
+  patrol : list
+  public_security_team : list
+  score : int
+  timenow
+}
+class "Event" as pyreverse.merged_file.Event {
+  description : str
+  slots : int
+  title : str
+}
+class "EventGenerator" as pyreverse.merged_file.EventGenerator {
+  calls : list
+  crimes : list
+  crimes_counter
+  events : list
+  generate_duty_event()
+  generate_public_security_event()
+}
+class "Investigation" as pyreverse.merged_file.Investigation {
+  crime
+  law
+  officers : List[Officer]
+  report
+  until : NoneType
+  investigate(timenow: datetime.datetime)
+}
+class "Law" as pyreverse.merged_file.Law {
+  description
+  jurisdiction
+  name
+  penalty
+}
+class "Loader" as pyreverse.merged_file.Loader {
+  load_events(path)
+  load_officers(path)
+}
+class "Officer" as pyreverse.merged_file.Officer {
+  experience : int
+  name : str
+  rank
+  unavailable_until
+}
+class "OfficerGenerator" as pyreverse.merged_file.OfficerGenerator {
+}
+class "PatrolOfficer" as pyreverse.merged_file.PatrolOfficer {
+}
+class "Police" as pyreverse.merged_file.Police {
+  active_cases : List[Investigation]
+  chief_officer : str
+  city : str
+  duty : Optional[Event, None]
+  officer_list : list
+  assign(officers: List[Officer], event: Optional[Event], mandatory: bool) -> List[Officer]
+  case_analysis()
+  investigate(event: Crime)
+  off_duty()
+  on_duty()
+  penalty()
+  prepare_duty(date: datetime)
+  respond(event: Call)
+}
+class "Position" as pyreverse.merged_file.Position {
+  DETECTIVE : int
+  PATROL : int
+  from_string(position: str)
+}
+class "PublicSecurity" as pyreverse.merged_file.PublicSecurity {
+  call
+  officers : list
+  public_security_operation(timenow: datetime.datetime)
+}
+class "Rank" as pyreverse.merged_file.Rank {
+  CAPTAIN : int
+  CHIEF : int
+  CHIEF_INSPECTOR : int
+  CONSTABLE : int
+  DEPUTY_CHIEF : int
+  INSPECTOR : int
+  LIEUTENANT : int
+  SERGEANT : int
+  SUPERINTENDENT : int
+  from_string(policerank: str)
+}
+class "ccolors" as pyreverse.merged_file.ccolors {
+  BLUE : str
+  BOLD : str
+  BROWN : str
+  CYAN : str
+  DEFAULT : str
+  END : str
+  FAIL : str
+  GREEN : str
+  HEADER : str
+  STRIKE : str
+  UNDERLINE : str
+  WARNING : str
+}
+pyreverse.merged_file.Call --|> pyreverse.merged_file.Event
+pyreverse.merged_file.Crime --|> pyreverse.merged_file.Event
+pyreverse.merged_file.Detective --|> pyreverse.merged_file.Officer
+pyreverse.merged_file.PatrolOfficer --|> pyreverse.merged_file.Officer
+pyreverse.merged_file.Duty --* pyreverse.merged_file.Police : duty
+pyreverse.merged_file.Call --o pyreverse.merged_file.PublicSecurity : call
+pyreverse.merged_file.Crime --o pyreverse.merged_file.Investigation : crime
+pyreverse.merged_file.Law --o pyreverse.merged_file.Crime : law
+pyreverse.merged_file.Rank --o pyreverse.merged_file.Officer : rank
+@enduml

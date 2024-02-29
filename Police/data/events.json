@@ -1,0 +1,95 @@
+[
+  {
+    "type": "Event",
+    "title": "Police Training Seminar",
+    "description": "A seminar on advanced investigative techniques for police officers.",
+    "slots": 1
+  },
+  {
+    "type": "Crime",
+    "title": "Night Store Robbery",
+    "description": "A small store was robbed at night.",
+    "slots": 3,
+    "difficulty": "easy",
+    "min_investigation_time": 48,
+    "law": {
+      "name": "Theft Act 1968",
+      "jurisdiction": "United Kingdom",
+      "description": "An Act to revise the law of England and Wales as to theft and similar or associated offences, and in connection therewith to make provision as to criminal proceedings by or on behalf of corporations, and to amend the Gaming Act 1968.",
+      "penalty": "Imprisonment up to 7 years"
+    }
+  },
+  {
+    "type": "Call",
+    "title": "Domestic Disturbance",
+    "description": "Report of a domestic disturbance at 123 Elm Street.",
+    "slots": 1,
+    "difficulty": "medium",
+    "address": "123 Elm Street",
+    "reaction_time": 15
+  },
+  {
+    "type": "Event",
+    "title": "Community Outreach Program",
+    "description": "Engaging with the community to address safety concerns.",
+    "slots": 4
+  },
+  {
+    "type": "Crime",
+    "title": "Vandalism",
+    "description": "Multiple incidents of vandalism reported in the area.",
+    "slots": 2,
+    "difficulty": "medium",
+    "min_investigation_time": 24,
+    "law": {
+      "name": "Criminal Damage Act 1971",
+      "jurisdiction": "United Kingdom",
+      "description": "An Act to consolidate the law relating to offences of damage to property, with amendments to give effect to recommendations of the Law Commission and the Scottish Law Commission.",
+      "penalty": "Imprisonment up to 10 years"
+    }
+  },
+  {
+    "type": "Call",
+    "title": "Traffic Accident",
+    "description": "Report of a traffic accident at the intersection of Main St. and Elm St.",
+    "slots": 2,
+    "difficulty": "easy",
+    "address": "Intersection of Main St. and Elm St.",
+    "reaction_time": 10
+  },
+  {
+    "type": "Event",
+    "title": "Neighborhood Watch Meeting",
+    "description": "Gathering to discuss neighborhood safety and security.",
+    "slots": 2
+  },
+  {
+    "type": "Crime",
+    "title": "Burglary",
+    "description": "A residential burglary occurred during daylight hours.",
+    "slots": 4,
+    "difficulty": "hard",
+    "min_investigation_time": 72,
+    "law": {
+      "name": "Theft Act 1968",
+      "jurisdiction": "United Kingdom",
+      "description": "An Act to revise the law of England and Wales as to theft and similar or associated offences, and in connection therewith to make provision as to criminal proceedings by or on behalf of corporations, and to amend the Gaming Act 1968.",
+      "penalty": "Imprisonment up to 14 years"
+    }
+  },
+  {
+    "type": "Call",
+    "title": "Fire Incident",
+    "description": "Report of a fire incident at 456 Oak Avenue.",
+    "slots": 3,
+    "difficulty": "medium",
+    "address": "456 Oak Avenue",
+    "reaction_time": 20
+  },
+  {
+    "type": "Event",
+    "title": "Crime Prevention Workshop",
+    "description": "Workshop to educate citizens on crime prevention strategies.",
+    "slots": 1
+  }
+]
