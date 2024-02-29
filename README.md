@@ -47,7 +47,8 @@
 
 И диаграммы состояний:
 
-![image](https://github.com/MarkGfrv/ppois-2-2024/assets/113544592/1d38a79b-e17b-4802-b569-de3bdad24468)
+![image](https://github.com/MarkGfrv/ppois-2-2024/assets/113544592/d27c9e49-1577-435b-985e-9286738a2af2)
+
 
 
 
