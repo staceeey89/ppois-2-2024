@@ -1,0 +1,230 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class BaseException {
+   args: 
+   __cause__: 
+   __context__: 
+   __suppress_context__: 
+   __traceback__: 
+   __init__(self, *args: object): 
+   __setstate__(self, __state: dict[str, Any] | None): 
+   with_traceback(self, __tb: TracebackType | None): 
+   add_note(self, __note: str): 
+}
+class Exception
+class bank as "finances.bank.Bank" {
+   name: str
+   __transaction_history: list[Transaction]
+   __cards: list[CreditCard]
+   __init__(self, name): None
+   add_card(self, card: CreditCard): None
+   remove_card(self, card: CreditCard): None
+   get_cards(self): list[CreditCard]
+   transfer(self, sender_card: CreditCard, receiver_card: CreditCard, pin: int, amount: int): None
+}
+class cardowner as "finances.card_owner.CardOwner" {
+   address: str
+   phone: str
+   name: str
+   email: Optional[str]
+   __init__(self, name: str, address: str, email: Optional[str], phone: str): 
+}
+class creditcard as "finances.credit_card.CreditCard" {
+   owner: CardOwner
+   __balance: int
+   __pin: int
+   card_number: str
+   __is_blocked: bool
+   __wrong_pin_inputs: int 
+   __payment_limit: int
+   __init__(self, card_number, owner: CardOwner, pin: int, is_blocked: bool): 
+   __check_pin(self, pin: int): 
+   __check_balance(self, amount: int): 
+   deposit(self, amount: int): 
+   withdraw(self, amount: int, pin: int): 
+   pay(self, amount: int, pin: int): 
+   get_balance(self, pin: int): 
+   is_blocked(self): 
+   block(self): 
+   unblock(self): 
+   set_pin(self, new_pin: int): 
+   set_limit(self, pin: int, new_limit: int): 
+}
+class node6 as "finances.finance_exceptions.FinanceException"
+class paymentmean as "finances.interfaces.PaymentMean" {
+   pay(self, amount: int, pin: Optional[int]): None 
+   deposit(self, amount: int): None
+   withdraw(self, amount: int, pin: Optional[int]): None
+}
+class transaction as "finances.transaction.Transaction" {
+   amount: int
+   receiver: CreditCard
+   sender: CreditCard
+   timestamp: datetime
+   __init__(self, sender_card: CreditCard, receiver_card: CreditCard, amount: int, timestamp: datetime): 
+}
+class financialstatemachine as "financial_state_machine.FinancialStateMachine" {
+   banks: 
+   selected_bank: 
+   selected_index: 
+   repository: 
+   selected_card: 
+   view_banks: 
+   view_bank: 
+   create_bank: 
+   delete_bank: 
+   view_card: 
+   create_card: 
+   delete_card: 
+   view_balance: 
+   deposit: 
+   withdraw: 
+   pay: 
+   change_pin: 
+   change_limit: 
+   toggle_block: 
+   exit_: 
+   move_next: 
+   __init__(self, repository: Repository): 
+   navigating_backwards(self, input_: str): 
+   navigating_balance(self, input_: str): 
+   navigating_pay(self, input_: str): 
+   navigating_withdraw(self, input_: str): 
+   navigating_deposit(self, input_: str): 
+   navigating_pin(self, input_: str): 
+   navigating_toggle_block(self, input_: str): 
+   navigating_limit(self, input_: str): 
+   navigating_create(self, input_: str): 
+   navigating_delete(self, input_: str): 
+   navigating_by_index(self, input_: str): 
+   on_enter_view_banks(self): 
+   on_enter_create_bank(self): 
+   on_enter_create_card(self): 
+   on_enter_view_card(self): 
+   on_enter_view_bank(self): 
+   on_enter_delete_bank(self): 
+   on_enter_delete_card(self): 
+   on_enter_withdraw(self): 
+   on_enter_view_balance(self): 
+   on_enter_deposit(self): 
+   on_enter_pay(self): 
+   on_enter_toggle_block(self): 
+   on_enter_change_limit(self): 
+   on_enter_change_pin(self): 
+   before_move_next(self): 
+   on_enter_exit_(self): 
+}
+class object {
+   '__doc__: 
+   '__dict__: 
+   '__module__: 
+   '__annotations__: 
+   '__class__(self): 
+   '__class__(self, __type: type[object]): 
+   '__init__(self): 
+   '__new__(cls): 
+   '__setattr__(self, __name: str, __value: Any): 
+   '__delattr__(self, __name: str): 
+   '__eq__(self, __value: object): 
+   '__ne__(self, __value: object): 
+   '__str__(self): 
+   '__repr__(self): 
+   '__hash__(self): 
+   '__format__(self, __format_spec: str): 
+   '__getattribute__(self, __name: str): 
+   '__sizeof__(self): 
+   '__reduce__(self): 
+   '__reduce_ex__(self, __protocol: SupportsIndex): 
+   '__reduce_ex__(self, __protocol: int): 
+   '__getstate__(self): 
+   '__dir__(self): 
+   '__init_subclass__(cls): 
+   '__subclasshook__(cls, __subclass: type): 
+}
+class repoexception as "repository.exceptions.RepositoryException"
+class filerepo as "repository.file_repository.FileRepository" {
+   filename: 
+   __init__(self, filename: str): 
+   save(self, obj): 
+   load(self): 
+}
+class repo as "repository.interfaces.Repository" {
+   save(self, obj): 
+   load(self): 
+}
+class statemachine as "statemachine.statemachine.StateMachine" {
+   _external_queue: 
+   _states_for_instance: 
+   state_field: 
+   __rtc: 
+   start_value: 
+   __processing: 
+   current_state_value: 
+   current_state: 
+   model: 
+   allow_event_without_transition: 
+   _callbacks_registry: 
+   TransitionNotAllowed: 
+   __init__(
+        self,
+        model: Any = None,
+        state_field: str = "state",
+        start_value: Any = None,
+        rtc: bool = True,
+        allow_event_without_transition: bool = False,
+    ): 
+   __getattr__(self, attribute: str): 
+   __repr__(self): 
+   _get_initial_state(self): 
+   _activate_initial_state(self, initial_transition): 
+   _get_protected_attrs(self): 
+   _visit_states_and_transitions(self, visitor): 
+   _setup(self, initial_transition: Transition): 
+   _build_observers_visitor(self, *observers): 
+   add_observer(self, *observers): 
+   _repr_html_(self): 
+   _repr_svg_(self): 
+   _graph(self): 
+   current_state_value(self): 
+   current_state_value(self, value): 
+   current_state(self): 
+   current_state(self, value): 
+   events(self): 
+   allowed_events(self): 
+   _process(self, trigger): 
+   _processing_loop(self): 
+   _activate(self, event_data: EventData): 
+   send(self, event, *args, **kwargs): 
+}
+class node3 as "typing.Hashable" {
+   '__hash__(self): 
+}
+
+BaseException --|> object        
+Exception <|-- BaseException 
+bank --|> object        
+cardowner --|> object        
+creditcard --|> paymentmean         
+node6 --|> Exception     
+paymentmean --|> object        
+transaction --|> object        
+financialstatemachine --|> statemachine         
+object --|> node3         
+repoexception --|> Exception     
+filerepo --|> repo        
+repo --|> object        
+statemachine --|> object        
+
+transaction "2" *-- "*" creditcard 
+creditcard "*" *-- "1" cardowner 
+
+financialstatemachine "*" o-- "*" bank
+financialstatemachine "*" o-- "*" creditcard 
+
+bank "*" o-- "1" transaction
+bank "*" o-- "1" creditcard
+@enduml

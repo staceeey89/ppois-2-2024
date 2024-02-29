@@ -1,0 +1,136 @@
+@startuml
+hide empty description
+skinparam linetype polyline
+
+[*] --> ViewBanks
+
+state ViewBanks
+state CreateBank  {
+	[*] --> InputName
+	InputName --> [*]
+}
+state ViewBank
+state DeleteBank
+state CreateCard  {
+	[*] --> InputNumber
+	InputNumber --> GetLoggedInUser
+	GetLoggedInUser --> InputPin
+	InputPin --> InputPin : PinInvalid
+	InputPin --> [*]
+}
+state Withdraw
+state ChangePin
+state ChangeLimit
+state Exit {
+	[*] --> SaveData
+	SaveData --> [*]
+}
+
+ViewBanks --> Exit: InputReturn
+
+ViewBanks --> ViewBanks : InputInvalid
+ViewBanks --> ViewBank : InputIndex
+ViewBanks --> CreateBank : InputCreate
+CreateBank --> ViewBanks
+
+ViewBank --> ViewBank : InputInvalid
+ViewBank --> DeleteBank : InputDelete
+DeleteBank --> ViewBanks
+ViewBank --> ViewBanks : InputReturn
+ViewBank --> ViewCard : InputIndex
+ViewBank --> CreateCard : InputCreate
+CreateCard --> ViewBank
+
+ViewCard --> ViewBank : InputReturn
+
+ViewCard --> DeleteCard : InputDelete
+DeleteCard --> ViewBank
+
+ViewCard --> ToggleBlock : InputToggleBlock
+ToggleBlock --> ViewCard
+
+ViewCard --> Pay : InputPay
+Pay --> ViewCard
+
+ViewCard --> Deposit : InputDeposit
+Deposit --> ViewCard
+
+state Deposit {
+	[*] --> InputDepositSum : CardNotBlocked
+	InputDepositSum --> [*] : SumValid
+	InputDepositSum --> InputDepositSum : SumInvalid
+}
+
+ViewCard --> Withdraw : InputWithdraw
+Withdraw --> ViewCard
+
+state Withdraw {
+	[*] --> InputWithdrawalSum : CardNotBlocked
+	InputWithdrawalSum --> InputPinForWithdraw : SumValid
+	InputWithdrawalSum --> InputWithdrawalSum : SumInvalid
+	InputPinForWithdraw --> InputPinForWithdraw: PinInvalid && CardNotBlocked
+	InputPinForWithdraw --> [*] : PinValid
+	InputPinForWithdraw --> [*] : CardBlocked
+}
+
+ViewCard --> ChangePin : InputChangePin
+ChangePin --> ViewCard
+
+state ChangePin {
+	[*] --> InputNewPin
+	InputNewPin --> InputNewPin : PinInvalid
+	InputNewPin --> [*] : PinValid
+}
+
+ViewCard --> ChangeLimit : InputChangeLimit
+ChangeLimit --> ViewCard
+
+state ChangeLimit {
+	[*] --> InputNewLimit
+	InputNewLimit --> InputNewLimit : LimitInvalid
+	InputNewLimit --> InputPinForChangingLimit : LimitValid
+	InputPinForChangingLimit --> InputPinForChangingLimit : PinInvalid && CardNotBlocked
+	InputPinForChangingLimit --> [*] : CardBlocked
+	InputPinForChangingLimit --> [*] : PinValid
+}
+
+
+ViewCard --> Withdraw : InputWithdraw
+Withdraw --> ViewCard
+
+state Pay {
+	[*] --> InputPaySum : CardNotBlocked
+	InputPaySum --> InputPinForPay : SumValid
+	InputPaySum --> InputPaySum : SumInvalid
+	InputPinForPay --> InputPinForPay: PinInvalid && CardNotBlocked
+	InputPinForPay --> [*] : PinValid
+	InputPinForPay --> [*] : CardBlocked
+}
+
+ViewCard --> ViewBalance : InputWithdraw
+ViewBalance --> ViewCard
+
+state ViewBalance {
+	[*] --> InputPinForBalance
+	InputPinForBalance --> InputPinForBalance: PinInvalid && CardNotBlocked
+	InputPinForBalance --> [*] : PinValid
+	InputPinForBalance --> [*] : CardBlocked
+}
+
+ViewCard --> Transfer : InputWithdraw
+Transfer --> ViewCard
+
+state Transfer {
+	[*] --> InputTransferSum : CardNotBlocked
+	InputTransferSum --> InputReceiverNumber : SumValid
+	InputTransferSum --> InputTransferSum : SumInvalid
+	InputReceiverNumber --> InputPinForTransfer : ReceiverExists
+	InputReceiverNumber --> [*] : ReceiverDoesNotExist
+	InputPinForTransfer --> InputPinForTransfer: PinInvalid && CardNotBlocked
+	InputPinForTransfer --> [*] : PinValid
+	InputPinForTransfer --> [*] : CardBlocked
+}
+
+Exit --> [*]
+
+@enduml
