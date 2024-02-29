@@ -1,0 +1,79 @@
+@startuml classes
+set namespaceSeparator none
+
+class Compiler {
+source_code : str
+machine_code : str
+error : str
+optimize_code : str
+compile_the_project(source_code: SourceCode,programming_language: ProgrammingLanguage)
+}
+
+class LexicalAnalyzer{
+tokens : list[str]
+error : str
+forbidden_characters : list[char]
+convert_to_tokens(source_code: SourceCode)
+get_list_of_tokens()
+}
+
+class MachineCode{
+#machine_code : str
+translate_to_machine_code(optimizer: Optimizer)
+get_machine_code()
+}
+
+class Optimizer{
+result_code : str
+optimize_source_code(syntax_analyzer: SyntaxAnalyzer)
+}
+
+class Person{
+full_name : str
+age : int
+get_person_info()
+}
+
+class Programmer{
+experience : int
+source_code : SourceCode
+write_source_code(file_extension: str, source_code: str,descriprion: str)
+change_source_code(source_code: str)
+change_desription(description: str)
+print_source_code()
+get_source_code()
+}
+
+class ProgrammingLanguage{
+#name : str
+#file_extension : str
+#reserved_words : dict{str: str}
+add_new_key_words(key_word_list: dict)
+add_new_key_word(key_word: str, definition: str)
+get_key_word_list()
+print_key_word()
+}
+
+class SourceCode{
+#source_code: str
+descriprion : str
+file_extension : str
+change_source_code(source_code: str)
+get_source_code()
+}
+
+class SyntaxAnalyzer{
+operator_dictionary : dict
+token_and_type : dict
+end_of_line : list
+tokens : list
+lines : list
+set_operator_and_data_type(operator: str, data_types: list)
+set_operator_and_data_type(dictionary: dict)
+check_source_code(programming_language: ProgrammingLanguage, tokens: list)
+get_info()
+}
+
+Person <|-- Programmer
+Programmer *-- SourceCode : source_code
+@enduml
