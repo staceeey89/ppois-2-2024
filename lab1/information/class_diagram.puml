@@ -1,0 +1,119 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class User {
+    username: str
+    name: str
+    surname: str
+    age: int
+    friends: list[User]
+    news: list[News]
+    sent_messages: list[Message]
+    received_messages: list[Message]
+    groups: list[Group]
+    gender: Gender
+
+    __init__(self, in username: str, in surname: str, in age: int, in gender: Gender, in social_network: SocialNetwork): None
+    __str__(self): str
+    add_friend(self, in friend: User): None
+    delete_friend(self, in username: str): None
+    post_news(self, news: News): None
+    write_message(self, message: Message): None
+    join_group(self, group: Group): None
+}
+
+class Newsline {
+    news: list[News]
+
+    __init__(self): None
+    __str__(self): str
+    add_news(self, in news: News): None
+}
+
+class News {
+    image: Image
+    date: datetime
+    content: str
+    user: User
+
+    __init__(self, in date: datetime, in content: str, in image: Image, in user: User): None
+    __str__(self): None
+}
+
+class SocialNetwork {
+    name: str
+    users: list[User]
+    groups: list[Group]
+    messages: list[Message]
+    newsline: Newsline
+
+    __init__(self, in name: str): None
+    add_user(self, in user: User): None
+    add_group(self, in group: Group): None
+    add_news(self, in news: News): None
+    add_message(self, in message: Message): None
+    get_news(self): list[News]
+    show_newsline(self): str
+    show_users(self): str
+    show_groups(self): str
+    show_received_messages(self): str
+    show_sent_messages(self): str
+}
+
+class Image {
+    width: int
+    height: int
+    content: str
+
+    __init__(self, in width: int, in height: int, in content: str): None
+    __str__(self): str
+}
+
+class Message{
+    from_user: User
+    to_user: User
+    content: str
+
+    __init__(self, in from_user: User, in to_user: User, in content: str): None
+    __str__(self): str
+}
+
+class Group{
+    name: str
+    members: list[User]
+
+    __init__(self, in name: str): None
+    __str__(self): str
+    add_user(self, user: User): None
+}
+
+enum Gender {
+    MALE
+    FEMALE
+
+    from_string(cls, gender_str: str): Gender
+}
+
+User "1"*--"*" Message
+User "*"*--"1" Gender
+User "*"*--*"1" SocialNetwork
+User "1"*--"*" News
+User "*"*--"1" Group
+Newsline "1"*--"*" News
+SocialNetwork "1"*--"*" Message
+SocialNetwork "1"*--"*" Group
+SocialNetwork "1"*--"1" Newsline
+
+News o-- Image
+
+User <..> News
+User <..> Message
+User <..> Group
+SocialNetwork ..> News
+SocialNetwork ..> Message
+SocialNetwork ..> Group
+SocialNetwork ..> User
+Newsline ..> News
+News "*"..>"*" Image
+
+@enduml
