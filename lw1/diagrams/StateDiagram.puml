@@ -1,0 +1,181 @@
+@startuml
+
+state "Load state from file" as load_state
+[*] --> load_state
+
+state "Choosing operation" as choosing_operation
+load_state --> choosing_operation
+
+state "Make Transaction" as make_transaction{
+    state "Choosing transaction" as choosing_transaction
+    [*] --> choosing_transaction
+    choosing_transaction --> Payment
+    choosing_transaction --> [*]: invalid choice
+    state "Transaction is not completed" as trans_not_compl
+    trans_not_compl: transaction was not correct
+    trans_not_compl: add transaction to history list
+    state "Transaction is completed" as trans_compl
+    trans_compl: transaction was correct
+    trans_compl: add transaction to history list
+    trans_compl --> [*]
+    trans_not_compl --> [*]
+}
+
+state "Make new investment" as make_investment{
+    state "Choosing investment" as choosing_investment
+    [*] --> choosing_investment
+    choosing_investment --> [*]: invalid choice
+    state "Enter sum" as enter_sum
+    choosing_investment --> enter_sum
+    enter_sum --> [*]: invalid value
+    state "Assess the risk" as assess_risk
+    enter_sum --> assess_risk
+    state fork_state <<fork>>
+    assess_risk --> fork_state: agreed
+    state "Confirm investment" as confirm_investment
+    confirm_investment: add new investment to portfolio
+    confirm_investment: withdrawal the money
+    state "Offer sum to be all the money in budget" as offer
+    fork_state --> confirm_investment: enough money
+    fork_state --> offer: not enough money
+    offer --> confirm_investment: agreed
+    offer --> [*]: not agreed
+    confirm_investment --> [*]
+}
+
+state "Make deposit" as make_deposit{
+    state "Enter sum" as enter_sum1
+    [*] --> enter_sum1
+    state "Replenish the budget" as repl_budget
+    enter_sum1 --> repl_budget
+    state "Saving transaction" as saving_transaction
+    saving_transaction: create new transaction
+    saving_transaction: add transaction to history list
+    repl_budget --> saving_transaction
+    saving_transaction --> [*]
+    enter_sum1 --> [*]: invalid value
+}
+
+state "Make withdrawal" as make_withdrawal{
+    state "Enter sum" as enter_sum2
+    [*] --> enter_sum2
+    state "Withdrawal is complete" as withdrawal_compl
+    withdrawal_compl: transaction was correct
+    withdrawal_compl: create new transaction
+    withdrawal_compl:add transaction to history
+    state "Withdrawal is complete" as withdrawal_not_compl
+    withdrawal_not_compl: transaction was not correct
+    withdrawal_not_compl: create new transaction
+    withdrawal_not_compl:add transaction to history
+    enter_sum2 --> withdrawal_compl: enough money
+    enter_sum2 --> withdrawal_not_compl: not enough money
+    withdrawal_not_compl --> [*]
+    withdrawal_compl --> [*]
+    enter_sum2 --> [*]: invalid value
+}
+
+state "Get analysis" as get_analysis
+get_analysis: create new report
+get_analysis: form analysis report text
+get_analysis: print report
+
+state "Get financial report" as get_financial_report
+get_financial_report: create new report
+get_financial_report: form financial report text
+get_financial_report: print report
+
+state "Form new budget" as form_new_budget{
+    state "Clear transaction history" as clear_trans_history
+    [*] --> clear_trans_history
+    state "Get all investment profit" as get_investment_profit
+    get_investment_profit: add to budget all profit
+    get_investment_profit: clear investments list
+    clear_trans_history --> get_investment_profit
+    state "Would u like to save your money on your new budget?" as save_or_not
+    get_investment_profit --> save_or_not
+    state "Transfer all money to new budget" as transfer_money
+    state "Withdrawal all money and get full empty new budget" as withdrawal_money
+    save_or_not --> transfer_money: yes
+    save_or_not --> withdrawal_money: no
+    state "New budget is formed" as budget_formed
+    transfer_money --> budget_formed
+    withdrawal_money --> budget_formed
+    budget_formed --> [*]
+}
+
+state "Portfolio management" as portfolio_management{
+    state "Choose investment" as choosing_investment1
+    [*] --> choosing_investment1
+    state "Choose operation" as choosing_operation1
+    choosing_investment1 --> choosing_operation1
+    state "Asset allocation" as asset_allocation
+    asset_allocation: risk decrease
+    asset_allocation: profit ratio increase
+    state "Diversification" as diversification
+    diversification: risk decrease
+    diversification: profit ratio decrease
+    state "Risk tolerance" as risk_tolerance
+    risk_tolerance: risk decrease
+    risk_tolerance: profit ratio increase
+    state "Balance" as balance
+    balance: risk decrease
+    balance: profit ratio increase
+    state "End investment and receive profit" as end_investment
+    end_investment: receive profit
+    end_investment: remove investment from investment list
+    choosing_operation1 --> asset_allocation: chose asset allocation
+    choosing_operation1 --> diversification: chose diversification
+    choosing_operation1 --> risk_tolerance: chose risk tolerance
+    choosing_operation1 --> balance: chose balance
+    choosing_operation1 --> end_investment: chose end_investment
+    asset_allocation --> [*]
+    diversification --> [*]
+    risk_tolerance --> [*]
+    balance --> [*]
+    end_investment --> [*]
+}
+
+state "Investment operations" as investment_operations{
+    state "Increasing number of operations" as increasing_op_number
+    [*] --> increasing_op_number
+    state "Random investment changing" as investment_changing
+    investment_changing: randomly choosing investment
+    investment_changing: investment risk changing
+    investment_changing: profit ratio changing
+    increasing_op_number --> investment_changing: number is divisible by 3
+    state "Removing the investment" as removing_investment
+    removing_investment: get profit
+    removing_investment: removing investment from list
+    investment_changing --> removing_investment: risk is higher than 1
+    removing_investment --> [*]
+    increasing_op_number --> [*]: risk is not divisible by 3
+    investment_changing --> [*]: risk is lower than 1
+}
+
+choosing_operation --> make_transaction: chose make transaction
+choosing_operation --> make_investment: chose make investment
+choosing_operation --> make_deposit: chose make deposit
+choosing_operation --> make_withdrawal: chose make withdrawal
+choosing_operation --> get_analysis: chose get analysis
+choosing_operation --> get_financial_report: chose get financial report
+choosing_operation --> form_new_budget: chose form new budget
+choosing_operation --> portfolio_management: chose portfolio management
+
+state "Completing the operation" as completing_operation
+make_transaction --> completing_operation
+make_investment --> completing_operation
+make_deposit --> completing_operation
+make_withdrawal --> completing_operation
+get_analysis --> completing_operation
+get_financial_report --> completing_operation
+form_new_budget --> completing_operation
+portfolio_management --> completing_operation
+completing_operation --> investment_operations
+
+state "Save the state" as save_state
+choosing_operation --> save_state: chose exit
+investment_operations --> save_state
+save_state --> [*]: chose exit
+save_state --> choosing_operation: chose another operation
+
+@enduml
