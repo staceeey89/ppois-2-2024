@@ -1,4 +1,5 @@
 from src.controller.commands.command import Command
+from src.model.conditionOfRelationBetweenStates import ConditionOfRelationBetweenStates
 
 
 class ListCommand(Command):
@@ -18,9 +19,9 @@ class ListCommand(Command):
             raise ValueError("List command: " + str(e))
 
         conditions = {
-            1: "war",
-            2: "peace",
-            3: "alliance",
+            ConditionOfRelationBetweenStates.WAR: "war",
+            ConditionOfRelationBetweenStates.PEACE: "peace",
+            ConditionOfRelationBetweenStates.ALLIANCE: "alliance",
         }
 
         answer = {

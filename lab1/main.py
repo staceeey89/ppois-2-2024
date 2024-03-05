@@ -12,6 +12,7 @@ from src.controller.commands.provideSocialSupportCommand import ProvideSocialSup
 from src.controller.commands.enhanceInfrastructureCommand import EnhanceInfrastructureCommand
 from src.controller.commands.exitCommand import ExitCommand
 from src.controller.commands.helpCommand import HelpCommand
+from src.controller.commands.createExternalRelationCommand import CreateExternalRelationCommand
 
 commands = {
     ListCommand.name: ListCommand,
@@ -24,6 +25,8 @@ commands = {
     EnhanceInfrastructureCommand.name: EnhanceInfrastructureCommand,
     ExitCommand.name: ExitCommand,
     HelpCommand.name: HelpCommand,
+    CreateExternalRelationCommand.name: CreateExternalRelationCommand,
+
 }
 
 terminal = Terminal(
@@ -34,6 +37,6 @@ terminal = Terminal(
 
 while True:
     try:
-        print(terminal.work())
+        print(terminal.do_iteration())
     except Exception as e:
         print(e)

@@ -15,7 +15,7 @@ class Terminal:
         self._interpreter = interpreter
         self._repository = repository
 
-    def work(self):
+    def do_iteration(self):
         input_ = self._inputer.get_input()
         command = self._interpreter.interpret(input_, self._repository)
         if not command.can_execute():

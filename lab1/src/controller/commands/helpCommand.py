@@ -17,7 +17,8 @@ class HelpCommand(Command):
                 "provide_security [name_of_state] [name_of_citizen]\n"
                 "provide_social_support [name_of_state] [name_of_citizen]\n"
                 "collect_taxes [name_of_state]\n"
-                "enhance_infrastructure [name_of_state]")
+                "enhance_infrastructure [name_of_state]\n"
+                "create_external_relation [first_state] [second_state] [war|peace|alliance]")
 
     def can_execute(self, *args: str) -> bool:
         return len(self.args) == 0
