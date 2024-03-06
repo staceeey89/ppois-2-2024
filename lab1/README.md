@@ -276,9 +276,9 @@ class VisitorNotFoundException(Exception):
 
 ### Диаграмма классов
 
-![UML Class diagram](/resources/class_diagram.png)
+![UML Class diagram](resources/class_diagram.png)
 
 ### Диаграмма состояний
 
-![UML State diagram](/resources/state_diagram.png)
+![UML State diagram](resources/state_diagram.png)
 
