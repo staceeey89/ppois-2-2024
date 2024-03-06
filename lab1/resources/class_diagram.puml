@@ -1,0 +1,153 @@
+@startuml
+
+enum BookStatus {
+    renting
+    finished
+}
+
+enum RoomStatus {
+    empty
+    occupied
+}
+
+enum RoomType {
+    economy
+    standard
+    luxury
+}
+
+enum ServiceType {
+    spa
+    massage
+    restaurant
+}
+
+enum WorkerStatus {
+    resting
+    working
+}
+
+enum Dishes {
+    fish
+    meat
+    vegetables
+}
+
+class Person {
+    - __name : str
+    - __age : int
+    - __passport_id : passport_id
+    + name() : str
+    + age() : int
+    + passport_id() : str
+}
+
+class HotelRoom {
+    - __number : str
+    - __type_of_room : RoomType
+    - __status : RoomStatus
+    + number() : str
+    + type() : RoomType
+    + status() : RoomStatus
+    + status() : RoomStatus
+}
+
+class Visitor {
+    + name() : str
+    + age() : int
+    + passport_id() : int
+}
+
+class Worker {
+    -  __status : WorkerStatus
+    + name() : WorkerStatus
+    + age() : int
+    + passport_id() : str
+    + status() : WorkerStatus
+}
+
+class Booking {
+    - __visitor : Visitor
+    - __room : HotelRoom
+    - __start_date : datetime
+    - __finish_date : datetime
+    - __status : BookStatus
+    + visitor() : Visitor
+    + room() : HotelRoom
+    + start_date() : datetime
+    + finish_date() : datetime
+    + status() : BookStatus
+}
+
+class Service {
+    - __visitor : Visitor
+    - __type : ServiceType
+    - __worker : Worker
+    + visitor() : Visitor
+    + type() : ServiceType
+    + worker() : Worker
+}
+
+class RestaurantService {
+    - __dishes : list[Dishes]
+    + dishes() : list[Dishes]
+}
+
+class Hotel {
+    - __workers : list[Worker]
+    + __reception : Reception
+    +add_worker(str, int, str) -> bool
+    +fire_off_worker(str) -> bool
+    +show_unemployed_workers() -> None
+    +show_all_workers() -> None
+    +add_room(str, str) -> bool
+    +show_available_rooms() -> None
+    +show_all_rooms() -> None
+    +book_room(str, int, str, String, int) -> bool
+    +pay_off(str) -> bool
+    +show_uncompleted_services() -> None
+    +ask_for_service(str, str, str) -> bool
+    +ask_for_restaurant_service(str, str, list[Dishes]) -> bool
+    +finish_service(str) -> bool
+    +show_all_visitors() -> None
+    +show_all_bookings() -> None
+}
+
+class Reception {
+    - __visitors : list[Visitor]
+    - __bookings : list[Booking]
+    - __services : list[Service]
+    - __rooms : list[HotelRoom]
+    +book(str, str, datetime, datetime) -> Booking
+    +finish_booking(str) -> Booking
+    +ask_for_service(str, ServiceType, Worker) -> None
+    +ask_for_restaurant_service(str, Worker, list[Dishes]) -> None
+    +finish_service(str) -> Service|None
+    +find_available_rooms() -> list[HotelRoom]
+    +registrate_visitor(Visitor) -> bool
+    +add_room(HotelRoom) -> bool
+    +find_visitor(str) -> Visitor|None
+    +rooms() -> list[HotelRoom]
+    +services() -> list[Service]
+    +bookings() -> list[Booking]
+    +visitors() -> list[Visitor]
+}
+
+Person "1" <|-- "1" Visitor : inheritance
+Person "1" <|-- "1" Worker : inheritance
+HotelRoom "1" *-- "1" RoomType : composition
+HotelRoom "1" *-- "1" RoomStatus : composition
+Booking "1" *-- "1" BookStatus : composition
+Worker "1" *-- "1" WorkerStatus : composition
+RestaurantService "1" *-- "1" Dishes : composition
+Service "1" *-- "1" ServiceType : composition
+Service "1" *-- "1" Worker : composition
+RestaurantService "1" -- "1" Service : inheritance
+Service "1" o-- "1" Visitor : aggregation
+Hotel "1" *-- "1" Reception : composition
+Reception "1" o-- "1" Visitor : aggregation
+Reception "1" o-- "1" Booking : aggregation
+Reception "1" o-- "1" Service : aggregation
+Reception "1" o-- "1" HotelRoom : aggregation
+
+@enduml
