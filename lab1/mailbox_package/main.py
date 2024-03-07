@@ -1,12 +1,8 @@
 from mailbox_package.mailbox import Sender
 from mailbox_package.mailbox import Receiver
 from mailbox_package.mailbox import Mailbox
-# from mailbox_package.mailbox import set_local_mailbox
-# from mailbox_package.mailbox import get_local_mailbox
-# from mailbox_package.mailbox import local_mailbox
 from time import sleep
 from random import randint
-# import pickle
 
 
 def indent() -> None:
@@ -171,14 +167,6 @@ def menu() -> None:
                 receiver_menu()
             case "3":
                 check_local_mailbox_condition()
-            # case "4":
-            #     with open("mailbox.pickle", "wb") as file:
-            #         pickle.dump(get_local_mailbox(), file)
-            # case "5":
-            #     with open("mailbox.pickle", "rb") as file:
-            #         mailbox: Mailbox = pickle.load(file)
-            #         local_mailbox = mailbox
-            #         # set_local_mailbox(mailbox)
             case "0":
                 print("Exiting...")
                 exit()

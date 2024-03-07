@@ -81,14 +81,6 @@ class Mailbox:
         return self._mailbox_capacity
 
 
-# def set_local_mailbox(mailbox: Mailbox) -> Mailbox:
-#     return mailbox
-#
-#
-# def get_local_mailbox() -> Mailbox:
-#     return local_mailbox
-
-
 local_mailbox: Mailbox = Mailbox(10)
 
 
@@ -211,7 +203,3 @@ class Sender:
                 print(f"{self.name} sending mail to {mail.receiver}")
                 local_mailbox.add_mail(mail)
             print("All mails sent.")
-
-
-# if __name__ == '__main__':
-#     local_mailbox = set_local_mailbox(Mailbox(10))
