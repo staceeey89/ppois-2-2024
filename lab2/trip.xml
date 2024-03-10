@@ -1,0 +1,52 @@
+<?xml version="1.0" ?><trip>
+    <train id="1">
+        <departure>
+            <station>Moscovskaya</station>
+            <datetime>2024-03-03T07:00:00</datetime>
+        </departure>
+        <arrival>
+            <station>Akademiya Nauk</station>
+            <datetime>2024-03-03T19:50:00</datetime>
+        </arrival>
+    </train>
+    <train id="2">
+        <departure>
+            <station>Uruchha</station>
+            <datetime>2024-04-03T09:00:00</datetime>
+        </departure>
+        <arrival>
+            <station>Plosha Lenina</station>
+            <datetime>2024-09-03T21:30:00</datetime>
+        </arrival>
+    </train>
+    <train id="3">
+        <departure>
+            <station>Borisov Trakt</station>
+            <datetime>2024-07-03T12:00:00</datetime>
+        </departure>
+        <arrival>
+            <station>Malinovka</station>
+            <datetime>2024-07-04T22:00:00</datetime>
+        </arrival>
+    </train>
+     <train id="4">
+        <departure>
+            <station>Borisov Trakt</station>
+            <datetime>2024-07-03T12:00:00</datetime>
+        </departure>
+        <arrival>
+            <station>Malinovka</station>
+            <datetime>2024-07-04T22:00:00</datetime>
+        </arrival>
+    </train>
+     <train id="5">
+        <departure>
+            <station>Borisov Trakt</station>
+            <datetime>2024-07-03T12:00:00</datetime>
+        </departure>
+        <arrival>
+            <station>Malinovka</station>
+            <datetime>2024-07-04T22:00:00</datetime>
+        </arrival>
+    </train>
+</trip>
