@@ -1,7 +1,7 @@
 from tkinter import *
 import xml.sax
 import xml.dom.minidom
-from tkinter import messagebox, ttk
+from tkinter import messagebox, ttk, Frame
 from datetime import datetime
 
 
@@ -461,3 +461,27 @@ def show_train_data_tree(root):
         tree.insert(arrival_node, "end", text=f"DateTime: {arrival['datetime']}")
 
     tree.pack(expand=True, fill="both")
+
+
+def create_toolbar(root):
+    toolbar_frame = ttk.Frame(root)
+    toolbar_frame.pack(side="top", fill="x", anchor="nw")
+
+    btn_show_data_table = ttk.Button(toolbar_frame, text='Просмотреть данные (таблица)', command=lambda: show_train_data_table(root))
+    btn_show_data_table.pack(side="left", padx=5, pady=5)
+
+    btn_show_data_tree = ttk.Button(toolbar_frame, text='Просмотреть данные (дерево)', command=lambda: show_train_data_tree(root))
+    btn_show_data_tree.pack(side="left", padx=5, pady=5)
+
+    btn_show_data = ttk.Button(toolbar_frame, text='Просмотреть данные', command=lambda: show_train_data(root))
+    btn_show_data.pack(side="left", padx=5, pady=5)
+
+    btn_write_file = ttk.Button(toolbar_frame, text='Записать в файл', command=lambda: write_in_file(root))
+    btn_write_file.pack(side="left", padx=5, pady=5)
+
+    btn_search_info = ttk.Button(toolbar_frame, text='Найти информацию', command=lambda: Search_Info(root))
+    btn_search_info.pack(side="left", padx=5, pady=5)
+
+    btn_delete_data = ttk.Button(toolbar_frame, text='Удалить данные', command=lambda: delete_data(root))
+    btn_delete_data.pack(side="left", padx=5, pady=5)
+
