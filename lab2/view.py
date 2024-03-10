@@ -1,8 +1,12 @@
 from tkinter import *
 from tkinter import ttk
+from model import create_toolbar
 
 def create_root():
     root = Tk()
+
+    create_toolbar(root)
+
     root.title("Расписание поездов")
     root.geometry("1000x600")
 
