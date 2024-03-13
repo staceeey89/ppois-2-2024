@@ -25,11 +25,17 @@
 Были реализованы такие классы как Plot(участок), Plant(растение), Soil(почва), IrrigationSystem(система полива), RecreationArea(зона отдыха), Instrument(инструмент). Классы Plot, Soil, Plant связаны между собой композицией. Класс RecreationArea наследуется от класса Plot.
 
 В программе были реализованы такие функции как:
+
 **Plant:**  planting(посадка растения), take_care_of(забота о растении), watering(полив растения)
+
 **Soil:** watering(полив почвы), fertilizing(удобрение почвы)
+
 **Instrument:** clearing(чистка инструмента)
+
 **IrrigationSystem:** turn_on and turn_off(включить и выключить систему полива соответственно), start_fertilize(заправить систему полива удобрением), stop_fertilize(перестать подавать удобрение в систему полива)
+
 **Plot:** planting_a_plant(посадить растение), print_list_of_the_plants(вывести список растений), watering_my_plants(полив растения), take_care_of_plant(забота о растении), fertilize_plants(удобрение растений на участке) **Примечание:** эти функции отличаются от функций в классах Растение и Почва тем, что в классе Растение и Почва они фиксируют состояния(к примеру полито растение или нет), когда как в классе Учасок совершается сам процесс полива, посадки и т.д.
+
 **RecreationArea:** decoration(декорация зоны отдыха), print_list_of_decorations(вывод списка декораций)
 
 
@@ -37,12 +43,12 @@
 
 ### Unit тесты
 
-Для проверки корректной работы программы добавлены unit тесты: для проверки корректной работы классов Plot, Instrument, RecreationArea:
+Для проверки корректной работы программы добавлены unit тесты: для проверки корректной работы классов Plot, Instrument, RecreationArea, IrrigationSystem:
 
-![image]()
-![image]()
 
-![image]()
+<img width="193" alt="Screenshot 2024-03-13 211238" src="https://github.com/kvetkod/ppois-2-2024/assets/115100299/d82c9f12-7da7-4b0a-a2c9-0013c20aeec0">
+
+
 
 
 
