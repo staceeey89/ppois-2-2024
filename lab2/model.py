@@ -3,8 +3,9 @@ import xml.sax
 import xml.dom.minidom
 from tkinter import messagebox, ttk, Frame
 from datetime import datetime
+import sqlite3
 
-
+DATABASE_FILE = 'train_info.db'
 class TrainHandler(xml.sax.ContentHandler):
     def __init__(self):
         self.trains = []
@@ -66,6 +67,92 @@ def parse_xml():
     parser.setContentHandler(handler)
     parser.parse('trip.xml')
     return handler.departures, handler.arrivals
+
+
+def create_database():
+    conn = sqlite3.connect(DATABASE_FILE)
+    c = conn.cursor()
+    c.execute('''CREATE TABLE IF NOT EXISTS trains
+                 (id INTEGER PRIMARY KEY,
+                 departure_station TEXT,
+                 departure_datetime TEXT,
+                 arrival_station TEXT,
+                 arrival_datetime TEXT,
+                 travel_time TEXT)''')
+    conn.commit()
+    conn.close()
+    messagebox.showinfo("Успех", "База данных успешно создана")
+
+
+def insert_train_data(departure_station, departure_datetime, arrival_station, arrival_datetime, travel_time):
+    conn = sqlite3.connect(DATABASE_FILE)
+    c = conn.cursor()
+    c.execute("INSERT INTO trains (departure_station, departure_datetime, arrival_station, arrival_datetime, travel_time) VALUES (?, ?, ?, ?, ?)",
+              (departure_station, departure_datetime, arrival_station, arrival_datetime, travel_time))
+    conn.commit()
+    conn.close()
+    global data_saved_successfully
+    data_saved_successfully = True
+
+
+def load_train_data_from_db():
+    conn = sqlite3.connect(DATABASE_FILE)
+    c = conn.cursor()
+    c.execute("SELECT * FROM trains")
+    rows = c.fetchall()
+    conn.close()
+    messagebox.showinfo("Успех", "Данные успешно загружены")
+    return rows
+
+
+def insert_to_db():
+    departures, arrivals = parse_xml()
+    for departure, arrival in zip(departures, arrivals):
+        departure_station = departure['station']
+        departure_datetime = departure['datetime']
+        arrival_station = arrival['station']
+        arrival_datetime = arrival['datetime']
+        departure_time = datetime.strptime(departure_datetime, "%Y-%m-%dT%H:%M:%S")
+        arrival_time = datetime.strptime(arrival_datetime, "%Y-%m-%dT%H:%M:%S")
+        travel_time = str(arrival_time - departure_time)
+        insert_train_data(departure_station, departure_datetime, arrival_station, arrival_datetime, travel_time)
+    if data_saved_successfully:
+        messagebox.showinfo("Успех", "Данные успешно сохранены")
+
+
+def load_from_db():
+    return load_train_data_from_db()
+
+
+def show_train_data_from_db():
+    rows = load_train_data_from_db()
+
+    window = Tk()
+    window.title('Информация о поезде (из базы данных)')
+    window.geometry('1200x500')
+
+    tree = ttk.Treeview(window)
+    tree["columns"] = ("departure_station", "departure_datetime", "arrival_station", "arrival_datetime", "travel_time")
+    tree.heading("#0", text="Train ID")
+    tree.heading("departure_station", text="Станция отправления")
+    tree.heading("departure_datetime", text="Дата и время отправления")
+    tree.heading("arrival_station", text="Станция прибытия")
+    tree.heading("arrival_datetime", text="Дата и время прибытия")
+    tree.heading("travel_time", text="Время в пути")
+
+    for row in rows:
+        train_id = row[0]
+        departure_station = row[1]
+        departure_datetime = row[2]
+        arrival_station = row[3]
+        arrival_datetime = row[4]
+        travel_time = row[5]
+
+        tree.insert("", "end", text=train_id, values=(departure_station, departure_datetime, arrival_station, arrival_datetime, travel_time))
+
+    tree.pack(expand=True, fill="both")
+    window.mainloop()
+
 
 
 def show_train_data(root):
@@ -484,4 +571,16 @@ def create_toolbar(root):
 
     btn_delete_data = ttk.Button(toolbar_frame, text='Удалить данные', command=lambda: delete_data(root))
     btn_delete_data.pack(side="left", padx=5, pady=5)
+
+    btn_create_db = ttk.Button(toolbar_frame, text='Создать БД', command=create_database)
+    btn_create_db.pack(side="left", padx=5, pady=5)
+
+    btn_load_from_db = ttk.Button(toolbar_frame, text='Загрузить из БД', command=load_from_db)
+    btn_load_from_db.pack(side="left", padx=5, pady=5)
+
+    btn_insert_to_db = ttk.Button(toolbar_frame, text='Сохранить в БД', command=insert_to_db)
+    btn_insert_to_db.pack(side="left", padx=5, pady=5)
+
+    btn_print_db = ttk.Button(toolbar_frame, text='Вывести информацию из БД', command=show_train_data_from_db)
+    btn_print_db.pack(side="left", padx=5, pady=5)
 
