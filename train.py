@@ -3,8 +3,7 @@ from abstractions import AbstractTrain, AbstractPlatform, AbstractPassenger
 
 
 class Train(AbstractTrain):
-    def __init__(self, number: int):
-        self.__number: int = number
+    def __init__(self):
         self.__passengers: List[AbstractPassenger] = []
         self.__platform: AbstractPlatform = None
 
@@ -31,3 +30,6 @@ class Train(AbstractTrain):
                 Exception(f"Next platform ({next_platform.number}) has a train")
         except Exception as text:
             print(text)
+
+    def get_passengers(self):
+        return self.__passengers

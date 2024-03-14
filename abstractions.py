@@ -29,6 +29,10 @@ class AbstractTrain(ABC):
     def platform(self, value):
         pass
 
+    @abstractmethod
+    def get_passengers(self):
+        pass
+
 
 class AbstractPassenger(ABC):
     @abstractmethod
@@ -98,3 +102,8 @@ class AbstractPlatform(ABC):
     @abstractmethod
     def train(self, value):
         pass
+
+    @abstractmethod
+    def get_passengers(self):
+        pass
+

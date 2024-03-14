@@ -1,5 +1,5 @@
 class Ticket:
-    def __init(self):
+    def __init__(self):
         self.__cost: int = 0
 
     @property
@@ -8,4 +8,4 @@ class Ticket:
 
     @cost.setter
     def cost(self, cost: int):
-        self.__cost = cost
+        self.__cost: int = cost

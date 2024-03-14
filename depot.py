@@ -17,5 +17,6 @@ class Depot:
                 Exception("There are no trains in Depot")
         except Exception as text:
             print(text)
+
     def get_trains_list(self):
         return self.__trains

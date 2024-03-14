@@ -6,9 +6,9 @@ from depot import Depot
 
 
 class Schedule:
-    def __init__(self, stations: List[Station], trains: List[Train]):
-        self.__stations: List[Station] = stations
-        self.__trains: List[Train] = trains
+    def __init__(self):
+        self.__stations: List[Station] = []
+        self.__trains: List[Train] = []
         self.__depots: List[Depot] = []
         self.__start_time: timedelta = timedelta(hours=5, minutes=30)
         self.__end_time: timedelta = timedelta(hours=00, minutes=40)
@@ -64,7 +64,7 @@ class Schedule:
             return
 
     def print_info(self):
-        print(f"It is {self.__start_time}\nTrain will be in {self.__delta_time}")
+        print(f"It is {self.__start_time}\nNearest train will be in {self.__delta_time}")
 
     def run_a_train(self):
         try:

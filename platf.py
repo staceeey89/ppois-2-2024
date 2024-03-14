@@ -25,3 +25,6 @@ class Platform(AbstractPlatform):
     @train.setter
     def train(self, train: AbstractTrain):
         self.__train = train
+
+    def get_passengers(self):
+        return self.__passengers
