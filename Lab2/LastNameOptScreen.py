@@ -1,5 +1,5 @@
 from PyQt5.QtGui import QIntValidator
-from PyQt5.QtWidgets import QPushButton, QWidget, QLabel, QLineEdit
+from PyQt5.QtWidgets import QPushButton, QWidget, QLabel, QLineEdit, QComboBox
 from Design import Design
 
 
@@ -29,10 +29,23 @@ class LastNameOptScreen(QWidget):
         self.high_opt_text = QLabel(self)
         self.low_opt_text = QLabel(self)
 
+        self.first_page_button = QPushButton(self)
+        self.all_users = QLabel(self)
+        self.users_page = QLabel(self)
+        self.number_users_page = QComboBox(self)
+
+        Design.design_combo_box(self.number_users_page, 25, 25, 45, 30)
+        Design.design_text(self.all_users, 80, 647, "", 13, 75)
+        Design.design_text(self.users_page, 80, 30, "", 13, 100)
+        Design.design_button(self.first_page_button, 160, 647, "1", 30, 30)
+
+        for i in range(1, 11):
+            self.number_users_page.addItem(str(i))
+
         Design.design_button(self.left_button, 343, 647, "<", 30, 30)
         Design.design_button(self.right_button, 422, 647, ">", 30, 30)
         Design.design_button(self.last_page_button, 463, 647, str(self.num_pages), 30, 30)
-        Design.design_button(self.search_button, 174, 646, "Найти")
+        Design.design_button(self.search_button, 200, 646, "Найти", 130)
         Design.design_home_button(self.home_button, 25, 647)
 
         Design.design_input_field(self.input_last_name_field, 15, 607, 129, 25, 10)
@@ -45,7 +58,7 @@ class LastNameOptScreen(QWidget):
         self.input_high_opt_field.setMaxLength(3)
         self.input_high_opt_field.setValidator(QIntValidator())
 
-        Design.design_text(self.current_page_text, 388, 647, "0/0", 13, 25)
+        Design.design_text(self.current_page_text, 375, 647, "0/0", 13, 25)
         Design.design_text(self.last_name_text, 15, 592, "Введите фамилию:",
                            11, 108, 13)
         Design.design_text(self.high_opt_text, 351, 592, "Введите вверхний предел:",
@@ -82,6 +95,12 @@ class LastNameOptScreen(QWidget):
         self.search_button.disconnect()
         self.search_button.clicked.connect(lambda: self.print_search_users(data_base, controller, xml))
 
+        self.first_page_button.disconnect()
+        self.first_page_button.clicked.connect(lambda: self.turn_first_page(data_base, controller, xml))
+
+        self.number_users_page.disconnect()
+        self.number_users_page.currentIndexChanged.connect(lambda: self.start_printing(data_base, controller, xml))
+
         self.hide()
 
     def clear_records(self):
@@ -99,11 +118,13 @@ class LastNameOptScreen(QWidget):
                                                                    str(self.input_last_name_field.text()),
                                                                    int(self.input_low_opt_field.text()),
                                                                    int(self.input_high_opt_field.text()),
-                                                                   xml)
+                                                                   xml,
+                                                                   int(self.number_users_page.currentText()))
         self.current_page_text.setText(f"{self.counter_pages}/{self.num_pages}")
         self.last_page_button.setText(str(self.num_pages))
         self.clear_records()
-        while self.counter_users < len(data_base.get_users()) and self.temp_counter < 10:
+        while (self.counter_users < len(data_base.get_users()) and self.temp_counter
+               < int(self.number_users_page.currentText())):
             if (str(data_base.get_users()[self.counter_users][1]) == str(self.input_last_name_field.text()) and
                     int(self.input_low_opt_field.text()) <= data_base.get_user_opt(self.counter_users)
                     <= int(self.input_high_opt_field.text())):
@@ -153,6 +174,11 @@ class LastNameOptScreen(QWidget):
 
             self.counter_users += 1
 
+        self.all_users.setText(f"Всего {str(data_base.get_num_users_search_last_name_opt(
+            self.input_last_name_field.text(), int(self.input_low_opt_field.text()),
+            int(self.input_high_opt_field.text())))}")
+        self.users_page.setText(f"На странице {self.temp_counter}")
+
     def print_users_xml(self, data_base, controller, xml):
         self.x_pos = 15
         self.y_pos = 87
@@ -160,11 +186,13 @@ class LastNameOptScreen(QWidget):
         self.num_pages = controller.get_search_last_name_opt_pages(data_base, str(self.input_last_name_field.text()),
                                                                    int(self.input_low_opt_field.text()),
                                                                    int(self.input_high_opt_field.text()),
-                                                                   xml)
+                                                                   xml,
+                                                                   int(self.number_users_page.currentText()))
         self.current_page_text.setText(f"{self.counter_pages}/{self.num_pages}")
         self.last_page_button.setText(str(self.num_pages))
         self.clear_records()
-        while self.counter_users < xml.get_num_users() and self.temp_counter < 10:
+        while (self.counter_users < xml.get_num_users() and self.temp_counter
+               < int(self.number_users_page.currentText())):
             if (str(xml.get_users()[self.counter_users]["last_name"]) == str(self.input_last_name_field.text()) and
                     int(self.input_low_opt_field.text()) <= xml.get_user_opt(self.counter_users)
                     <= int(self.input_high_opt_field.text())):
@@ -214,6 +242,11 @@ class LastNameOptScreen(QWidget):
 
             self.counter_users += 1
 
+        self.all_users.setText(f"Всего {str(xml.get_num_users_search_last_name_opt(
+            self.input_last_name_field.text(), int(self.input_low_opt_field.text()),
+            int(self.input_high_opt_field.text())))}")
+        self.users_page.setText(f"На странице {self.temp_counter}")
+
     def print_users(self, data_base, controller, xml):
         if not controller.check_bd_or_xml_file():
             self.print_users_bd(data_base, controller, xml)
@@ -243,6 +276,14 @@ class LastNameOptScreen(QWidget):
             return False
         else:
             return True
+
+    def turn_first_page(self, data_base, controller, xml):
+        if self.num_pages == 0:
+            return
+        self.clear_records()
+        self.counter_pages = 1
+        self.counter_users = 0
+        self.print_users(data_base, controller, xml)
 
     def turn_right_page(self, data_base, controller, xml):
         if self.num_pages == 0:
@@ -284,20 +325,24 @@ class LastNameOptScreen(QWidget):
             self.counter_users = (data_base.find_num_watch_pages() -
                                   data_base.get_pos_users_last_name_opt(
                                       controller.get_users_on_last_page_last_name_opt(data_base,
-                                                                                      self.input_last_name_field.text(),
-                                                                                      int(self.input_low_opt_field.text()),
-                                                                                      int(self.input_high_opt_field.text()),
-                                                                                      xml),
+                                                                                self.input_last_name_field.text(),
+                                                                                int(self.input_low_opt_field.text()),
+                                                                                int(self.input_high_opt_field.text()),
+                                                                                xml,
+                                                                                int(self.number_users_page.currentText())),
                                       self.input_last_name_field.text(),
                                       int(self.input_low_opt_field.text()),
-                                      int(self.input_high_opt_field.text())))
+                                      int(self.input_high_opt_field.text()),
+                                      data_base.get_users()[data_base.get_num_users()-1]))
         else:
             self.clear_records()
             self.counter_pages -= 1
-            self.counter_users -= data_base.get_pos_users_last_name_opt(10 + self.temp_counter,
-                                                                        self.input_last_name_field.text(),
-                                                                        int(self.input_low_opt_field.text()),
-                                                                        int(self.input_high_opt_field.text()))
+            self.counter_users -= data_base.get_pos_users_last_name_opt(int(self.number_users_page.currentText())
+                                                                        + self.temp_counter,
+                                                            self.input_last_name_field.text(),
+                                                            int(self.input_low_opt_field.text()),
+                                                            int(self.input_high_opt_field.text()),
+                                                            data_base.get_users()[self.counter_users-1])
 
     def turn_left_page_xml(self, data_base, xml, controller):
         if self.counter_pages - 1 < 1:
@@ -306,20 +351,24 @@ class LastNameOptScreen(QWidget):
             self.counter_users = (xml.get_num_users() -
                                   xml.get_pos_users_last_name_opt(
                                       controller.get_users_on_last_page_last_name_opt(data_base,
-                                                                                      self.input_last_name_field.text(),
-                                                                                      int(self.input_low_opt_field.text()),
-                                                                                      int(self.input_high_opt_field.text()),
-                                                                                      xml),
+                                                                                self.input_last_name_field.text(),
+                                                                                int(self.input_low_opt_field.text()),
+                                                                                int(self.input_high_opt_field.text()),
+                                                                                xml,
+                                                                                int(self.number_users_page.currentText())),
                                       self.input_last_name_field.text(),
                                       int(self.input_low_opt_field.text()),
-                                      int(self.input_high_opt_field.text())))
+                                      int(self.input_high_opt_field.text()),
+                                      xml.get_users()[xml.get_num_users()-1]))
         else:
             self.clear_records()
             self.counter_pages -= 1
-            self.counter_users -= xml.get_pos_users_last_name_opt(10 + self.temp_counter,
+            self.counter_users -= xml.get_pos_users_last_name_opt(int(self.number_users_page.currentText())
+                                                                  + self.temp_counter,
                                                                   self.input_last_name_field.text(),
                                                                   int(self.input_low_opt_field.text()),
-                                                                  int(self.input_high_opt_field.text()))
+                                                                  int(self.input_high_opt_field.text()),
+                                                                  xml.get_users()[self.counter_users-1])
 
     def turn_last_page(self, data_base, controller, xml):
         if self.num_pages == 0:
@@ -341,13 +390,15 @@ class LastNameOptScreen(QWidget):
         self.counter_users = (data_base.find_num_watch_pages() -
                               data_base.get_pos_users_last_name_opt(
                                   controller.get_users_on_last_page_last_name_opt(data_base,
-                                                                                  self.input_last_name_field.text(),
-                                                                                  int(self.input_low_opt_field.text()),
-                                                                                  int(self.input_high_opt_field.text()),
-                                                                                  xml),
+                                                                            self.input_last_name_field.text(),
+                                                                            int(self.input_low_opt_field.text()),
+                                                                            int(self.input_high_opt_field.text()),
+                                                                            xml,
+                                                                            int(self.number_users_page.currentText())),
                                   self.input_last_name_field.text(),
                                   int(self.input_low_opt_field.text()),
-                                  int(self.input_high_opt_field.text())))
+                                  int(self.input_high_opt_field.text()),
+                                  data_base.get_users()[data_base.get_num_users()-1]))
 
     def turn_last_page_xml(self, data_base, xml, controller):
         self.clear_records()
@@ -358,10 +409,12 @@ class LastNameOptScreen(QWidget):
                                                                            self.input_last_name_field.text(),
                                                                            int(self.input_low_opt_field.text()),
                                                                            int(self.input_high_opt_field.text()),
-                                                                           xml),
+                                                                           xml,
+                                                                           int(self.number_users_page.currentText())),
                                   self.input_last_name_field.text(),
                                   int(self.input_low_opt_field.text()),
-                                  int(self.input_high_opt_field.text())))
+                                  int(self.input_high_opt_field.text()),
+                                  xml.get_users()[xml.get_num_users()-1]))
 
     def start_printing(self, data_base, controller, xml):
         self.counter_users = 0
@@ -371,3 +424,8 @@ class LastNameOptScreen(QWidget):
         except ValueError:
             self.input_low_opt_field.clear()
             self.input_high_opt_field.clear()
+
+    def zero_page(self):
+        self.num_pages = 0
+        self.counter_users = 0
+        self.counter_pages = 1

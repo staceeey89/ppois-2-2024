@@ -88,18 +88,22 @@ class XML:
                 counter += 1
         return counter
 
-    def get_pos_users_group_opt(self, num, group, low_opt, high_opt):
+    def get_pos_users_group_opt(self, num, group, low_opt, high_opt, last_user):
         # Вычисляет, сколько людей нужно убрать в переходе на страницу
         need_num = num
         counter = 0
         us = handler.users
+        flag = False
         for user in reversed(us):
-            if need_num <= 0:
-                return counter
-            opt = sum([int(user[f"term{i - 3}"]) for i in range(4, 14)])
-            if user["user_group"] == group and low_opt <= opt <= high_opt:
-                need_num -= 1
-            counter += 1
+            if user == last_user:
+                flag = True
+            if flag:
+                if need_num <= 0:
+                    return counter
+                opt = sum([int(user[f"term{i - 3}"]) for i in range(4, 14)])
+                if user["user_group"] == group and low_opt <= opt <= high_opt:
+                    need_num -= 1
+                counter += 1
         return counter
 
     # Поиск по фамилии и кол-ву работы
@@ -112,18 +116,22 @@ class XML:
                 counter += 1
         return counter
 
-    def get_pos_users_last_name_opt(self, num, last_name, low_opt, high_opt):
+    def get_pos_users_last_name_opt(self, num, last_name, low_opt, high_opt, last_user):
         # Вычисляет, сколько людей нужно убрать в переходе на страницу
         need_num = num
         counter = 0
         us = handler.users
+        flag = False
         for user in reversed(us):
-            if need_num <= 0:
-                return counter
-            opt = sum([int(user[f"term{i - 3}"]) for i in range(4, 14)])
-            if user["last_name"] == last_name and low_opt <= opt <= high_opt:
-                need_num -= 1
-            counter += 1
+            if user == last_user:
+                flag = True
+            if flag:
+                if need_num <= 0:
+                    return counter
+                opt = sum([int(user[f"term{i - 3}"]) for i in range(4, 14)])
+                if user["last_name"] == last_name and low_opt <= opt <= high_opt:
+                    need_num -= 1
+                counter += 1
         return counter
 
     # Поиск по фамилии и группе
@@ -135,17 +143,21 @@ class XML:
                 counter += 1
         return counter
 
-    def get_pos_users_last_name_group(self, num, last_name, group):
+    def get_pos_users_last_name_group(self, num, last_name, group, last_user):
         # Вычисляет, сколько людей нужно убрать в переходе на страницу
         need_num = num
         counter = 0
         us = handler.users
+        flag = False
         for user in reversed(us):
-            if need_num <= 0:
-                return counter
-            if user["last_name"] == last_name and user["user_group"] == group:
-                need_num -= 1
-            counter += 1
+            if user == last_user:
+                flag = True
+            if flag:
+                if need_num <= 0:
+                    return counter
+                if user["last_name"] == last_name and user["user_group"] == group:
+                    need_num -= 1
+                counter += 1
         return counter
 
     # Удаляет элемент по фамилии и группе

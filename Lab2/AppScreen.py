@@ -41,7 +41,7 @@ class AppScreen(QWidget):
         self.select_file_screen = SelectFileScreen(self.controller, self.data_base, self.xml)
         self.add_screen = AddScreen(self.xml, self.data_base, self.controller)
         self.watch_screen = WatchScreen(self.controller, self.data_base, self.xml)
-        self.tree_screen = TreeScreen()
+        self.tree_screen = TreeScreen(self.data_base, self.controller, self.xml)
 
         self.del_group_opt_screen.setParent(self)
         self.del_last_name_opt_screen.setParent(self)
@@ -165,6 +165,7 @@ class AppScreen(QWidget):
 
     def hide_last_name_group_screen_and_show_main_screen(self):
         self.last_name_group_screen.hide()
+        self.last_name_group_screen.zero_page()
         self.last_name_group_screen.clear_records()
         self.last_name_group_screen.input_last_name_field.clear()
         self.last_name_group_screen.input_group_field.clear()
@@ -172,6 +173,7 @@ class AppScreen(QWidget):
 
     def hide_last_name_opt_screen_and_show_main_screen(self):
         self.last_name_opt_screen.hide()
+        self.last_name_opt_screen.zero_page()
         self.last_name_opt_screen.clear_records()
         self.last_name_opt_screen.input_last_name_field.clear()
         self.last_name_opt_screen.input_low_opt_field.clear()
@@ -180,6 +182,7 @@ class AppScreen(QWidget):
 
     def hide_group_opt_screen_and_show_main_screen(self):
         self.group_opt_screen.hide()
+        self.group_opt_screen.zero_page()
         self.group_opt_screen.clear_records()
         self.group_opt_screen.input_group_field.clear()
         self.group_opt_screen.input_low_opt_field.clear()
@@ -216,9 +219,11 @@ class AppScreen(QWidget):
         self.main_screen.show()
 
     def hide_main_screen_and_show_tree_screen(self):
-        self.main_screen.hide()
-        self.tree_screen.show()
+        if self.controller.open_file_name != "":
+            self.main_screen.hide()
+            self.tree_screen.start_printing(self.data_base, self.xml, self.controller)
 
     def hide_tree_screen_and_show_main_screen(self):
         self.tree_screen.hide()
+        self.tree_screen.hide_main_elements()
         self.main_screen.show()

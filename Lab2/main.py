@@ -142,6 +142,7 @@ class Application(QMainWindow):
         self.app_screen.del_group_opt_screen.input_low_opt_field.clear()
         self.app_screen.del_group_opt_screen.input_high_opt_field.clear()
         self.app_screen.tree_screen.hide()
+        self.app_screen.tree_screen.hide_main_elements()
 
     def show_del_group_opt_screen(self):
         if self.check_connect_file():
@@ -209,8 +210,9 @@ class Application(QMainWindow):
             self.app_screen.last_name_group_screen.show()
 
     def show_tree_screen(self):
-        self.hide_all()
-        self.app_screen.tree_screen.show()
+        if self.check_connect_file():
+            self.hide_all()
+            self.app_screen.tree_screen.show()
 
     def check_connect_file(self):
         if self.app_screen.controller.open_file_name != "":

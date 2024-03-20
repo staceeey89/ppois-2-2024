@@ -71,6 +71,12 @@ class DataBase:
 
         return users
 
+    def get_num_users(self):
+        self.cursor.execute("SELECT * FROM users")
+        users = self.cursor.fetchall()
+
+        return len(users)
+
     def get_user_opt(self, num):
         self.cursor.execute("SELECT * FROM users")
         users = self.cursor.fetchall()
@@ -90,18 +96,22 @@ class DataBase:
                 counter += 1
         return counter
 
-    def get_pos_users_last_name_group(self, num, last_name, group):
+    def get_pos_users_last_name_group(self, num, last_name, group, last_user):
         # Вычисляет, сколько людей нужно убрать в переходе на страницу
         need_num = num
         counter = 0
         self.cursor.execute("SELECT * FROM users")
         users = self.cursor.fetchall()
+        flag = False
         for user in reversed(users):
-            if need_num <= 0:
-                return counter
-            if user[1] == last_name and user[3] == group:
-                need_num -= 1
-            counter += 1
+            if user == last_user:
+                flag = True
+            if flag:
+                if need_num <= 0:
+                    return counter
+                if user[1] == last_name and user[3] == group:
+                    need_num -= 1
+                counter += 1
         return counter
 
     # Методы для страницы поиска по фамилии и кол-ву работы
@@ -111,28 +121,28 @@ class DataBase:
         self.cursor.execute("SELECT * FROM users")
         users = self.cursor.fetchall()
         for user in users:
-            opt = 0
-            for i in range(4, 14):
-                opt += int(user[i])
+            opt = sum([int(user[i]) for i in range(4, 14)])
             if user[1] == last_name and low_opt <= opt <= high_opt:
                 counter += 1
         return counter
 
-    def get_pos_users_last_name_opt(self, num, last_name, low_opt, high_opt):
+    def get_pos_users_last_name_opt(self, num, last_name, low_opt, high_opt, last_user):
         # Вычисляет, сколько людей нужно убрать в переходе на страницу
         need_num = num
         counter = 0
         self.cursor.execute("SELECT * FROM users")
         users = self.cursor.fetchall()
+        flag = False
         for user in reversed(users):
-            opt = 0
-            for i in range(4, 14):
-                opt += int(user[i])
-            if need_num <= 0:
-                return counter
-            if user[1] == last_name and low_opt <= opt <= high_opt:
-                need_num -= 1
-            counter += 1
+            if user == last_user:
+                flag = True
+            if flag:
+                opt = sum([int(user[i]) for i in range(4, 14)])
+                if need_num <= 0:
+                    return counter
+                if user[1] == last_name and low_opt <= opt <= high_opt:
+                    need_num -= 1
+                counter += 1
         return counter
 
     # Методы для страницы поиска по группе и кол-ву работы
@@ -142,28 +152,28 @@ class DataBase:
         self.cursor.execute("SELECT * FROM users")
         users = self.cursor.fetchall()
         for user in users:
-            opt = 0
-            for i in range(4, 14):
-                opt += int(user[i])
+            opt = sum([int(user[i]) for i in range(4, 14)])
             if user[3] == group and low_opt <= opt <= high_opt:
                 counter += 1
         return counter
 
-    def get_pos_users_group_opt(self, num, group, low_opt, high_opt):
+    def get_pos_users_group_opt(self, num, group, low_opt, high_opt, last_user):
         # Вычисляет, сколько людей нужно убрать в переходе на страницу
         need_num = num
         counter = 0
+        flag = False
         self.cursor.execute("SELECT * FROM users")
         users = self.cursor.fetchall()
         for user in reversed(users):
-            opt = 0
-            for i in range(4, 14):
-                opt += int(user[i])
-            if need_num <= 0:
-                return counter
-            if user[3] == group and low_opt <= opt <= high_opt:
-                need_num -= 1
-            counter += 1
+            if user == last_user:
+                flag = True
+            if flag:
+                opt = sum([int(user[i]) for i in range(4, 14)])
+                if need_num <= 0:
+                    return counter
+                if user[3] == group and low_opt <= opt <= high_opt:
+                    need_num -= 1
+                counter += 1
         return counter
 
     def delete_last_name_group(self, last_name, group):

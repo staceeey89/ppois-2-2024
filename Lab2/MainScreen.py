@@ -23,7 +23,8 @@ class MainScreen(QWidget):
         Design.design_button(self.delete_button, 173, 436, "Удаление",
                              153, 39, 15, "#514E4E")
         Design.design_button(self.select_file_button, 173, 542, "Выбор файла")
-        Design.design_button(self.tree_button, 173, 613, "Дерево")
+        Design.design_button(self.tree_button, 173, 613, "Дерево",
+                             153, 39, 15, "#514E4E")
 
     def activate_buttons(self):
         Design.design_button(self.watch_button, 173, 118, "Просмотр",
@@ -33,4 +34,6 @@ class MainScreen(QWidget):
         Design.design_button(self.add_button, 173, 330, "Добавление",
                              153, 39, 15, "#572774")
         Design.design_button(self.delete_button, 173, 436, "Удаление",
+                             153, 39, 15, "#572774")
+        Design.design_button(self.tree_button, 173, 613, "Дерево",
                              153, 39, 15, "#572774")
