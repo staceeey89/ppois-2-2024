@@ -1,0 +1,92 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class VacuumCleaner {
+    color: str
+    firm: str
+    nozzle: Nozzle
+    dust_container: DustContainer
+    filter: Filter
+    engine: Engine
+    control_buttons: ControlButtons
+
+    __init__(self, in color: str, in firm: str): None
+    put_on_nozzle(self, in picked_nozzle: str): None
+    change_nozzle(self, in new_nozzle: str): None
+    show_nozzle(self): None
+    clean_dust_container(self): None
+    check_dust_container(self): None
+    show_power(self): None
+    clean_room(self, dust_room: Room): None
+    technical_work(self): None
+    start_vacuum(self, in wishful_power: int): None
+    check_filter_health(self): None
+}
+
+class DustContainer {
+    isFilled: bool
+    __init__(self): None
+}
+
+class ControlButtons {
+    start_b: bool
+    using_power: int
+
+    __init__(self): None
+    change_power(self, in wishful_power: int): None
+}
+
+class Engine {
+    min_power: int
+    max_power: int
+    health: int
+
+    __init__(self): None
+    set_power(self, in min_power: int, in max_power: int): None
+    renew_health(self): None
+    usage_of_engine(self): None
+}
+
+class Filter {
+    health: int
+
+    __init__(self): None
+    usage_of_filter(self): None
+    renew_filter(self): None
+}
+
+class Nozzle {
+     turbo_brush: bool
+     slot_nozzle: bool
+     round_nozzle: bool
+     laminate_nozzle: bool
+     corner_nozzle: bool
+
+     __init__(self): None
+}
+
+class Room {
+     isClean: bool
+     width: int
+     length: int
+     square: int
+
+     __init__(self): None
+}
+
+VacuumCleaner o-- Engine
+VacuumCleaner o-- Filter
+VacuumCleaner o-- Nozzle
+VacuumCleaner o-- DustContainer
+VacuumCleaner o-- ControlButtons
+
+VacuumCleaner "1"--"*" Room
+Room "1"--"*"VacuumCleaner
+
+VacuumCleaner <.. DustContainer
+VacuumCleaner <.. Engine
+VacuumCleaner <.. ControlButtons
+VacuumCleaner <.. Nozzle
+VacuumCleaner <.. Filter
+
+@enduml
