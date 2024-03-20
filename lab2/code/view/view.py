@@ -1,8 +1,9 @@
-import tkinter as tk
-from tkinter import ttk, dialog
-from tkinter import messagebox
-from controller.Controller import PlayerController
 import datetime
+import tkinter as tk
+from tkinter import messagebox
+from tkinter import ttk
+
+from controller.Controller import PlayerController
 from controller.PlayerDto import PlayerDto
 
 player_controller: PlayerController = PlayerController()
@@ -13,7 +14,7 @@ def show_error(message):
 
 
 def on_exit():
-    if messagebox.askyesno("Exit", "Do you want to exit the application?"):
+    if messagebox.askyesno("Выход", "Вы хотите выйти из приложения?"):
         root.destroy()
 
 
@@ -65,37 +66,11 @@ def display_players():
             player.position))
 
 
-def save_player():
-    # Получаем значения из полей ввода
-    full_name: str = full_name_entry.get()
-    birth_date: str = birth_date_entry.get()
-    football_team: str = football_team_entry.get()
-    home_city: str = home_city_entry.get()
-    team_size: str = team_size_entry.get()
-    position: str = position_entry.get()
-
-    if validate_input(full_name, birth_date, football_team, home_city, team_size, position):
-        team_size: int = int(team_size_entry.get())
-        birth_date: datetime.date = datetime.datetime.strptime(birth_date_entry.get(), "%Y-%m-%d")
-    else:
-        return
-
-    # Создаем новый объект игрока
-    new_player = PlayerDto(full_name=full_name, birth_date=birth_date, football_team=football_team,
-                           home_city=home_city, team_size=team_size, position=position, id=None)
-
-    # Добавляем игрока в базу данных
-    player_id = player_controller.create(new_player)
-
-    # Выводим сообщение об успешном добавлении
-    messagebox.showinfo("Success", f"Player with ID {player_id.id} created successfully.")
-    dialog.destroy()
-
-
 def create_player():
     # Создаем новое диалоговое окно
     dialog = tk.Toplevel(root)
     dialog.title("Create Player")
+    dialog.grab_set()  # Блокируем доступ к другим окнам
 
     # Добавляем метки и поля ввода для данных игрока
     full_name_label = ttk.Label(dialog, text="Full Name:")
@@ -128,7 +103,31 @@ def create_player():
     position_entry = ttk.Entry(dialog)
     position_entry.grid(row=5, column=1, padx=5, pady=5)
 
-    # Кнопка "Создать игрока"
+    def save_player():
+        # Получаем значения из полей ввода
+        full_name: str = full_name_entry.get()
+        birth_date: str = birth_date_entry.get()
+        football_team: str = football_team_entry.get()
+        home_city: str = home_city_entry.get()
+        team_size: str = team_size_entry.get()
+        position: str = position_entry.get()
+
+        if validate_input(full_name, birth_date, football_team, home_city, team_size, position):
+            team_size: int = int(team_size_entry.get())
+            birth_date: datetime.date = datetime.datetime.strptime(birth_date_entry.get(), "%Y-%m-%d")
+
+            # Создаем новый объект игрока
+            new_player = PlayerDto(full_name=full_name, birth_date=birth_date, football_team=football_team,
+                                   home_city=home_city, team_size=team_size, position=position, id=None)
+
+            # Добавляем игрока в базу данных
+            player_id = player_controller.create(new_player)
+
+            # Выводим сообщение об успешном добавлении
+            messagebox.showinfo("Успех!", f"Игрок с ID {player_id.id} успешно создан!.")
+            dialog.destroy()
+
+    # Кнопка "Сохранить игрока"
     save_button = ttk.Button(dialog, text="Save Player", command=save_player)
     save_button.grid(row=6, column=0, columnspan=2, padx=5, pady=5)
 
@@ -150,40 +149,11 @@ toolbar = tk.Frame(root, bd=1, relief=tk.RAISED)
 toolbar.pack(side=tk.TOP, fill=tk.X)
 
 # Кнопка "Create Player"
-create_button = tk.Button(toolbar, text="Create Player", command=save_player)
+create_button = ttk.Button(toolbar, text="Create Player", command=create_player)
 create_button.pack(side=tk.LEFT, padx=2, pady=2)
 
 # Устанавливаем меню приложения
 root.config(menu=menu_bar)
-
-# Создаем и размещаем элементы интерфейса
-tk.Label(root, text="Full Name:").pack()
-full_name_entry = tk.Entry(root)
-full_name_entry.pack()
-
-tk.Label(root, text="Birth Date:").pack()
-birth_date_entry = tk.Entry(root)
-birth_date_entry.pack()
-
-tk.Label(root, text="Football Team:").pack()
-football_team_entry = tk.Entry(root)
-football_team_entry.pack()
-
-tk.Label(root, text="Home City:").pack()
-home_city_entry = tk.Entry(root)
-home_city_entry.pack()
-
-tk.Label(root, text="Position:").pack()
-position_entry = tk.Entry(root)
-position_entry.pack()
-
-tk.Label(root, text="Team Size:").pack()
-team_size_entry = tk.Entry(root)
-team_size_entry.pack()
-
-# Кнопка для создания нового игрока
-create_button = tk.Button(root, text="Create Player", command=save_player)
-create_button.pack()
 
 # Создаем виджет Treeview для отображения данных в виде таблицы
 columns = ("ID", "Full Name", "Birth Date", "Football Team", "Home City", "Team Size", "Position")
