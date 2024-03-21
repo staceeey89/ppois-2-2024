@@ -1,0 +1,380 @@
+<pet_records>
+    <pet_record>
+        <pet_name>Snowball</pet_name>
+        <birth_date>7/12/2018</birth_date>
+        <last_visit_date>11/29/2023</last_visit_date>
+        <vet_full_name>Dr. Anderson</vet_full_name>
+        <diagnosis>Fleas</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Simba</pet_name>
+        <birth_date>5/3/2017</birth_date>
+        <last_visit_date>10/15/2023</last_visit_date>
+        <vet_full_name>Dr. Thompson</vet_full_name>
+        <diagnosis>Eye Infection</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Lily</pet_name>
+        <birth_date>9/18/2019</birth_date>
+        <last_visit_date>12/5/2023</last_visit_date>
+        <vet_full_name>Dr. Garcia</vet_full_name>
+        <diagnosis>Broken Leg</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Charlie</pet_name>
+        <birth_date>3/8/2016</birth_date>
+        <last_visit_date>8/20/2023</last_visit_date>
+        <vet_full_name>Dr. Wilson</vet_full_name>
+        <diagnosis>Obesity</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Bella</pet_name>
+        <birth_date>11/24/2020</birth_date>
+        <last_visit_date>3/10/2024</last_visit_date>
+        <vet_full_name>Dr. Lopez</vet_full_name>
+        <diagnosis>Ear Infection</diagnosis>
+    </pet_record>
+     <pet_record>
+        <pet_name>Milo</pet_name>
+        <birth_date>2/14/2019</birth_date>
+        <last_visit_date>6/25/2023</last_visit_date>
+        <vet_full_name>Dr. Martinez</vet_full_name>
+        <diagnosis>Urinary Tract Infection</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Lucy</pet_name>
+        <birth_date>8/7/2017</birth_date>
+        <last_visit_date>12/18/2023</last_visit_date>
+        <vet_full_name>Dr. King</vet_full_name>
+        <diagnosis>Heartworm</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Rusty</pet_name>
+        <birth_date>4/29/2020</birth_date>
+        <last_visit_date>9/3/2023</last_visit_date>
+        <vet_full_name>Dr. Ramirez</vet_full_name>
+        <diagnosis>Arthritis</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Smokey</pet_name>
+        <birth_date>10/11/2018</birth_date>
+        <last_visit_date>2/9/2024</last_visit_date>
+        <vet_full_name>Dr. Nguyen</vet_full_name>
+        <diagnosis>Dental Disease</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Coco</pet_name>
+        <birth_date>6/5/2015</birth_date>
+        <last_visit_date>11/7/2023</last_visit_date>
+        <vet_full_name>Dr. Turner</vet_full_name>
+        <diagnosis>Obesity</diagnosis>
+    </pet_record>
+     <pet_record>
+        <pet_name>Max</pet_name>
+        <birth_date>9/3/2016</birth_date>
+        <last_visit_date>4/11/2023</last_visit_date>
+        <vet_full_name>Dr. Patel</vet_full_name>
+        <diagnosis>Diabetes</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Luna</pet_name>
+        <birth_date>5/21/2019</birth_date>
+        <last_visit_date>10/28/2023</last_visit_date>
+        <vet_full_name>Dr. Lee</vet_full_name>
+        <diagnosis>Fleas</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Rocky</pet_name>
+        <birth_date>12/10/2017</birth_date>
+        <last_visit_date>5/15/2023</last_visit_date>
+        <vet_full_name>Dr. Kim</vet_full_name>
+        <diagnosis>Ear Infection</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Charlie</pet_name>
+        <birth_date>7/18/2020</birth_date>
+        <last_visit_date>1/22/2024</last_visit_date>
+        <vet_full_name>Dr. Thompson</vet_full_name>
+        <diagnosis>Eye Infection</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Bella</pet_name>
+        <birth_date>4/2/2018</birth_date>
+        <last_visit_date>9/9/2023</last_visit_date>
+        <vet_full_name>Dr. Martinez</vet_full_name>
+        <diagnosis>Respiratory Infection</diagnosis>
+    </pet_record>
+     <pet_record>
+        <pet_name>Buddy</pet_name>
+        <birth_date>8/7/2015</birth_date>
+        <last_visit_date>3/4/2023</last_visit_date>
+        <vet_full_name>Dr. Garcia</vet_full_name>
+        <diagnosis>Obesity</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Cooper</pet_name>
+        <birth_date>11/15/2019</birth_date>
+        <last_visit_date>6/12/2023</last_visit_date>
+        <vet_full_name>Dr. Martinez</vet_full_name>
+        <diagnosis>Joint Pain</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Lucy</pet_name>
+        <birth_date>3/25/2016</birth_date>
+        <last_visit_date>10/2/2023</last_visit_date>
+        <vet_full_name>Dr. Thompson</vet_full_name>
+        <diagnosis>Urinary Tract Infection</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Jack</pet_name>
+        <birth_date>9/14/2017</birth_date>
+        <last_visit_date>4/21/2023</last_visit_date>
+        <vet_full_name>Dr. Kim</vet_full_name>
+        <diagnosis>Anxiety</diagnosis>
+    </pet_record>
+    <pet_record>
+        <pet_name>Milo</pet_name>
+        <birth_date>6/8/2020</birth_date>
+        <last_visit_date>1/14/2024</last_visit_date>
+        <vet_full_name>Dr. Lee</vet_full_name>
+        <diagnosis>Giardia</diagnosis>
+    </pet_record>
+    <pet_record>
+    <pet_name>Luna</pet_name>
+    <birth_date>5/12/2018</birth_date>
+    <last_visit_date>11/7/2023</last_visit_date>
+    <vet_full_name>Dr. Patel</vet_full_name>
+    <diagnosis>Ear Infection</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Bella</pet_name>
+    <birth_date>2/28/2014</birth_date>
+    <last_visit_date>9/18/2023</last_visit_date>
+    <vet_full_name>Dr. Nguyen</vet_full_name>
+    <diagnosis>Hypothyroidism</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Max</pet_name>
+    <birth_date>10/5/2019</birth_date>
+    <last_visit_date>5/23/2023</last_visit_date>
+    <vet_full_name>Dr. Wang</vet_full_name>
+    <diagnosis>Flea Infestation</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Sophie</pet_name>
+    <birth_date>7/17/2017</birth_date>
+    <last_visit_date>12/30/2023</last_visit_date>
+    <vet_full_name>Dr. Brown</vet_full_name>
+    <diagnosis>Dental Disease</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Rocky</pet_name>
+    <birth_date>4/9/2022</birth_date>
+    <last_visit_date>10/5/2023</last_visit_date>
+    <vet_full_name>Dr. Garcia</vet_full_name>
+    <diagnosis>Intestinal Parasites</diagnosis>
+</pet_record>
+    <pet_record>
+    <pet_name>Luna</pet_name>
+    <birth_date>5/12/2018</birth_date>
+    <last_visit_date>11/7/2023</last_visit_date>
+    <vet_full_name>Dr. Patel</vet_full_name>
+    <diagnosis>Ear Infection</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Bella</pet_name>
+    <birth_date>2/28/2014</birth_date>
+    <last_visit_date>9/18/2023</last_visit_date>
+    <vet_full_name>Dr. Nguyen</vet_full_name>
+    <diagnosis>Hypothyroidism</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Max</pet_name>
+    <birth_date>10/5/2019</birth_date>
+    <last_visit_date>5/23/2023</last_visit_date>
+    <vet_full_name>Dr. Wang</vet_full_name>
+    <diagnosis>Flea Infestation</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Sophie</pet_name>
+    <birth_date>7/17/2017</birth_date>
+    <last_visit_date>12/30/2023</last_visit_date>
+    <vet_full_name>Dr. Brown</vet_full_name>
+    <diagnosis>Dental Disease</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Rocky</pet_name>
+    <birth_date>4/9/2022</birth_date>
+    <last_visit_date>10/5/2023</last_visit_date>
+    <vet_full_name>Dr. Garcia</vet_full_name>
+    <diagnosis>Intestinal Parasites</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Milo</pet_name>
+    <birth_date>1/15/2016</birth_date>
+    <last_visit_date>8/9/2023</last_visit_date>
+    <vet_full_name>Dr. Martinez</vet_full_name>
+    <diagnosis>Obesity</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Charlie</pet_name>
+    <birth_date>9/20/2015</birth_date>
+    <last_visit_date>4/3/2023</last_visit_date>
+    <vet_full_name>Dr. Adams</vet_full_name>
+    <diagnosis>Anxiety</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Sasha</pet_name>
+    <birth_date>8/3/2019</birth_date>
+    <last_visit_date>2/12/2023</last_visit_date>
+    <vet_full_name>Dr. Lee</vet_full_name>
+    <diagnosis>Urinary Tract Infection</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Rusty</pet_name>
+    <birth_date>6/28/2017</birth_date>
+    <last_visit_date>1/25/2023</last_visit_date>
+    <vet_full_name>Dr. Rodriguez</vet_full_name>
+    <diagnosis>Heartworm Disease</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Cooper</pet_name>
+    <birth_date>3/9/2018</birth_date>
+    <last_visit_date>10/11/2023</last_visit_date>
+    <vet_full_name>Dr. Campbell</vet_full_name>
+    <diagnosis>Arthritis</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Lucy</pet_name>
+    <birth_date>11/14/2015</birth_date>
+    <last_visit_date>6/17/2023</last_visit_date>
+    <vet_full_name>Dr. Stewart</vet_full_name>
+    <diagnosis>Dermatitis</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Ruby</pet_name>
+    <birth_date>10/22/2020</birth_date>
+    <last_visit_date>5/3/2023</last_visit_date>
+    <vet_full_name>Dr. Green</vet_full_name>
+    <diagnosis>Bladder Stones</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Jake</pet_name>
+    <birth_date>4/5/2014</birth_date>
+    <last_visit_date>11/30/2023</last_visit_date>
+    <vet_full_name>Dr. Price</vet_full_name>
+    <diagnosis>Diabetes</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Riley</pet_name>
+    <birth_date>12/19/2017</birth_date>
+    <last_visit_date>7/14/2023</last_visit_date>
+    <vet_full_name>Dr. Wright</vet_full_name>
+    <diagnosis>Kidney Disease</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Jack</pet_name>
+    <birth_date>9/8/2016</birth_date>
+    <last_visit_date>2/21/2023</last_visit_date>
+    <vet_full_name>Dr. Hill</vet_full_name>
+    <diagnosis>Epilepsy</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Lilly</pet_name>
+    <birth_date>7/25/2019</birth_date>
+    <last_visit_date>1/10/2023</last_visit_date>
+    <vet_full_name>Dr. Carter</vet_full_name>
+    <diagnosis>Eye Infection</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Toby</pet_name>
+    <birth_date>2/9/2015</birth_date>
+    <last_visit_date>9/4/2023</last_visit_date>
+    <vet_full_name>Dr. Russell</vet_full_name>
+    <diagnosis>Liver Disease</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Chloe</pet_name>
+    <birth_date>8/16/2018</birth_date>
+    <last_visit_date>3/19/2023</last_visit_date>
+    <vet_full_name>Dr. Cooper</vet_full_name>
+    <diagnosis>Respiratory Infection</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Oscar</pet_name>
+    <birth_date>6/3/2016</birth_date>
+    <last_visit_date>11/28/2023</last_visit_date>
+    <vet_full_name>Dr. Butler</vet_full_name>
+    <diagnosis>Hyperthyroidism</diagnosis>
+</pet_record>
+    <pet_record>
+    <pet_name>Oliver</pet_name>
+    <birth_date>11/9/2018</birth_date>
+    <last_visit_date>5/24/2023</last_visit_date>
+    <vet_full_name>Dr. Hayes</vet_full_name>
+    <diagnosis>Ear Mites</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Leo</pet_name>
+    <birth_date>10/14/2019</birth_date>
+    <last_visit_date>4/29/2023</last_visit_date>
+    <vet_full_name>Dr. Dunn</vet_full_name>
+    <diagnosis>Feline Leukemia</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Molly</pet_name>
+    <birth_date>3/27/2016</birth_date>
+    <last_visit_date>9/10/2023</last_visit_date>
+    <vet_full_name>Dr. Wallace</vet_full_name>
+    <diagnosis>Obesity</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>George</pet_name>
+    <birth_date>8/7/2017</birth_date>
+    <last_visit_date>1/20/2023</last_visit_date>
+    <vet_full_name>Dr. Hunt</vet_full_name>
+    <diagnosis>Arthritis</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Lilly</pet_name>
+    <birth_date>6/4/2018</birth_date>
+    <last_visit_date>11/17/2023</last_visit_date>
+    <vet_full_name>Dr. Coleman</vet_full_name>
+    <diagnosis>Bladder Infection</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Simba</pet_name>
+    <birth_date>12/21/2015</birth_date>
+    <last_visit_date>7/4/2023</last_visit_date>
+    <vet_full_name>Dr. Wheeler</vet_full_name>
+    <diagnosis>Diabetes</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Lucy</pet_name>
+    <birth_date>5/30/2020</birth_date>
+    <last_visit_date>12/13/2023</last_visit_date>
+    <vet_full_name>Dr. Warren</vet_full_name>
+    <diagnosis>Kennel Cough</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Buddy</pet_name>
+    <birth_date>9/12/2017</birth_date>
+    <last_visit_date>3/27/2023</last_visit_date>
+    <vet_full_name>Dr. Ferguson</vet_full_name>
+    <diagnosis>Heart Murmur</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Harley</pet_name>
+    <birth_date>7/8/2018</birth_date>
+    <last_visit_date>1/21/2023</last_visit_date>
+    <vet_full_name>Dr. Bradley</vet_full_name>
+    <diagnosis>Gastric Dilatation</diagnosis>
+</pet_record>
+<pet_record>
+    <pet_name>Daisy</pet_name>
+    <birth_date>4/17/2016</birth_date>
+    <last_visit_date>10/30/2023</last_visit_date>
+    <vet_full_name>Dr. Wells</vet_full_name>
+    <diagnosis>Dental Disease</diagnosis>
+</pet_record>
+</pet_records>
