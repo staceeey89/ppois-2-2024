@@ -1,0 +1,452 @@
+<students>
+    <student>
+        <full_name>Michael Andrew Wilson</full_name>
+        <father_name>David Paul Wilson</father_name>
+        <father_salary>60000</father_salary>
+        <mother_name>Susan Marie Wilson</mother_name>
+        <mother_salary>55000</mother_salary>
+        <brothers_amount>1</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Sophia Elizabeth Thompson</full_name>
+        <father_name>William Henry Thompson</father_name>
+        <father_salary>58000</father_salary>
+        <mother_name>Emma Louise Thompson</mother_name>
+        <mother_salary>52000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+    <student>
+        <full_name>Ethan Michael Harris</full_name>
+        <father_name>James Robert Harris</father_name>
+        <father_salary>62000</father_salary>
+        <mother_name>Amy Michelle Harris</mother_name>
+        <mother_salary>57000</mother_salary>
+        <brothers_amount>3</brothers_amount>
+        <sisters_amount>0</sisters_amount>
+    </student>
+    <student>
+        <full_name>Madison Olivia Clark</full_name>
+        <father_name>John Patrick Clark</father_name>
+        <father_salary>59000</father_salary>
+        <mother_name>Julia Ann Clark</mother_name>
+        <mother_salary>53000</mother_salary>
+        <brothers_amount>0</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Aiden Benjamin Rodriguez</full_name>
+        <father_name>Carlos Miguel Rodriguez</father_name>
+        <father_salary>64000</father_salary>
+        <mother_name>Sofia Elena Rodriguez</mother_name>
+        <mother_salary>59000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+    <student>
+        <full_name>Abigail Grace Scott</full_name>
+        <father_name>Jason William Scott</father_name>
+        <father_salary>61000</father_salary>
+        <mother_name>Christina Marie Scott</mother_name>
+        <mother_salary>56000</mother_salary>
+        <brothers_amount>1</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Noah Alexander Young</full_name>
+        <father_name>Steven Charles Young</father_name>
+        <father_salary>63000</father_salary>
+        <mother_name>Michelle Renee Young</mother_name>
+        <mother_salary>58000</mother_salary>
+        <brothers_amount>3</brothers_amount>
+        <sisters_amount>0</sisters_amount>
+    </student>
+    <student>
+        <full_name>Charlotte Emma Baker</full_name>
+        <father_name>Joseph Daniel Baker</father_name>
+        <father_salary>60000</father_salary>
+        <mother_name>Heather Nicole Baker</mother_name>
+        <mother_salary>54000</mother_salary>
+        <brothers_amount>0</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Elijah Matthew Hall</full_name>
+        <father_name>Andrew Brian Hall</father_name>
+        <father_salary>65000</father_salary>
+        <mother_name>Katherine Ann Hall</mother_name>
+        <mother_salary>60000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+    <student>
+        <full_name>Amelia Harper Lewis</full_name>
+        <father_name>Richard Thomas Lewis</father_name>
+        <father_salary>62000</father_salary>
+        <mother_name>Patricia Lynn Lewis</mother_name>
+        <mother_salary>57000</mother_salary>
+        <brothers_amount>1</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Mason Jacob Green</full_name>
+        <father_name>Mark Joseph Green</father_name>
+        <father_salary>64000</father_salary>
+        <mother_name>Stephanie Marie Green</mother_name>
+        <mother_salary>59000</mother_salary>
+        <brothers_amount>3</brothers_amount>
+        <sisters_amount>0</sisters_amount>
+    </student>
+    <student>
+        <full_name>Evelyn Victoria King</full_name>
+        <father_name>Christopher William King</father_name>
+        <father_salary>61000</father_salary>
+        <mother_name>Angela Marie King</mother_name>
+        <mother_salary>55000</mother_salary>
+        <brothers_amount>0</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Carter Dylan Perez</full_name>
+        <father_name>Kevin Anthony Perez</father_name>
+        <father_salary>66000</father_salary>
+        <mother_name>Melissa Maria Perez</mother_name>
+        <mother_salary>61000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+    <student>
+        <full_name>Harper Grace Turner</full_name>
+        <father_name>Scott Andrew Turner</father_name>
+        <father_salary>63000</father_salary>
+        <mother_name>Diana Elizabeth Turner</mother_name>
+        <mother_salary>58000</mother_salary>
+        <brothers_amount>1</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Sebastian Joseph Harris</full_name>
+        <father_name>Gregory David Harris</father_name>
+        <father_salary>65000</father_salary>
+        <mother_name>Jennifer Susan Harris</mother_name>
+        <mother_salary>60000</mother_salary>
+        <brothers_amount>3</brothers_amount>
+        <sisters_amount>0</sisters_amount>
+    </student>
+    <student>
+        <full_name>Gianna Elizabeth Nelson</full_name>
+        <father_name>Charles Christopher Nelson</father_name>
+        <father_salary>62000</father_salary>
+        <mother_name>Linda Michelle Nelson</mother_name>
+        <mother_salary>56000</mother_salary>
+        <brothers_amount>0</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Logan Michael Robinson</full_name>
+        <father_name>Robert Anthony Robinson</father_name>
+        <father_salary>67000</father_salary>
+        <mother_name>Mary Theresa Robinson</mother_name>
+        <mother_salary>62000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+    <student>
+        <full_name>Avery Sophia White</full_name>
+        <father_name>Justin Michael White</father_name>
+        <father_salary>64000</father_salary>
+        <mother_name>Amanda Nicole White</mother_name>
+        <mother_salary>59000</mother_salary>
+        <brothers_amount>1</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Jackson Alexander Hall</full_name>
+        <father_name>Eric Matthew Hall</father_name>
+        <father_salary>66000</father_salary>
+        <mother_name>Michelle Elizabeth Hall</mother_name>
+        <mother_salary>61000</mother_salary>
+        <brothers_amount>3</brothers_amount>
+        <sisters_amount>0</sisters_amount>
+    </student>
+    <student>
+        <full_name>Sofia Abigail Adams</full_name>
+        <father_name>John Christopher Adams</father_name>
+        <father_salary>63000</father_salary>
+        <mother_name>Emily Margaret Adams</mother_name>
+        <mother_salary>58000</mother_salary>
+        <brothers_amount>0</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Wyatt Oliver Martinez</full_name>
+        <father_name>Gabriel Luis Martinez</father_name>
+        <father_salary>68000</father_salary>
+        <mother_name>Victoria Maria Martinez</mother_name>
+        <mother_salary>63000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+    <student>
+        <full_name>Lily Grace Mitchell</full_name>
+        <father_name>Nicholas Ryan Mitchell</father_name>
+        <father_salary>65000</father_salary>
+        <mother_name>Rachel Elizabeth Mitchell</mother_name>
+        <mother_salary>60000</mother_salary>
+        <brothers_amount>1</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Henry Samuel Thompson</full_name>
+        <father_name>Timothy David Thompson</father_name>
+        <father_salary>67000</father_salary>
+        <mother_name>Kimberly Ann Thompson</mother_name>
+        <mother_salary>62000</mother_salary>
+        <brothers_amount>3</brothers_amount>
+        <sisters_amount>0</sisters_amount>
+    </student>
+    <student>
+        <full_name>Scarlett Madison Hernandez</full_name>
+        <father_name>Jose Carlos Hernandez</father_name>
+        <father_salary>64000</father_salary>
+        <mother_name>Isabella Maria Hernandez</mother_name>
+        <mother_salary>59000</mother_salary>
+        <brothers_amount>0</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Jack Alexander Young</full_name>
+        <father_name>Dylan Matthew Young</father_name>
+        <father_salary>69000</father_salary>
+        <mother_name>Emma Sophia Young</mother_name>
+        <mother_salary>64000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+    <student>
+        <full_name>Lucy Elizabeth Davis</full_name>
+        <father_name>Adam Michael Davis</father_name>
+        <father_salary>66000</father_salary>
+        <mother_name>Lauren Elizabeth Davis</mother_name>
+        <mother_salary>61000</mother_salary>
+        <brothers_amount>1</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Leo Benjamin Rodriguez</full_name>
+        <father_name>Juan Carlos Rodriguez</father_name>
+        <father_salary>68000</father_salary>
+        <mother_name>Valentina Sofia Rodriguez</mother_name>
+        <mother_salary>63000</mother_salary>
+        <brothers_amount>3</brothers_amount>
+        <sisters_amount>0</sisters_amount>
+    </student>
+    <student>
+        <full_name>Grace Victoria Wright</full_name>
+        <father_name>Lucas William Wright</father_name>
+        <father_salary>65000</father_salary>
+        <mother_name>Anna Maria Wright</mother_name>
+        <mother_salary>60000</mother_salary>
+        <brothers_amount>0</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Oliver James Martinez</full_name>
+        <father_name>Fernando Miguel Martinez</father_name>
+        <father_salary>70000</father_salary>
+        <mother_name>Elena Isabella Martinez</mother_name>
+        <mother_salary>65000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+    <student>
+        <full_name>Zoe Emma Phillips</full_name>
+        <father_name>Matthew James Phillips</father_name>
+        <father_salary>67000</father_salary>
+        <mother_name>Olivia Grace Phillips</mother_name>
+        <mother_salary>62000</mother_salary>
+        <brothers_amount>1</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Liam Michael Walker</full_name>
+        <father_name>Anthony David Walker</father_name>
+        <father_salary>69000</father_salary>
+        <mother_name>Jessica Nicole Walker</mother_name>
+        <mother_salary>64000</mother_salary>
+        <brothers_amount>3</brothers_amount>
+        <sisters_amount>0</sisters_amount>
+    </student>
+    <student>
+        <full_name>Nora Abigail Lopez</full_name>
+        <father_name>Francisco Javier Lopez</father_name>
+        <father_salary>66000</father_salary>
+        <mother_name>Paula Maria Lopez</mother_name>
+        <mother_salary>61000</mother_salary>
+        <brothers_amount>0</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Eli Daniel Lee</full_name>
+        <father_name>Jason Christopher Lee</father_name>
+        <father_salary>71000</father_salary>
+        <mother_name>Hannah Elizabeth Lee</mother_name>
+        <mother_salary>66000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+    <student>
+        <full_name>Isaac Noah Adams</full_name>
+        <father_name>Samuel David Adams</father_name>
+        <father_salary>70000</father_salary>
+        <mother_name>Emily Grace Adams</mother_name>
+        <mother_salary>65000</mother_salary>
+        <brothers_amount>1</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Sophia Elizabeth Moore</full_name>
+        <father_name>Robert Andrew Moore</father_name>
+        <father_salary>68000</father_salary>
+        <mother_name>Grace Olivia Moore</mother_name>
+        <mother_salary>63000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+    <student>
+        <full_name>Matthew Jacob Carter</full_name>
+        <father_name>Christopher Daniel Carter</father_name>
+        <father_salary>72000</father_salary>
+        <mother_name>Emma Katherine Carter</mother_name>
+        <mother_salary>67000</mother_salary>
+        <brothers_amount>3</brothers_amount>
+        <sisters_amount>0</sisters_amount>
+    </student>
+    <student>
+        <full_name>Chloe Grace Mitchell</full_name>
+        <father_name>Justin Ryan Mitchell</father_name>
+        <father_salary>69000</father_salary>
+        <mother_name>Sarah Michelle Mitchell</mother_name>
+        <mother_salary>64000</mother_salary>
+        <brothers_amount>0</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Daniel Alexander Hill</full_name>
+        <father_name>Gregory Thomas Hill</father_name>
+        <father_salary>71000</father_salary>
+        <mother_name>Anna Elizabeth Hill</mother_name>
+        <mother_salary>66000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+    <student>
+        <full_name>Madelyn Sophia Nelson</full_name>
+        <father_name>David Michael Nelson</father_name>
+        <father_salary>70000</father_salary>
+        <mother_name>Julia Anne Nelson</mother_name>
+        <mother_salary>65000</mother_salary>
+        <brothers_amount>1</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Logan Christopher Perez</full_name>
+        <father_name>Michael Anthony Perez</father_name>
+        <father_salary>73000</father_salary>
+        <mother_name>Christina Marie Perez</mother_name>
+        <mother_salary>68000</mother_salary>
+        <brothers_amount>3</brothers_amount>
+        <sisters_amount>0</sisters_amount>
+    </student>
+    <student>
+        <full_name>Riley Elizabeth King</full_name>
+        <father_name>Joshua Benjamin King</father_name>
+        <father_salary>70000</father_salary>
+        <mother_name>Abigail Grace King</mother_name>
+        <mother_salary>65000</mother_salary>
+        <brothers_amount>0</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Caleb Joshua Brown</full_name>
+        <father_name>Patrick Michael Brown</father_name>
+        <father_salary>72000</father_salary>
+        <mother_name>Stephanie Ann Brown</mother_name>
+        <mother_salary>67000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+    <student>
+        <full_name>Hailey Madison Cooper</full_name>
+        <father_name>Thomas William Cooper</father_name>
+        <father_salary>71000</father_salary>
+        <mother_name>Megan Nicole Cooper</mother_name>
+        <mother_salary>66000</mother_salary>
+        <brothers_amount>1</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Dylan Joseph Turner</full_name>
+        <father_name>Benjamin James Turner</father_name>
+        <father_salary>73000</father_salary>
+        <mother_name>Samantha Louise Turner</mother_name>
+        <mother_salary>68000</mother_salary>
+        <brothers_amount>3</brothers_amount>
+        <sisters_amount>0</sisters_amount>
+    </student>
+    <student>
+        <full_name>Leah Abigail Hall</full_name>
+        <father_name>Eric Christopher Hall</father_name>
+        <father_salary>70000</father_salary>
+        <mother_name>Alexandra Marie Hall</mother_name>
+        <mother_salary>65000</mother_salary>
+        <brothers_amount>0</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Connor James Stewart</full_name>
+        <father_name>Jonathan Michael Stewart</father_name>
+        <father_salary>74000</father_salary>
+        <mother_name>Lauren Elizabeth Stewart</mother_name>
+        <mother_salary>69000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+    <student>
+        <full_name>Julia Grace Foster</full_name>
+        <father_name>Kevin Matthew Foster</father_name>
+        <father_salary>72000</father_salary>
+        <mother_name>Jennifer Ann Foster</mother_name>
+        <mother_salary>67000</mother_salary>
+        <brothers_amount>1</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>Lucas Michael Powell</full_name>
+        <father_name>Edward David Powell</father_name>
+        <father_salary>75000</father_salary>
+        <mother_name>Victoria Lynn Powell</mother_name>
+        <mother_salary>70000</mother_salary>
+        <brothers_amount>3</brothers_amount>
+        <sisters_amount>0</sisters_amount>
+    </student>
+    <student>
+        <full_name>Ellie Sophia Ramirez</full_name>
+        <father_name>Carlos Javier Ramirez</father_name>
+        <father_salary>72000</father_salary>
+        <mother_name>Isabella Maria Ramirez</mother_name>
+        <mother_salary>67000</mother_salary>
+        <brothers_amount>0</brothers_amount>
+        <sisters_amount>2</sisters_amount>
+    </student>
+    <student>
+        <full_name>John Benjamin Barnes</full_name>
+        <father_name>George Andrew Barnes</father_name>
+        <father_salary>74000</father_salary>
+        <mother_name>Emily Charlotte Barnes</mother_name>
+        <mother_salary>69000</mother_salary>
+        <brothers_amount>2</brothers_amount>
+        <sisters_amount>1</sisters_amount>
+    </student>
+</students>
