@@ -3,14 +3,22 @@ import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
 
-from controller.Controller import PlayerController
+from controller.DB import DBPlayerController
 from controller.PlayerDto import PlayerDto
+from controller.XML import XmlPlayerController
 
-player_controller: PlayerController = PlayerController()
+db_player_controller: DBPlayerController = DBPlayerController()
+xml_player_controller: XmlPlayerController = XmlPlayerController("C:/Users/Daniil/PycharmProjects/ppois-2-2024/lab2"
+                                                                 "/players.xml")
 
 
 def show_error(message):
     messagebox.showerror("Ошибка", message)
+
+
+def save_db():
+    if messagebox.askyesno("Сохранение", "Вы хотите сохранить изменение базы данных?"):
+        db_player_controller.save_db()
 
 
 def on_exit():
@@ -57,7 +65,7 @@ def display_players():
         treeview.delete(row)
 
     # Получаем данные из базы данных
-    players = player_controller.get_all()
+    players = db_player_controller.get_all()
 
     # Добавляем данные в таблицу
     for player in players:
@@ -121,7 +129,7 @@ def create_player():
                                    home_city=home_city, team_size=team_size, position=position, id=None)
 
             # Добавляем игрока в базу данных
-            player_id = player_controller.create(new_player)
+            player_id = db_player_controller.create(new_player)
 
             # Выводим сообщение об успешном добавлении
             messagebox.showinfo("Успех!", f"Игрок с ID {player_id.id} успешно создан!.")
@@ -141,6 +149,7 @@ menu_bar = tk.Menu(root)
 
 # Создаем меню "File" и добавляем в него пункты
 file_menu = tk.Menu(menu_bar, tearoff=0)
+file_menu.add_command(label="Save DB", command=save_db)
 file_menu.add_command(label="Exit", command=on_exit)
 menu_bar.add_cascade(label="File", menu=file_menu)
 

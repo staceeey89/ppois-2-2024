@@ -20,7 +20,7 @@ def to_player_entity(player_dto: PlayerDto) -> Player:
     return player
 
 
-class PlayerController:
+class DBPlayerController:
     def __init__(self):
         self.__player_dao = PlayerDao()
 
@@ -119,3 +119,6 @@ class PlayerController:
         player: Player = to_player_entity(dto)
         player_created: Player = self.__player_dao.create(player)
         return to_player_dto(player_created)
+
+    def save_db(self):
+        self.__player_dao.save_db()

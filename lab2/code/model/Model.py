@@ -110,44 +110,44 @@ class PlayerDao:
     def delete_by_full_name(self, name: str):
         with self.__connection.cursor() as curs:
             curs.execute(self.__delete_by_full_name_query, (f'%{name}%',))
-            self.__connection.commit()
+            # self.__connection.commit()
             return curs.rowcount
 
     def delete_by_birth_date(self, date: datetime.date):
         with self.__connection.cursor() as curs:
             curs.execute(self.__delete_by_birth_date_query, (date,))
-            self.__connection.commit()
+            # self.__connection.commit()
             return curs.rowcount
 
     def delete_by_football_team(self, team: str):
         with self.__connection.cursor() as curs:
             curs.execute(self.__delete_by_football_team_query, (team,))
-            self.__connection.commit()
+            # self.__connection.commit()
             return curs.rowcount
 
     def delete_by_home_city(self, home: str):
         with self.__connection.cursor() as curs:
             curs.execute(self.__delete_by_home_city_query, (home,))
-            self.__connection.commit()
+            # self.__connection.commit()
             return curs.rowcount
 
     def delete_by_team_size(self, size):
         with self.__connection.cursor() as curs:
             curs.execute(self.__delete_by_team_size_query, (size,))
-            self.__connection.commit()
+            # self.__connection.commit()
             return curs.rowcount
 
     def delete_by_position(self, position: str):
         with self.__connection.cursor() as curs:
             curs.execute(self.__delete_by_position_query, (position,))
-            self.__connection.commit()
+            # self.__connection.commit()
             return curs.rowcount
 
     def update(self, player: Player) -> Player:
         with self.__connection.cursor() as curs:
             curs.execute(self.__update_by_id_query, (player.full_name, player.birth_date, player.football_team,
                                                      player.home_city, player.team_size, player.position, player.id))
-            self.__connection.commit()
+            # self.__connection.commit()
             return self.find_by_id(player.id)
 
     def create(self, player: Player) -> Player:
@@ -156,10 +156,13 @@ class PlayerDao:
                          (player.full_name, player.birth_date, player.football_team,
                           player.home_city, player.team_size, player.position))
             last_row_id = curs.fetchone()[0]
-            self.__connection.commit()
+            # self.__connection.commit()
             curs.execute(self.__find_by_id_query, (last_row_id,))
             created_player = curs.fetchone()
             return Player(*created_player)
+
+    def save_db(self):
+        self.__connection.commit()
 
     def __del__(self):
         self.__connection.close()
