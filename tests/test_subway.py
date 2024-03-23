@@ -69,5 +69,6 @@ class TestPassenger(unittest.TestCase):
         self.assertEqual(self.depot.pull_out_train(), self.train_test)
         self.assertEqual(len(self.depot.get_trains_list()), 0)
 
+
 if __name__ == '__main__':
     unittest.main()

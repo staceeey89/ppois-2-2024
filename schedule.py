@@ -15,6 +15,15 @@ class Schedule:
         self.__delta_time: timedelta = timedelta(minutes=0)
         self.__trains_counter: int = 0
 
+    def add_depot(self, depot: Depot):
+        try:
+            if len(self.__depots) < 2:
+                self.__depots.append(depot)
+            else:
+                Exception("Subway is overfilled by depots!")
+        except Exception as text:
+            print(text)
+
     def add_train(self, train: Train):
         try:
             if len(self.__stations) >= len(self.__trains):
@@ -39,6 +48,9 @@ class Schedule:
 
     def add_station(self, station: Station):
         self.__stations.append(station)
+
+    def add_stations(self, stations: List[Station]):
+        self.__stations.extend(stations)
 
     def remove_station(self, station: Station):
         self.__stations.remove(station)

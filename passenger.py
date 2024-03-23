@@ -15,6 +15,10 @@ class Passenger(AbstractPassenger):
     def cash(self):
         return self.__cash
 
+    @cash.setter
+    def cash(self, cash: int):
+        self.__cash = cash
+
     def buy_a_ticket(self, ticket: Ticket):
         self.__cash -= ticket.cost
         self.__ticket = ticket
@@ -25,6 +29,10 @@ class Passenger(AbstractPassenger):
     @property
     def name(self):
         return self.__name
+
+    @name.setter
+    def name(self, name: str):
+        self.__name = name
 
     @property
     def ticket(self):

@@ -44,6 +44,11 @@ class AbstractPassenger(ABC):
     def cash(self):
         pass
 
+    @cash.setter
+    @abstractmethod
+    def cash(self, value):
+        pass
+
     @abstractmethod
     def buy_a_ticket(self, value):
         pass
@@ -55,6 +60,11 @@ class AbstractPassenger(ABC):
     @property
     @abstractmethod
     def name(self):
+        pass
+
+    @name.setter
+    @abstractmethod
+    def name(self, value):
         pass
 
     @property

@@ -9,31 +9,88 @@ from depot import Depot
 from turnstile import Turnstile
 from station import Station
 
+
 def main():
+    passengers: List[Passenger] = []
+    global choosen_passenger
+    choosen_passenger = -1
+    global choosen_station
+    choosen_station = -1
+    depot_1 = Depot()
+    depot_2 = Depot()
+    stations: List[Station] = []
     print("\t\tДобро пожаловать в модель метро!\nМеню выбора операций:")
     schedule = Schedule()
+    schedule.add_depot(depot_1)
+    schedule.add_depot(depot_2)
+    ticket = Ticket()
+    turnstile = Turnstile()
+
     while True:
-        print("1. Создать пассажира\t2. Создать станцию метро\t3. Создать билет метро"
-              "\n4. Продать пассажиру билет\t5. Пройти турникет пассажиру\t6. Выбрать станцию для посадки"
-              "\n7. Выбрать платформу\t8 Сесть в поезд\t9 Выйти из поезда\t10 Выяснить актуальную станцию метро"
-              "\n11. Выяснить время до ближайшего поезда\t12. Отправить поезда на ветке на следующую станцию"
-              "\n13. Создать поезд\t-1. Выход")
+        print("1. Создать пассажира\t2. Создать станцию метро\t3. Назначить цену проезда"
+              "\n4. Выбрать пассажира\t5. Выбрать станцию"
+              "\n\t-1. Выход")
         choice: int = int(input())
         if choice == 1:
-            print("Имя:")
+            print("Введите имя:")
             name = input()
             print("Кол-во денег:")
             cash = int(input())
             passenger = Passenger(name, cash)
+            passengers.append(passenger)
             print("Пассажир создан!")
             continue
         elif choice == 2:
-            print("Номер станции:")
-            num = int(input())
-            station = Station(num)
+            print("Введите номер станции метро")
+            number = int(input())
+            platform_1 = Platform(0)
+            platform_2 = Platform(1)
+            station: Station = Station(number)
+            station.add_platform(platform_1)
+            station.add_platform(platform_2)
+            station.turnstile = turnstile
+            station.ticket = ticket
+            stations.append(station)
             schedule.add_station(station)
+            print("Станция создана!")
+            continue
         elif choice == 3:
-            ticket = Ticket()
+            print("Введите цену:")
+            num = int(input())
+            ticket.cost = num
+            print("Цена задана!")
+            continue
+        elif choice == 4:
+            i = 0
+            for passenger in passengers:
+                print(f"{passenger.name} index:{i}")
+                i += 1
+            while True:
+                print("\nВыберите индекс пассажира:")
+                choosen_passenger_check = int(input())
+                if choosen_passenger_check <= i-1:
+                    choosen_passenger = choosen_passenger_check
+                    break
+                else:
+                    print("Такого пассажира нет.")
+            print("Пассажир выбран!")
+            continue
+        elif choice == 5:
+            i = 0
+            for station in stations:
+                print(f"{station.number} index:{i}")
+                i += 1
+            while True:
+                print("\nВыберите индекс станции:")
+                choosen_station_check = int(input())
+                if choosen_station_check <= i - 1:
+                    choosen_station = choosen_station_check
+                    break
+                else:
+                    print("Такой станции нет.")
+            print("Станция выбрана!")
+            continue
+
 
 if __name__ == "__main__":
     main()
