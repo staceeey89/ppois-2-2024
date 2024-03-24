@@ -37,38 +37,38 @@ class DBPlayerController:
 
     def get_by_full_name(self, name: str) -> List[PlayerDto]:
         players: List[Player] = self.__player_dao.find_by_full_name(name)
-        if players is None:
-            raise RuntimeWarning("No players with name: " + name)
+        if not players:
+            return []
         return [to_player_dto(player) for player in players]
 
     def get_by_birth_date(self, date: datetime.date) -> List[PlayerDto]:
         players: List[Player] = self.__player_dao.find_by_birth_date(date)
-        if players is None:
-            raise RuntimeWarning("No players with birth date: " + date.strftime('%Y-%m-%d'))
+        if not players:
+            return []
         return [to_player_dto(player) for player in players]
 
     def get_by_position(self, position: str) -> List[PlayerDto]:
         players: List[Player] = self.__player_dao.find_by_position(position)
-        if players is None:
-            raise RuntimeWarning("No players with position: " + position)
+        if not players:
+            return []
         return [to_player_dto(player) for player in players]
 
     def get_by_team_size(self, size: int) -> List[PlayerDto]:
         players: List[Player] = self.__player_dao.find_by_team_size(size)
-        if players is None:
-            raise RuntimeWarning("No players with team size : " + str(size))
+        if not players:
+            return []
         return [to_player_dto(player) for player in players]
 
     def get_by_football_team(self, team_name: str) -> List[PlayerDto]:
         players: List[Player] = self.__player_dao.find_by_football_team(team_name)
-        if players is None:
-            raise RuntimeWarning("No players with football team: " + team_name)
+        if not players:
+            return []
         return [to_player_dto(player) for player in players]
 
     def get_by_home_city(self, home: str) -> List[PlayerDto]:
         players: List[Player] = self.__player_dao.find_by_home_city(home)
-        if players is None:
-            raise RuntimeWarning("No players with home city: " + home)
+        if not players:
+            return []
         return [to_player_dto(player) for player in players]
 
     def delete_by_full_name(self, name: str):
@@ -107,13 +107,13 @@ class DBPlayerController:
             raise RuntimeWarning("Players with position " + position + " not found")
         print(self.__player_dao.delete_by_position(position))
 
-    def update(self, dto: PlayerDto) -> PlayerDto:
-        player: Player = to_player_entity(dto)
-        player.id = dto.id
-        player_created: Player = self.__player_dao.update(player)
-        if player_created is None:
-            raise RuntimeWarning("No player with id: " + str(dto.id))
-        return to_player_dto(player_created)
+    # def update(self, dto: PlayerDto) -> PlayerDto:
+    #     player: Player = to_player_entity(dto)
+    #     player.id = dto.id
+    #     player_created: Player = self.__player_dao.update(player)
+    #     if player_created is None:
+    #         raise RuntimeWarning("No player with id: " + str(dto.id))
+    #     return to_player_dto(player_created)
 
     def create(self, dto: PlayerDto) -> PlayerDto:
         player: Player = to_player_entity(dto)

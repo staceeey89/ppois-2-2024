@@ -143,12 +143,12 @@ class PlayerDao:
             # self.__connection.commit()
             return curs.rowcount
 
-    def update(self, player: Player) -> Player:
-        with self.__connection.cursor() as curs:
-            curs.execute(self.__update_by_id_query, (player.full_name, player.birth_date, player.football_team,
-                                                     player.home_city, player.team_size, player.position, player.id))
-            # self.__connection.commit()
-            return self.find_by_id(player.id)
+    # def update(self, player: Player) -> Player:
+    #     with self.__connection.cursor() as curs:
+    #         curs.execute(self.__update_by_id_query, (player.full_name, player.birth_date, player.football_team,
+    #                                                  player.home_city, player.team_size, player.position, player.id))
+    #         # self.__connection.commit()
+    #         return self.find_by_id(player.id)
 
     def create(self, player: Player) -> Player:
         with self.__connection.cursor() as curs:

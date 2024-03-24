@@ -2,7 +2,7 @@ import datetime
 from dataclasses import dataclass
 
 
-@dataclass
+@dataclass(eq=True, frozen=True)
 class Player:
     id: int
     full_name: str
