@@ -74,38 +74,38 @@ class DBPlayerController:
     def delete_by_full_name(self, name: str):
         players: List[Player] = self.__player_dao.find_by_full_name(name)
         if players is None:
-            raise RuntimeWarning("Players with name " + name + " not found")
-        print(self.__player_dao.delete_by_full_name(name))
+            return 0
+        return self.__player_dao.delete_by_full_name(name)
 
     def delete_by_birth_date(self, date: datetime.date):
         players: List[Player] = self.__player_dao.find_by_birth_date(date)
         if players is None:
-            raise RuntimeWarning("Players with birth date " + date.strftime('%Y-%m-%d') + " not found")
-        print(self.__player_dao.delete_by_birth_date(date))
+            return 0
+        return self.__player_dao.delete_by_birth_date(date)
 
     def delete_by_football_team(self, team_name: str):
         players: List[Player] = self.__player_dao.find_by_football_team(team_name)
         if players is None:
-            raise RuntimeWarning("Players with football team " + team_name + " not found")
-        print(self.__player_dao.delete_by_football_team(team_name))
+            return 0
+        return self.__player_dao.delete_by_football_team(team_name)
 
     def delete_by_home_city(self, home: str):
         players: List[Player] = self.__player_dao.find_by_home_city(home)
         if players is None:
-            raise RuntimeWarning("Players with home city " + home + " not found")
-        print(self.__player_dao.delete_by_home_city(home))
+            return 0
+        return self.__player_dao.delete_by_home_city(home)
 
     def delete_by_team_size(self, size: int):
         players: List[Player] = self.__player_dao.find_by_team_size(size)
         if players is None:
-            raise RuntimeWarning("Players with team size " + str(size) + " not found")
-        print(self.__player_dao.delete_by_team_size(size))
+            return 0
+        return self.__player_dao.delete_by_team_size(size)
 
     def delete_by_position(self, position: str):
         players: List[Player] = self.__player_dao.find_by_position(position)
         if players is None:
-            raise RuntimeWarning("Players with position " + position + " not found")
-        print(self.__player_dao.delete_by_position(position))
+            return 0
+        return self.__player_dao.delete_by_position(position)
 
     # def update(self, dto: PlayerDto) -> PlayerDto:
     #     player: Player = to_player_entity(dto)

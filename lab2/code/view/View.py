@@ -3,11 +3,13 @@ import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
 
+from anytree import Node, RenderTree
+
+from SearchTable import SearchResultsWindow
 from controller.DB import DBPlayerController
 from controller.PlayerDto import PlayerDto
 from controller.XML import XmlPlayerController
 from model.entity.Player import Player
-from SearchTable import SearchResultsWindow
 
 db_player_controller: DBPlayerController = DBPlayerController()
 xml_player_controller: XmlPlayerController = XmlPlayerController("C:/Users/Daniil/PycharmProjects/ppois-2-2024/lab2"
@@ -107,6 +109,42 @@ class SearchWindow:
                 found_players = set(found_players) & set(xml_player_controller.search_by_position(position))
         found_players = list(found_players)
         SearchResultsWindow(self.window, found_players)
+
+
+def create_player_tree(players):
+    new_root = Node("Players")
+    for player in players:
+        player_node = Node(str(player.id), parent=new_root)
+        Node(f"id: {player.id}", parent=player_node)
+        Node(f"full_name: {player.full_name}", parent=player_node)
+        Node(f"birth_date: {player.birth_date}", parent=player_node)
+        Node(f"football_team: {player.football_team}", parent=player_node)
+        Node(f"home_city: {player.home_city}", parent=player_node)
+        Node(f"team_size: {player.team_size}", parent=player_node)
+        Node(f"position: {player.position}", parent=player_node)
+    return new_root
+
+
+def display_player_tree(players):
+    player_tree = create_player_tree(players)
+    tree_text = ""
+    for pre, _, node in RenderTree(player_tree):
+        tree_text += "%s%s\n" % (pre, node.name)
+    return tree_text
+
+
+def show_tree_window():
+    global data
+    tree_text = display_player_tree(data)
+
+    # Создание нового окна
+    tree_window = tk.Toplevel()
+    tree_window.title("Player Tree")
+
+    # Создание виджета Text для отображения древовидной структуры
+    tree_text_widget = tk.Text(tree_window, wrap="none")
+    tree_text_widget.insert(tk.END, tree_text)
+    tree_text_widget.pack(fill=tk.BOTH, expand=True)
 
 
 def show_error(message):
@@ -311,8 +349,10 @@ def create_player():
                 # Добавляем игрока в базу данных
                 db_player_controller.create(new_player)
             else:
+                xml_player = xml_player_controller.get_all_players()[-1]
                 new_player = Player(full_name=full_name, birth_date=birth_date, football_team=football_team,
-                                    home_city=home_city, team_size=team_size, position=position, id=None)
+                                    home_city=home_city, team_size=team_size, position=position,
+                                    id=int(xml_player.id) + 1)
                 xml_player_controller.insert(new_player)
             # Выводим сообщение об успешном добавлении
             messagebox.showinfo("Успех!", f"Игрок успешно создан!.")
@@ -323,8 +363,93 @@ def create_player():
     save_button.grid(row=6, column=0, columnspan=2, padx=5, pady=5)
 
 
-def find_entries():
-    pass
+def delete_players():
+    dialog = tk.Toplevel(root)
+    dialog.title("Delete Player")
+    dialog.grab_set()
+
+    full_name_label = ttk.Label(dialog, text="Full Name:")
+    full_name_label.grid(row=0, column=0, padx=5, pady=5)
+    full_name_entry = ttk.Entry(dialog)
+    full_name_entry.grid(row=0, column=1, padx=5, pady=5)
+
+    birth_date_label = ttk.Label(dialog, text="Birth Date (YYYY-MM-DD):")
+    birth_date_label.grid(row=1, column=0, padx=5, pady=5)
+    birth_date_entry = ttk.Entry(dialog)
+    birth_date_entry.grid(row=1, column=1, padx=5, pady=5)
+
+    football_team_label = ttk.Label(dialog, text="Football Team:")
+    football_team_label.grid(row=2, column=0, padx=5, pady=5)
+    football_team_entry = ttk.Entry(dialog)
+    football_team_entry.grid(row=2, column=1, padx=5, pady=5)
+
+    home_city_label = ttk.Label(dialog, text="Home City:")
+    home_city_label.grid(row=3, column=0, padx=5, pady=5)
+    home_city_entry = ttk.Entry(dialog)
+    home_city_entry.grid(row=3, column=1, padx=5, pady=5)
+
+    team_size_label = ttk.Label(dialog, text="Team Size:")
+    team_size_label.grid(row=4, column=0, padx=5, pady=5)
+    team_size_entry = ttk.Entry(dialog)
+    team_size_entry.grid(row=4, column=1, padx=5, pady=5)
+
+    position_label = ttk.Label(dialog, text="Position:")
+    position_label.grid(row=5, column=0, padx=5, pady=5)
+    position_entry = ttk.Entry(dialog)
+    position_entry.grid(row=5, column=1, padx=5, pady=5)
+
+    def delete_player():
+        full_name: str = full_name_entry.get()
+        birth_date: str = birth_date_entry.get()
+        football_team: str = football_team_entry.get()
+        home_city: str = home_city_entry.get()
+        team_size: str = team_size_entry.get()
+        position: str = position_entry.get()
+        delete_num: int = 0
+        if is_database is True:
+            if full_name:
+                delete_num += db_player_controller.delete_by_full_name(full_name)
+            if birth_date:
+                try:
+                    delete_num += db_player_controller.delete_by_birth_date(
+                        datetime.datetime.strptime(birth_date, "%Y-%m-%d").date())
+                except ValueError:
+                    show_error("Ошибка: Некорректный формат даты. Используйте формат 'YYYY-MM-DD'.")
+                    return
+            if football_team:
+                delete_num += db_player_controller.delete_by_football_team(football_team)
+            if home_city:
+                delete_num += db_player_controller.delete_by_home_city(home_city)
+            if team_size:
+                try:
+                    delete_num += db_player_controller.delete_by_team_size(int(team_size))
+                except ValueError:
+                    show_error("Ошибка: Поле 'team_size' должно содержать только цифры.")
+                    return
+            if position:
+                delete_num += db_player_controller.delete_by_position(position)
+        else:
+            if full_name:
+                delete_num += xml_player_controller.delete_by_name(full_name)
+            if birth_date:
+                delete_num += xml_player_controller.delete_by_birth_date(birth_date)
+            if football_team:
+                delete_num += xml_player_controller.delete_by_football_team(football_team)
+            if home_city:
+                delete_num += xml_player_controller.delete_by_home_city(home_city)
+            if team_size:
+                try:
+                    delete_num += xml_player_controller.delete_by_team_size(int(team_size))
+                except ValueError:
+                    show_error("Ошибка: Поле 'team_size' должно содержать только цифры.")
+                    return
+            if position:
+                delete_num += xml_player_controller.delete_by_position(position)
+        messagebox.showinfo("Успех!", "Удалено игроков: " + str(delete_num))
+        dialog.destroy()
+
+    delete = ttk.Button(dialog, text="Delete Player", command=delete_player)
+    delete.grid(row=6, column=0, columnspan=2, padx=5, pady=5)
 
 
 root = tk.Tk()
@@ -344,7 +469,13 @@ menu_bar.add_cascade(label="File", menu=file_menu)
 
 view_menu = tk.Menu(menu_bar, tearoff=0)
 view_menu.add_command(label="Find", command=lambda: SearchWindow(root))
+view_menu.add_command(label="Tree", command=lambda: show_tree_window())
 menu_bar.add_cascade(label="View", menu=view_menu)
+
+edit_menu = tk.Menu(menu_bar, tearoff=0)
+edit_menu.add_command(label="Create", command=create_player)
+edit_menu.add_command(label="Delete", command=delete_players)
+menu_bar.add_cascade(label="Edit", menu=edit_menu)
 
 # Создаем панель инструментов
 toolbar = tk.Frame(root, bd=1, relief=tk.RAISED)
@@ -353,6 +484,8 @@ toolbar.pack(side=tk.TOP, fill=tk.X)
 # Кнопка "Create Player"
 create_button = ttk.Button(toolbar, text="Create Player", command=create_player)
 create_button.pack(side=tk.LEFT, padx=2, pady=2)
+delete_button = ttk.Button(toolbar, text="Delete Player", command=delete_players)
+delete_button.pack(side=tk.LEFT)
 
 # Устанавливаем меню приложения
 root.config(menu=menu_bar)

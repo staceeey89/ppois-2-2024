@@ -294,4 +294,32 @@
 # display_players()
 #
 # root.mainloop()
+from anytree import Node, RenderTree
+from typing import List
+import datetime
 
+from model.entity.Player import Player
+from controller.DB import DBPlayerController
+db_controller = DBPlayerController()
+# Пример списка игроков
+players = db_controller.get_all()
+
+# Создаем корневой узел для древовидной структуры
+root = Node("Players")
+
+# Проходим по каждому игроку в списке
+for player in players:
+    # Создаем узел для каждого игрока с его уникальным идентификатором
+    player_node = Node(str(player.id), parent=root)
+    # Добавляем дочерние узлы с атрибутами игрока
+    Node(f"id: {player.id}", parent=player_node)
+    Node(f"full_name: {player.full_name}", parent=player_node)
+    Node(f"birth_date: {player.birth_date}", parent=player_node)
+    Node(f"football_team: {player.football_team}", parent=player_node)
+    Node(f"home_city: {player.home_city}", parent=player_node)
+    Node(f"team_size: {player.team_size}", parent=player_node)
+    Node(f"position: {player.position}", parent=player_node)
+
+# Выводим древовидную структуру
+for pre, fill, node in RenderTree(root):
+    print("%s%s" % (pre, node.name))
