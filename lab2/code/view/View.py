@@ -137,11 +137,9 @@ def show_tree_window():
     global data
     tree_text = display_player_tree(data)
 
-    # Создание нового окна
     tree_window = tk.Toplevel()
     tree_window.title("Player Tree")
 
-    # Создание виджета Text для отображения древовидной структуры
     tree_text_widget = tk.Text(tree_window, wrap="none")
     tree_text_widget.insert(tk.END, tree_text)
     tree_text_widget.pack(fill=tk.BOTH, expand=True)
@@ -163,19 +161,16 @@ def on_exit():
 
 
 def validate_input(full_name, birth_date_str, football_team, home_city, team_size_str, position):
-    # Проверка full_name
     if not full_name.strip():
         show_error("Ошибка: Поле 'full_name' не должно быть пустым.")
         return False
 
-    # Проверка birth_date
     try:
         datetime.datetime.strptime(birth_date_str, "%Y-%m-%d")
     except ValueError:
         show_error("Ошибка: Некорректный формат даты. Используйте формат 'YYYY-MM-DD'.")
         return False
 
-    # Проверка football_team, home_city, position
     if not football_team.strip():
         show_error("Ошибка: Поле 'football_team' не должно быть пустым.")
         return False
@@ -186,7 +181,6 @@ def validate_input(full_name, birth_date_str, football_team, home_city, team_siz
         show_error("Ошибка: Поле 'position' не должно быть пустым.")
         return False
 
-    # Проверка team_size
     team_size_str = team_size_str.strip()
     if not team_size_str.isdigit():
         show_error("Ошибка: Поле 'team_size' должно содержать только цифры.")
@@ -198,18 +192,14 @@ def validate_input(full_name, birth_date_str, football_team, home_city, team_siz
 def display_players():
     global current_page, records_per_page, treeview, data
 
-    # Очищаем все данные в таблице перед обновлением
     for row in treeview.get_children():
         treeview.delete(row)
 
-    # Определяем, откуда получать данные: из базы данных или из XML
     if is_database:
-        # Получаем данные из базы данных
         data = db_player_controller.get_all()
     else:
         data = xml_player_controller.get_all_players()
 
-    # Добавляем данные в таблицу
     start = (current_page - 1) * records_per_page
     end = start + records_per_page
     for player in data[start:end]:
@@ -294,12 +284,10 @@ def set_is_database_false():
 
 
 def create_player():
-    # Создаем новое диалоговое окно
     dialog = tk.Toplevel(root)
     dialog.title("Create Player")
-    dialog.grab_set()  # Блокируем доступ к другим окнам
+    dialog.grab_set()
 
-    # Добавляем метки и поля ввода для данных игрока
     full_name_label = ttk.Label(dialog, text="Full Name:")
     full_name_label.grid(row=0, column=0, padx=5, pady=5)
     full_name_entry = ttk.Entry(dialog)
@@ -331,7 +319,6 @@ def create_player():
     position_entry.grid(row=5, column=1, padx=5, pady=5)
 
     def save_player():
-        # Получаем значения из полей ввода
         full_name: str = full_name_entry.get()
         birth_date: str = birth_date_entry.get()
         football_team: str = football_team_entry.get()
@@ -343,10 +330,8 @@ def create_player():
             team_size: int = int(team_size_entry.get())
             birth_date: datetime.date = datetime.datetime.strptime(birth_date, "%Y-%m-%d").date()
             if is_database is True:
-                # Создаем новый объект игрока
                 new_player = PlayerDto(full_name=full_name, birth_date=birth_date, football_team=football_team,
                                        home_city=home_city, team_size=team_size, position=position, id=None)
-                # Добавляем игрока в базу данных
                 db_player_controller.create(new_player)
             else:
                 xml_player = xml_player_controller.get_all_players()[-1]
@@ -354,11 +339,9 @@ def create_player():
                                     home_city=home_city, team_size=team_size, position=position,
                                     id=int(xml_player.id) + 1)
                 xml_player_controller.insert(new_player)
-            # Выводим сообщение об успешном добавлении
             messagebox.showinfo("Успех!", f"Игрок успешно создан!.")
             dialog.destroy()
 
-    # Кнопка "Сохранить игрока"
     save_button = ttk.Button(dialog, text="Save Player", command=save_player)
     save_button.grid(row=6, column=0, columnspan=2, padx=5, pady=5)
 
@@ -456,10 +439,8 @@ root = tk.Tk()
 root.title("Library App")
 root.geometry('1470x720')
 
-# Создаем меню
 menu_bar = tk.Menu(root)
 
-# Создаем меню "File" и добавляем в него пункты
 file_menu = tk.Menu(menu_bar, tearoff=0)
 file_menu.add_command(label="Open a db file", command=set_is_database_true)
 file_menu.add_command(label="Open an XML file", command=set_is_database_false)
@@ -477,20 +458,16 @@ edit_menu.add_command(label="Create", command=create_player)
 edit_menu.add_command(label="Delete", command=delete_players)
 menu_bar.add_cascade(label="Edit", menu=edit_menu)
 
-# Создаем панель инструментов
 toolbar = tk.Frame(root, bd=1, relief=tk.RAISED)
 toolbar.pack(side=tk.TOP, fill=tk.X)
 
-# Кнопка "Create Player"
 create_button = ttk.Button(toolbar, text="Create Player", command=create_player)
 create_button.pack(side=tk.LEFT, padx=2, pady=2)
 delete_button = ttk.Button(toolbar, text="Delete Player", command=delete_players)
 delete_button.pack(side=tk.LEFT)
 
-# Устанавливаем меню приложения
 root.config(menu=menu_bar)
 
-# Создаем фреймы для кнопок навигации и информации
 navigation_frame = tk.Frame(root)
 navigation_frame.pack()
 
@@ -503,7 +480,6 @@ column_widths = (100, 150, 100, 120, 100, 80, 100)  # Ширина каждог�
 current_page = 1
 records_per_page = 10
 
-# Кнопки навигации
 prev_button = tk.Button(navigation_frame, text="Previous", command=prev_page)
 prev_button.pack(side=tk.LEFT)
 
@@ -516,7 +492,6 @@ first_button.pack(side=tk.LEFT)
 last_button = tk.Button(navigation_frame, text="Last", command=last_page)
 last_button.pack(side=tk.LEFT)
 
-# Надписи с информацией
 total_records_label = tk.Label(info_frame, text="Total Records: {}".format(calculate_total_records()))
 total_records_label.pack()
 

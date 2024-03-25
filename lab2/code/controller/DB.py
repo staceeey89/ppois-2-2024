@@ -107,14 +107,6 @@ class DBPlayerController:
             return 0
         return self.__player_dao.delete_by_position(position)
 
-    # def update(self, dto: PlayerDto) -> PlayerDto:
-    #     player: Player = to_player_entity(dto)
-    #     player.id = dto.id
-    #     player_created: Player = self.__player_dao.update(player)
-    #     if player_created is None:
-    #         raise RuntimeWarning("No player with id: " + str(dto.id))
-    #     return to_player_dto(player_created)
-
     def create(self, dto: PlayerDto) -> PlayerDto:
         player: Player = to_player_entity(dto)
         player_created: Player = self.__player_dao.create(player)
