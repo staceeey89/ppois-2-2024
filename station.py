@@ -18,9 +18,9 @@ class Station:
             if len(self.__platforms) < 2:
                 self.__platforms.append(platform)
             else:
-                Exception("Platforms are already two")
-        except Exception as text:
-            print(text)
+                raise ValueError("Платформы уже две")
+        except ValueError as e:
+            print(e)
 
     def remove_platform(self, platform: Platform):
         self.__platforms.remove(platform)
@@ -46,9 +46,11 @@ class Station:
             if passenger.cash >= self.__ticket.cost:
                 passenger.buy_a_ticket(self.ticket)
             else:
-                Exception(f"passenger {passenger.name} doesn't have enough money")
-        except Exception as text:
-            print(text)
+                raise ValueError(f"Passenger {passenger.name} doesn't have enough money")
+        except ValueError as e:
+            print(e)
+            raise ValueError("Purchase has not been made!")
+
 
     def get_platforms(self):
         return self.__platforms

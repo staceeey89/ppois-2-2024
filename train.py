@@ -27,9 +27,9 @@ class Train(AbstractTrain):
                 self.__platform = next_platform
                 next_platform.train = self
             else:
-                Exception(f"Next platform ({next_platform.number}) has a train")
-        except Exception as text:
-            print(text)
+                raise ValueError(f"Next platform ({next_platform.number}) has a train")
+        except ValueError as e:
+            print(e)
 
     def get_passengers(self):
         return self.__passengers

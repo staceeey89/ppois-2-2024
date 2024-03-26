@@ -14,9 +14,9 @@ class Depot:
             if len(self.__trains) is not 0:
                 return self.__trains.pop()
             else:
-                Exception("There are no trains in Depot")
-        except Exception as text:
-            print(text)
+                raise IndexError("There are no trains in Depot")
+        except IndexError as e:
+            print(e)
 
     def get_trains_list(self):
         return self.__trains

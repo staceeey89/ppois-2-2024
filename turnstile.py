@@ -10,7 +10,8 @@ class Turnstile:
             if ticket is not None:
                 return True
             else:
-                Exception("Buy a ticket!")
-        except Exception as text:
-            print(text)
+                raise ValueError("Passenger didn't buy a ticket!")
+        except ValueError as e:
+            print(e)
             return False
+

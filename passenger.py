@@ -43,20 +43,20 @@ class Passenger(AbstractPassenger):
             if self.__crossed_a_turnstile:
                 self.__platform = platform
             else:
-                Exception(f"Passenger {self.name}, cross a turnstile!")
-        except Exception as text:
-            print(text)
+                raise RuntimeError(f"Passenger {self.name}, cross a turnstile!")
+        except RuntimeError as e:
+            print(e)
 
     def board(self, train: AbstractTrain):
         try:
             if self.__platform is not None and self.__platform.train == train:
                 train.add_passenger(self)
             elif self.__platform is None:
-                Exception("Choose a platform!")
+                raise ValueError("Choose a platform!")
             elif self.__platform.train is None:
-                Exception(f"Train is {self.__platform.train}")
-        except Exception as text:
-            print(text)
+                raise ValueError(f"Train is not at your platform!")
+        except ValueError as e:
+            print(e)
 
     def disembark(self, train: AbstractTrain):
         train.remove_passenger(self)

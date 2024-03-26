@@ -20,18 +20,18 @@ class Schedule:
             if len(self.__depots) < 2:
                 self.__depots.append(depot)
             else:
-                Exception("Subway is overfilled by depots!")
-        except Exception as text:
-            print(text)
+                raise ValueError("Subway is overfilled by depots!")
+        except ValueError as e:
+            print(e)
 
     def add_train(self, train: Train):
         try:
             if len(self.__stations) >= len(self.__trains):
                 self.__trains.append(train)
             else:
-                Exception("Subway is overfilled by trains!")
-        except Exception as text:
-            print(text)
+                raise ValueError("Subway is overfilled by trains!")
+        except ValueError as e:
+            print(e)
 
     def fill_depots(self):
         flag: bool = False

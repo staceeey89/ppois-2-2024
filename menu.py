@@ -12,10 +12,10 @@ from station import Station
 
 def main():
     passengers: List[Passenger] = []
-    global choosen_passenger
-    choosen_passenger = -1
-    global choosen_station
-    choosen_station = -1
+    global chosen_passenger
+    chosen_passenger = -1
+    global chosen_station
+    chosen_station = -1
     depot_1 = Depot()
     depot_2 = Depot()
     stations: List[Station] = []
@@ -28,7 +28,8 @@ def main():
 
     while True:
         print("1. Создать пассажира\t2. Создать станцию метро\t3. Назначить цену проезда"
-              "\n4. Выбрать пассажира\t5. Выбрать станцию"
+              "\n4. Выбрать пассажира\t5. Выбрать станцию\t6. Купить билет \t7. Пройти турникет "
+              "\n8. Выбрать платформу"
               "\n\t-1. Выход")
         choice: int = int(input())
         if choice == 1:
@@ -67,9 +68,9 @@ def main():
                 i += 1
             while True:
                 print("\nВыберите индекс пассажира:")
-                choosen_passenger_check = int(input())
-                if choosen_passenger_check <= i-1:
-                    choosen_passenger = choosen_passenger_check
+                chosen_passenger_check = int(input())
+                if chosen_passenger_check <= i:
+                    chosen_passenger = chosen_passenger_check
                     break
                 else:
                     print("Такого пассажира нет.")
@@ -82,14 +83,24 @@ def main():
                 i += 1
             while True:
                 print("\nВыберите индекс станции:")
-                choosen_station_check = int(input())
-                if choosen_station_check <= i - 1:
-                    choosen_station = choosen_station_check
+                chosen_station_check = int(input())
+                if chosen_station_check <= i:
+                    chosen_station = chosen_station_check
                     break
                 else:
                     print("Такой станции нет.")
             print("Станция выбрана!")
             continue
+        elif choice == 6:
+            try:
+                stations[chosen_station].sell_a_ticket(passengers[chosen_passenger])
+            except ValueError as e:
+                print(e)
+        elif choice == 7:
+            passengers[chosen_passenger].cross_a_turnstile(stations[chosen_station].turnstile)
+
+        elif choice == -1:
+            break
 
 
 if __name__ == "__main__":
