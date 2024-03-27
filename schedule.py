@@ -81,19 +81,19 @@ class Schedule:
     def run_a_train(self):
         try:
             if len(self.__depots[0].get_trains_list()) == 0 and len(self.__depots[1].get_trains_list()) == 0:
-                Exception("Depots are empty")
+                raise ValueError("Depots are empty")
             if self.__stations[0].get_platforms()[0].train is None:
                 self.__stations[0].get_platforms()[0].train = self.__depots[0].pull_out_train()
                 self.__trains_counter += 1
             else:
-                Exception(f"Station {self.__stations[0].number}\n Platform 0 \nAlready has a train")
+                raise ValueError(f"Station {self.__stations[0].number}\n Platform 0 \nAlready has a train")
             if self.__stations[-1].get_platforms()[1].train is None:
                 self.__stations[-1].get_platforms()[1].train = self.__depots[1].pull_out_train()
                 self.__trains_counter += 1
             else:
-                Exception(f"Station {self.__stations[1].number}\n Platform 1 \nAlready has a train")
-        except Exception as text:
-            print(text)
+                raise ValueError(f"Station {self.__stations[1].number}\n Platform 1 \nAlready has a train")
+        except ValueError as e:
+            print(e)
 
     def next_phase(self):
         self.set_time_delay()

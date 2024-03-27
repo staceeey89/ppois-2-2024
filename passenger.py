@@ -12,6 +12,10 @@ class Passenger(AbstractPassenger):
         self.__crossed_a_turnstile: bool = False
 
     @property
+    def platform(self):
+        return self.__platform
+
+    @property
     def cash(self):
         return self.__cash
 
