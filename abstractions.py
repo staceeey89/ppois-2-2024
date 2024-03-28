@@ -84,6 +84,11 @@ class AbstractPassenger(ABC):
     def disembark(self, value):
         pass
 
+    @property
+    @abstractmethod
+    def station(self):
+        pass
+
 
 class AbstractPlatform(ABC):
     @abstractmethod
@@ -116,4 +121,15 @@ class AbstractPlatform(ABC):
     @abstractmethod
     def get_passengers(self):
         pass
+
+    @property
+    @abstractmethod
+    def station(self):
+        pass
+
+    @station.setter
+    @abstractmethod
+    def station(self, value):
+        pass
+
 

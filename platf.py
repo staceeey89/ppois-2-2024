@@ -1,4 +1,5 @@
 from typing import List
+from station import Station
 from abstractions import AbstractTrain, AbstractPassenger, AbstractPlatform
 
 
@@ -7,6 +8,7 @@ class Platform(AbstractPlatform):
         self.__number: int = number
         self.__passengers: List[AbstractPassenger] = []
         self.__train: AbstractTrain = None
+        self.__station: Station = None
 
     def add_passenger(self, passenger: AbstractPassenger):
         self.__passengers.append(passenger)
@@ -28,3 +30,11 @@ class Platform(AbstractPlatform):
 
     def get_passengers(self):
         return self.__passengers
+
+    @property
+    def station(self):
+        return self.__station
+
+    @station.setter
+    def station(self, station: Station):
+        self.__station = station

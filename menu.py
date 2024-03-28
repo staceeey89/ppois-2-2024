@@ -104,6 +104,7 @@ def main():
                 print(e)
         elif choice == 7:
             passengers[chosen_passenger].cross_a_turnstile(stations[chosen_station].turnstile)
+            print("Турникет пройден!")
         elif choice == 8:
             while True:
                 print("Введите номер платформы: 0 или 1")
@@ -152,6 +153,7 @@ def main():
             print("Поезда запущены в первые станции!")
         elif choice == 15:
             schedule.print_info()
+            print(f"Текущая станция {passengers[chosen_passenger].station}")
         elif choice == -1:
             break
 

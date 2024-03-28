@@ -11,7 +11,7 @@ class Depot:
 
     def pull_out_train(self):
         try:
-            if len(self.__trains) is not 0:
+            if len(self.__trains) != 0:
                 return self.__trains.pop()
             else:
                 raise IndexError("There are no trains in Depot")
