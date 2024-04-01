@@ -1,0 +1,5 @@
+.env
+docker_compose.yml
+\venv
+\__pycache__
+answer.txt
