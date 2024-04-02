@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student>
+		<id>1</id>
+		<last_name>Гринь </last_name>
+		<first_name>Никита</first_name>
+		<middle_name>Александрович</middle_name>
+		<group_name>221702</group_name>
+		<sem1_public_works>44</sem1_public_works>
+		<sem2_public_works>55</sem2_public_works>
+		<sem3_public_works>34</sem3_public_works>
+		<sem4_public_works>4</sem4_public_works>
+		<sem5_public_works>77</sem5_public_works>
+		<sem6_public_works>0</sem6_public_works>
+		<sem7_public_works>33</sem7_public_works>
+		<sem8_public_works>0</sem8_public_works>
+	</student>
+</students>

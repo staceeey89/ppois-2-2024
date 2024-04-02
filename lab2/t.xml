@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student>
+		<id>6</id>
+		<last_name>Кузнецов</last_name>
+		<first_name>Михаил</first_name>
+		<middle_name>Андреевич</middle_name>
+		<group_name>106</group_name>
+		<sem1_public_works>35</sem1_public_works>
+		<sem2_public_works>45</sem2_public_works>
+		<sem3_public_works>55</sem3_public_works>
+		<sem4_public_works>65</sem4_public_works>
+		<sem5_public_works>75</sem5_public_works>
+		<sem6_public_works>85</sem6_public_works>
+		<sem7_public_works>95</sem7_public_works>
+		<sem8_public_works>15</sem8_public_works>
+	</student>
+</students>
