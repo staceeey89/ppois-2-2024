@@ -63,6 +63,7 @@ class MainWindow:
         self.__products_on_page_box: ttk.Combobox = ttk.Combobox(self.__products_on_page_panel,
                                                                  textvariable=self.__number_of_products_on_page,
                                                                  values=['5', '10', '15'], state='readonly')
+        self.__current_product_page: ttk.Label = ttk.Label(self.__products_on_page_panel, text='1/1')
         self.__tree_view_checkbutton: ttk.Checkbutton = ttk.Checkbutton(self.__products_on_page_panel,
                                                                         text='Отображение в виде дерева',
                                                                         variable=self.__tree_view,
@@ -71,8 +72,11 @@ class MainWindow:
 
         # page control
 
-        self.__next_page_button: ttk.Button = ttk.Button(text='Следующая страница', command=self.next_page)
-        self.__prev_page_button: ttk.Button = ttk.Button(text='Предыдущая страница', command=self.prev_page)
+        self.__page_buttons: ttk.Frame = ttk.Frame(self.__main_window)
+        self.__next_page_button: ttk.Button = ttk.Button(self.__page_buttons, text='Следующая страница', command=self.next_page)
+        self.__prev_page_button: ttk.Button = ttk.Button(self.__page_buttons, text='Предыдущая страница', command=self.prev_page)
+        self.__first_page_button: ttk.Button = ttk.Button(self.__page_buttons, text='Первая страница', command=self.first_page)
+        self.__last_page_button: ttk.Button = ttk.Button(self.__page_buttons, text='Последняя странциа', command=self.last_page)
         self.page_control_config()
 
         # error message
@@ -134,11 +138,17 @@ class MainWindow:
         self.__products_on_page_label_text.grid(row=1, column=0, sticky=W)
         self.__products_on_page_box.grid(row=1, column=1, sticky=W)
         self.__tree_view_checkbutton.grid(row=1, column=2, sticky=E)
+        self.__current_product_page.grid(row=1, column=2, sticky=NSEW)
         self.__products_on_page_box.bind("<<ComboboxSelected>>", self.new_page_value)
 
     def page_control_config(self) -> None:
-        self.__prev_page_button.grid(row=2, column=0, sticky=W)
-        self.__next_page_button.grid(row=2, column=0, sticky=E)
+        self.__page_buttons.columnconfigure(index=(0, 1, 2, 3), weight=0)
+        self.__page_buttons.rowconfigure(index=0, weight=0)
+        self.__prev_page_button.grid(row=0, column=0, sticky=W)
+        self.__first_page_button.grid(row=0, column=1)
+        self.__last_page_button.grid(row=0, column=2)
+        self.__next_page_button.grid(row=0, column=3, sticky=E)
+        self.__page_buttons.grid(row=2)
 
     def create_db(self) -> None:
         CreateDataBaseWindow(self)
@@ -149,6 +159,7 @@ class MainWindow:
             self.form_db(filepath)
 
     def form_db(self, filename: str) -> None:
+        self.__current_page = 1
         self.__data_controller: DataBaseController = DataBaseController(filename)
         self.page_update()
 
@@ -161,19 +172,22 @@ class MainWindow:
             self.form_xml(filepath)
 
     def form_xml(self, filepath: str) -> None:
+        self.__current_page = 1
         self.__data_controller: FileController = FileController(filepath)
         self.page_update()
 
     def page_update(self) -> None:
         if self.__data_controller is not None:
-            if (math.ceil(self.__data_controller.products_amount() / int(self.__number_of_products_on_page.get())) <
-                    self.__current_page):
+            max_page: int = max(1, math.ceil(self.__data_controller.products_amount()
+                                             / int(self.__number_of_products_on_page.get())))
+            if max_page < self.__current_page:
                 self.__current_page -= 1
                 raise IndexError
             if self.__current_page == 0:
                 self.__current_page = 1
                 raise IndexError
             self.__error_message.set('')
+            self.__current_product_page['text'] = f'{self.__current_page}/{max_page}'
             products: list[Product] = self.__data_controller.get_products()
             for product in self.__products_table.get_children("")[:]:
                 self.__products_table.delete(product)
@@ -257,6 +271,21 @@ class MainWindow:
         else:
             self.__products_table['show'] = 'headings'
         self.page_update()
+
+    def first_page(self):
+        self.__current_page = 1
+        try:
+            self.page_update()
+        except AttributeError as e:
+            self.__error_message.set('Вы не открыли файл или базу данных, чтобы начать работу')
+
+    def last_page(self):
+        self.__current_page = math.ceil(self.__data_controller.products_amount()
+                                        / int(self.__number_of_products_on_page.get()))
+        try:
+            self.page_update()
+        except AttributeError as e:
+            self.__error_message.set('Вы не открыли файл или базу данных, чтобы начать работу')
 
     @property
     def data_controller(self) -> DataController:
