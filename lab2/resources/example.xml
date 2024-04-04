@@ -1,0 +1,597 @@
+<railway-depot>
+    <train-trips>
+<train-trip>
+    <train-id>4</train-id>
+    <departure-station>Lissabon</departure-station>
+    <arrival-station>Rome</arrival-station>
+    <departure-datetime>1991-10-23 17:30:00</departure-datetime>
+    <arrival-datetime>1991-10-24 23:00:00</arrival-datetime>
+    <travel-time>58800</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>7</train-id>
+    <departure-station>Moscow</departure-station>
+    <arrival-station>London</arrival-station>
+    <departure-datetime>2007-08-15 11:45:00</departure-datetime>
+    <arrival-datetime>2007-08-19 21:15:00</arrival-datetime>
+    <travel-time>361200</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>9</train-id>
+    <departure-station>Berlin</departure-station>
+    <arrival-station>Moscow</arrival-station>
+    <departure-datetime>2015-04-05 05:00:00</departure-datetime>
+    <arrival-datetime>2015-04-11 10:00:00</arrival-datetime>
+    <travel-time>521400</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>7</train-id>
+    <departure-station>Rome</departure-station>
+    <arrival-station>Moscow</arrival-station>
+    <departure-datetime>1982-06-14 12:30:00</departure-datetime>
+    <arrival-datetime>1982-06-20 20:45:00</arrival-datetime>
+    <travel-time>548100</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>10</train-id>
+    <departure-station>Madrid</departure-station>
+    <arrival-station>Berlin</arrival-station>
+    <departure-datetime>2018-12-02 14:15:00</departure-datetime>
+    <arrival-datetime>2018-12-08 23:45:00</arrival-datetime>
+    <travel-time>567000</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>8</train-id>
+    <departure-station>Paris</departure-station>
+    <arrival-station>Minsk</arrival-station>
+    <departure-datetime>2014-03-28 19:00:00</departure-datetime>
+    <arrival-datetime>2014-03-31 09:30:00</arrival-datetime>
+    <travel-time>218700</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>9</train-id>
+    <departure-station>New-York</departure-station>
+    <arrival-station>London</arrival-station>
+    <departure-datetime>2000-11-11 08:45:00</departure-datetime>
+    <arrival-datetime>2000-11-15 20:00:00</arrival-datetime>
+    <travel-time>362700</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>4</train-id>
+    <departure-station>Moscow</departure-station>
+    <arrival-station>Paris</arrival-station>
+    <departure-datetime>2008-10-05 05:30:00</departure-datetime>
+    <arrival-datetime>2008-10-10 16:30:00</arrival-datetime>
+    <travel-time>469200</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>6</train-id>
+    <departure-station>Madrid</departure-station>
+    <arrival-station>Berlin</arrival-station>
+    <departure-datetime>2003-07-20 10:00:00</departure-datetime>
+    <arrival-datetime>2003-07-26 15:15:00</arrival-datetime>
+    <travel-time>556500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>5</train-id>
+    <departure-station>Berlin</departure-station>
+    <arrival-station>Rome</arrival-station>
+    <departure-datetime>1999-02-15 15:15:00</departure-datetime>
+    <arrival-datetime>1999-02-20 23:45:00</arrival-datetime>
+    <travel-time>457800</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>9</train-id>
+    <departure-station>Rome</departure-station>
+    <arrival-station>Madrid</arrival-station>
+    <departure-datetime>2012-09-29 08:00:00</departure-datetime>
+    <arrival-datetime>2012-10-05 12:00:00</arrival-datetime>
+    <travel-time>529200</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>5</train-id>
+    <departure-station>Minsk</departure-station>
+    <arrival-station>Lissabon</arrival-station>
+    <departure-datetime>2017-01-07 18:30:00</departure-datetime>
+    <arrival-datetime>2017-01-13 00:45:00</arrival-datetime>
+    <travel-time>475500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>7</train-id>
+    <departure-station>Lissabon</departure-station>
+    <arrival-station>Paris</arrival-station>
+    <departure-datetime>1983-11-04 13:45:00</departure-datetime>
+    <arrival-datetime>1983-11-08 20:15:00</arrival-datetime>
+    <travel-time>345600</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>8</train-id>
+    <departure-station>London</departure-station>
+    <arrival-station>Paris</arrival-station>
+    <departure-datetime>2004-05-21 08:30:00</departure-datetime>
+    <arrival-datetime>2004-05-24 22:30:00</arrival-datetime>
+    <travel-time>259200</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>6</train-id>
+    <departure-station>Paris</departure-station>
+    <arrival-station>Madrid</arrival-station>
+    <departure-datetime>2001-04-17 16:15:00</departure-datetime>
+    <arrival-datetime>2001-04-20 05:45:00</arrival-datetime>
+    <travel-time>243000</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>1</train-id>
+    <departure-station>New-York</departure-station>
+    <arrival-station>Moscow</arrival-station>
+    <departure-datetime>1990-08-15 07:30:00</departure-datetime>
+    <arrival-datetime>1990-08-22 13:00:00</arrival-datetime>
+    <travel-time>547800</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>2</train-id>
+    <departure-station>Moscow</departure-station>
+    <arrival-station>Rome</arrival-station>
+    <departure-datetime>2009-12-19 11:00:00</departure-datetime>
+    <arrival-datetime>2009-12-25 14:30:00</arrival-datetime>
+    <travel-time>550800</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>8</train-id>
+    <departure-station>Rome</departure-station>
+    <arrival-station>Minsk</arrival-station>
+    <departure-datetime>2011-01-29 05:45:00</departure-datetime>
+    <arrival-datetime>2011-02-05 13:00:00</arrival-datetime>
+    <travel-time>604200</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>3</train-id>
+    <departure-station>Berlin</departure-station>
+    <arrival-station>Paris</arrival-station>
+    <departure-datetime>2010-10-10 14:00:00</departure-datetime>
+    <arrival-datetime>2010-10-15 19:15:00</arrival-datetime>
+    <travel-time>450900</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>6</train-id>
+    <departure-station>Madrid</departure-station>
+    <arrival-station>Minsk</arrival-station>
+    <departure-datetime>2006-06-28 18:15:00</departure-datetime>
+    <arrival-datetime>2006-07-04 23:45:00</arrival-datetime>
+    <travel-time>519000</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>4</train-id>
+    <departure-station>Lissabon</departure-station>
+    <arrival-station>London</arrival-station>
+    <departure-datetime>1988-07-03 07:00:00</departure-datetime>
+    <arrival-datetime>1988-07-08 11:30:00</arrival-datetime>
+    <travel-time>470700</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>10</train-id>
+    <departure-station>Paris</departure-station>
+    <arrival-station>Madrid</arrival-station>
+    <departure-datetime>2005-09-10 19:45:00</departure-datetime>
+    <arrival-datetime>2005-09-16 20:30:00</arrival-datetime>
+    <travel-time>529200</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>2</train-id>
+    <departure-station>Minsk</departure-station>
+    <arrival-station>Berlin</arrival-station>
+    <departure-datetime>1994-04-05 10:30:00</departure-datetime>
+    <arrival-datetime>1994-04-08 17:45:00</arrival-datetime>
+    <travel-time>259500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>1</train-id>
+    <departure-station>Berlin</departure-station>
+    <arrival-station>Lissabon</arrival-station>
+    <departure-datetime>2003-02-20 12:45:00</departure-datetime>
+    <arrival-datetime>2003-02-23 21:30:00</arrival-datetime>
+    <travel-time>303300</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>9</train-id>
+    <departure-station>Moscow</departure-station>
+    <arrival-station>Berlin</arrival-station>
+    <departure-datetime>1997-12-10 06:15:00</departure-datetime>
+    <arrival-datetime>1997-12-14 14:30:00</arrival-datetime>
+    <travel-time>385500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>10</train-id>
+    <departure-station>Minsk</departure-station>
+    <arrival-station>London</arrival-station>
+    <departure-datetime>1980-01-17 05:30:00</departure-datetime>
+    <arrival-datetime>1980-01-22 09:45:00</arrival-datetime>
+    <travel-time>461700</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>8</train-id>
+    <departure-station>Madrid</departure-station>
+    <arrival-station>Paris</arrival-station>
+    <departure-datetime>1998-05-30 06:00:00</departure-datetime>
+    <arrival-datetime>1998-06-05 11:30:00</arrival-datetime>
+    <travel-time>548700</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>3</train-id>
+    <departure-station>Rome</departure-station>
+    <arrival-station>Madrid</arrival-station>
+    <departure-datetime>2000-12-28 14:15:00</departure-datetime>
+    <arrival-datetime>2001-01-01 20:45:00</arrival-datetime>
+    <travel-time>453000</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>5</train-id>
+    <departure-station>Berlin</departure-station>
+    <arrival-station>New-York</arrival-station>
+    <departure-datetime>1985-09-07 08:45:00</departure-datetime>
+    <arrival-datetime>1985-09-11 20:00:00</arrival-datetime>
+    <travel-time>347700</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>4</train-id>
+    <departure-station>Lissabon</departure-station>
+    <arrival-station>Minsk</arrival-station>
+    <departure-datetime>2016-11-22 19:30:00</departure-datetime>
+    <arrival-datetime>2016-11-27 00:45:00</arrival-datetime>
+    <travel-time>456300</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>1</train-id>
+    <departure-station>Paris</departure-station>
+    <arrival-station>Madrid</arrival-station>
+    <departure-datetime>1993-07-12 09:00:00</departure-datetime>
+    <arrival-datetime>1993-07-18 15:30:00</arrival-datetime>
+    <travel-time>558000</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>10</train-id>
+    <departure-station>New-York</departure-station>
+    <arrival-station>Moscow</arrival-station>
+    <departure-datetime>1999-10-10 07:45:00</departure-datetime>
+    <arrival-datetime>1999-10-16 13:00:00</arrival-datetime>
+    <travel-time>547800</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>7</train-id>
+    <departure-station>Moscow</departure-station>
+    <arrival-station>Paris</arrival-station>
+    <departure-datetime>2006-02-15 05:30:00</departure-datetime>
+    <arrival-datetime>2006-02-19 11:45:00</arrival-datetime>
+    <travel-time>414300</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>8</train-id>
+    <departure-station>Minsk</departure-station>
+    <arrival-station>Madrid</arrival-station>
+    <departure-datetime>1995-09-30 17:00:00</departure-datetime>
+    <arrival-datetime>1995-10-06 20:30:00</arrival-datetime>
+    <travel-time>569400</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>3</train-id>
+    <departure-station>Madrid</departure-station>
+    <arrival-station>Rome</arrival-station>
+    <departure-datetime>2002-03-05 18:15:00</departure-datetime>
+    <arrival-datetime>2002-03-11 21:30:00</arrival-datetime>
+    <travel-time>538500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>6</train-id>
+    <departure-station>Rome</departure-station>
+    <arrival-station>Madrid</arrival-station>
+    <departure-datetime>1989-04-22 11:00:00</departure-datetime>
+    <arrival-datetime>1989-04-27 15:30:00</arrival-datetime>
+    <travel-time>465000</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>2</train-id>
+    <departure-station>Berlin</departure-station>
+    <arrival-station>Lissabon</arrival-station>
+    <departure-datetime>2008-08-18 16:45:00</departure-datetime>
+    <arrival-datetime>2008-08-24 22:00:00</arrival-datetime>
+    <travel-time>552900</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>9</train-id>
+    <departure-station>Berlin</departure-station>
+    <arrival-station>Rome</arrival-station>
+    <departure-datetime>2004-06-09 12:30:00</departure-datetime>
+    <arrival-datetime>2004-06-16 17:45:00</arrival-datetime>
+    <travel-time>622500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>10</train-id>
+    <departure-station>Rome</departure-station>
+    <arrival-station>Berlin</arrival-station>
+    <departure-datetime>2017-12-03 07:00:00</departure-datetime>
+    <arrival-datetime>2017-12-08 14:15:00</arrival-datetime>
+    <travel-time>484500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>3</train-id>
+    <departure-station>Lissabon</departure-station>
+    <arrival-station>Madrid</arrival-station>
+    <departure-datetime>1996-05-28 18:30:00</departure-datetime>
+    <arrival-datetime>1996-06-03 23:45:00</arrival-datetime>
+    <travel-time>525900</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>7</train-id>
+    <departure-station>New-York</departure-station>
+    <arrival-station>Moscow</arrival-station>
+    <departure-datetime>2013-01-15 06:15:00</departure-datetime>
+    <arrival-datetime>2013-01-22 15:30:00</arrival-datetime>
+    <travel-time>611100</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>10</train-id>
+    <departure-station>Moscow</departure-station>
+    <arrival-station>New-York</arrival-station>
+    <departure-datetime>1992-09-07 19:30:00</departure-datetime>
+    <arrival-datetime>1992-09-13 23:45:00</arrival-datetime>
+    <travel-time>525900</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>6</train-id>
+    <departure-station>Minsk</departure-station>
+    <arrival-station>Paris</arrival-station>
+    <departure-datetime>1986-12-02 10:45:00</departure-datetime>
+    <arrival-datetime>1986-12-08 18:00:00</arrival-datetime>
+    <travel-time>514200</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>8</train-id>
+    <departure-station>Lissabon</departure-station>
+    <arrival-station>Madrid</arrival-station>
+    <departure-datetime>2019-02-14 06:00:00</departure-datetime>
+    <arrival-datetime>2019-02-20 14:15:00</arrival-datetime>
+    <travel-time>547500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>2</train-id>
+    <departure-station>Madrid</departure-station>
+    <arrival-station>Berlin</arrival-station>
+    <departure-datetime>2001-08-09 12:15:00</departure-datetime>
+    <arrival-datetime>2001-08-13 20:30:00</arrival-datetime>
+    <travel-time>389100</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>1</train-id>
+    <departure-station>Moscow</departure-station>
+    <arrival-station>Lissabon</arrival-station>
+    <departure-datetime>2004-06-11 14:30:00</departure-datetime>
+    <arrival-datetime>2004-06-15 21:45:00</arrival-datetime>
+    <travel-time>374100</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>3</train-id>
+    <departure-station>Minsk</departure-station>
+    <arrival-station>Rome</arrival-station>
+    <departure-datetime>2010-06-29 15:00:00</departure-datetime>
+    <arrival-datetime>2010-07-05 19:30:00</arrival-datetime>
+    <travel-time>531000</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>9</train-id>
+    <departure-station>Berlin</departure-station>
+    <arrival-station>Paris</arrival-station>
+    <departure-datetime>1987-09-02 10:30:00</departure-datetime>
+    <arrival-datetime>1987-09-06 20:45:00</arrival-datetime>
+    <travel-time>390300</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>4</train-id>
+    <departure-station>Lissabon</departure-station>
+    <arrival-station>Moscow</arrival-station>
+    <departure-datetime>1999-11-05 14:00:00</departure-datetime>
+    <arrival-datetime>1999-11-10 18:15:00</arrival-datetime>
+    <travel-time>463500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>8</train-id>
+    <departure-station>Moscow</departure-station>
+    <arrival-station>Rome</arrival-station>
+    <departure-datetime>2002-10-03 07:45:00</departure-datetime>
+    <arrival-datetime>2002-10-07 15:00:00</arrival-datetime>
+    <travel-time>329100</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>1</train-id>
+    <departure-station>Moscow</departure-station>
+    <arrival-station>Berlin</arrival-station>
+    <departure-datetime>2018-05-17 19:00:00</departure-datetime>
+    <arrival-datetime>2018-05-21 22:15:00</arrival-datetime>
+    <travel-time>354300</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>6</train-id>
+    <departure-station>Rome</departure-station>
+    <arrival-station>Berlin</arrival-station>
+    <departure-datetime>1997-03-13 17:30:00</departure-datetime>
+    <arrival-datetime>1997-03-20 21:45:00</arrival-datetime>
+    <travel-time>536100</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>5</train-id>
+    <departure-station>Paris</departure-station>
+    <arrival-station>Rome</arrival-station>
+    <departure-datetime>1990-01-18 09:15:00</departure-datetime>
+    <arrival-datetime>1990-01-22 12:30:00</arrival-datetime>
+    <travel-time>348300</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>2</train-id>
+    <departure-station>Berlin</departure-station>
+    <arrival-station>Moscow</arrival-station>
+    <departure-datetime>1984-12-31 06:00:00</departure-datetime>
+    <arrival-datetime>1985-01-04 13:15:00</arrival-datetime>
+    <travel-time>444300</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>10</train-id>
+    <departure-station>Madrid</departure-station>
+    <arrival-station>Minsk</arrival-station>
+    <departure-datetime>1988-11-20 07:45:00</departure-datetime>
+    <arrival-datetime>1988-11-24 15:00:00</arrival-datetime>
+    <travel-time>339300</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>3</train-id>
+    <departure-station>New-York</departure-station>
+    <arrival-station>London</arrival-station>
+    <departure-datetime>2019-07-29 05:30:00</departure-datetime>
+    <arrival-datetime>2019-08-04 11:45:00</arrival-datetime>
+    <travel-time>522300</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>9</train-id>
+    <departure-station>Lissabon</departure-station>
+    <arrival-station>Berlin</arrival-station>
+    <departure-datetime>2007-06-05 16:15:00</departure-datetime>
+    <arrival-datetime>2007-06-10 23:30:00</arrival-datetime>
+    <travel-time>458100</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>7</train-id>
+    <departure-station>Rome</departure-station>
+    <arrival-station>Minsk</arrival-station>
+    <departure-datetime>2016-05-20 17:00:00</departure-datetime>
+    <arrival-datetime>2016-05-26 21:15:00</arrival-datetime>
+    <travel-time>537300</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>5</train-id>
+    <departure-station>London</departure-station>
+    <arrival-station>Berlin</arrival-station>
+    <departure-datetime>2014-11-02 08:45:00</departure-datetime>
+    <arrival-datetime>2014-11-06 15:00:00</arrival-datetime>
+    <travel-time>358500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>6</train-id>
+    <departure-station>Madrid</departure-station>
+    <arrival-station>Paris</arrival-station>
+    <departure-datetime>2008-02-13 14:30:00</departure-datetime>
+    <arrival-datetime>2008-02-19 23:45:00</arrival-datetime>
+    <travel-time>556500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>4</train-id>
+    <departure-station>Berlin</departure-station>
+    <arrival-station>Lissabon</arrival-station>
+    <departure-datetime>1980-03-28 17:45:00</departure-datetime>
+    <arrival-datetime>1980-04-02 21:00:00</arrival-datetime>
+    <travel-time>370500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>1</train-id>
+    <departure-station>Minsk</departure-station>
+    <arrival-station>Berlin</arrival-station>
+    <departure-datetime>1991-02-01 06:30:00</departure-datetime>
+    <arrival-datetime>1991-02-06 13:45:00</arrival-datetime>
+    <travel-time>462900</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>9</train-id>
+    <departure-station>Lissabon</departure-station>
+    <arrival-station>Rome</arrival-station>
+    <departure-datetime>1995-08-05 14:00:00</departure-datetime>
+    <arrival-datetime>1995-08-11 20:15:00</arrival-datetime>
+    <travel-time>549300</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>10</train-id>
+    <departure-station>Rome</departure-station>
+    <arrival-station>Paris</arrival-station>
+    <departure-datetime>2003-12-30 09:15:00</departure-datetime>
+    <arrival-datetime>2004-01-05 14:30:00</arrival-datetime>
+    <travel-time>546900</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>7</train-id>
+    <departure-station>Berlin</departure-station>
+    <arrival-station>Moscow</arrival-station>
+    <departure-datetime>2005-04-22 15:00:00</departure-datetime>
+    <arrival-datetime>2005-04-26 19:15:00</arrival-datetime>
+    <travel-time>354300</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>8</train-id>
+    <departure-station>Paris</departure-station>
+    <arrival-station>Rome</arrival-station>
+    <departure-datetime>1992-10-10 16:30:00</departure-datetime>
+    <arrival-datetime>1992-10-14 20:45:00</arrival-datetime>
+    <travel-time>361500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>3</train-id>
+    <departure-station>Minsk</departure-station>
+    <arrival-station>Lissabon</arrival-station>
+    <departure-datetime>2012-06-18 07:00:00</departure-datetime>
+    <arrival-datetime>2012-06-24 11:15:00</arrival-datetime>
+    <travel-time>533100</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>5</train-id>
+    <departure-station>Moscow</departure-station>
+    <arrival-station>London</arrival-station>
+    <departure-datetime>2009-04-07 08:15:00</departure-datetime>
+    <arrival-datetime>2009-04-11 12:30:00</arrival-datetime>
+    <travel-time>373500</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>6</train-id>
+    <departure-station>Berlin</departure-station>
+    <arrival-station>Lissabon</arrival-station>
+    <departure-datetime>2006-12-11 16:00:00</departure-datetime>
+    <arrival-datetime>2006-12-15 22:15:00</arrival-datetime>
+    <travel-time>374100</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>10</train-id>
+    <departure-station>Lissabon</departure-station>
+    <arrival-station>Berlin</arrival-station>
+    <departure-datetime>2015-03-24 13:15:00</departure-datetime>
+    <arrival-datetime>2015-03-30 21:30:00</arrival-datetime>
+    <travel-time>554100</travel-time>
+</train-trip>
+<train-trip>
+    <train-id>4</train-id>
+    <departure-station>Rome</departure-station>
+    <arrival-station>Berlin</arrival-station>
+    <departure-datetime>1981-08-29 10:45:00</departure-datetime>
+    <arrival-datetime>1981-09-04 17:00:00</arrival-datetime>
+    <travel-time>504300</travel-time>
+</train-trip>
+    <train-trip><train-id>7</train-id><departure-station>Paris</departure-station><arrival-station>Warsaw</arrival-station><departure-datetime>1000-01-01 00:10:00</departure-datetime><arrival-datetime>1000-01-02 00:01:00</arrival-datetime><travel-time>85860</travel-time></train-trip></train-trips>
+    <trains>
+        <train id="1">The Orient Express 1883</train>
+        <train id="2">The Trans-Siberian Express 1898</train>
+        <train id="3">The Flying Scotsman 1928</train>
+        <train id="4">Frontier Mail 1928 </train>
+        <train id="5">The Grand Trunk Express 1929</train>
+        <train id="6">The Mallard 1938</train>
+        <train id="7">The Qinghai-Tibet Railway</train>
+        <train id="8">The Shinkansen 1964</train>
+        <train id="9">The Super Chief 1937</train>
+        <train id="10">Indian Pacific 1970</train>
+    </trains>
+
+    <stations>
+        <station id="1">Minsk</station>
+        <station id="2">London</station>
+        <station id="3">Paris</station>
+        <station id="4">New-York</station>
+        <station id="5">Moscow</station>
+        <station id="6">Rome</station>
+        <station id="7">Madrid</station>
+        <station id="8">Lissabon</station>
+        <station id="9">Berlin</station>
+        <station id="10">Warsaw</station>
+    </stations>
+</railway-depot>
