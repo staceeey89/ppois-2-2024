@@ -1,0 +1,2 @@
+class BuySellException(Exception):
+    pass
