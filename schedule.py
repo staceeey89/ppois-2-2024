@@ -15,6 +15,9 @@ class Schedule:
         self.__delta_time: timedelta = timedelta(minutes=0)
         self.__trains_counter: int = 0
 
+    def get_stations_list(self):
+        return self.__stations
+
     def add_depot(self, depot: Depot):
         try:
             if len(self.__depots) < 2:
@@ -26,7 +29,7 @@ class Schedule:
 
     def add_train(self, train: Train):
         try:
-            if len(self.__stations) >= len(self.__trains):
+            if 2 * len(self.__stations) > len(self.__trains):
                 self.__trains.append(train)
             else:
                 raise ValueError("Subway is overfilled by trains!")
@@ -35,7 +38,7 @@ class Schedule:
 
     def fill_depots(self):
         flag: bool = False
-        for train in self.__trains:
+        for train in self.__trains[:]:
             if flag is False:
                 self.__depots[0].pull_into(train)
                 flag = True
@@ -84,39 +87,59 @@ class Schedule:
                 raise ValueError("Depots are empty")
             if self.__stations[0].get_platforms()[0].train is None:
                 self.__stations[0].get_platforms()[0].train = self.__depots[0].pull_out_train()
+                self.__stations[0].get_platforms()[0].train.platform = self.__stations[0].get_platforms()[0]
+
                 self.__trains_counter += 1
-            else:
+            elif self.__stations[0].get_platforms()[0].train is not None:
                 raise ValueError(f"Station {self.__stations[0].number}\n Platform 0 \nAlready has a train")
             if self.__stations[-1].get_platforms()[1].train is None:
                 self.__stations[-1].get_platforms()[1].train = self.__depots[1].pull_out_train()
+                self.__stations[-1].get_platforms()[1].train.platform = self.__stations[-1].get_platforms()[1]
                 self.__trains_counter += 1
-            else:
+            elif self.__stations[-1].get_platforms()[1].train is not None:
                 raise ValueError(f"Station {self.__stations[1].number}\n Platform 1 \nAlready has a train")
         except ValueError as e:
             print(e)
 
     def next_phase(self):
+        skip_bool: bool = False
         self.set_time_delay()
         for i in range(len(self.__stations) - 1):
-            if self.__stations[len(self.__stations) - 1].get_platforms()[0].train is not None:
-                self.__depots[1].pull_into(self.__stations[len(self.__stations)-1].get_platforms()[0].train)
-                self.__stations[len(self.__stations)-1].get_platforms()[0].train = None
-                self.__trains_counter -= 1
 
-            if self.__stations[i+1].get_platforms()[0].train is None:
-                self.__stations[i].get_platforms()[0].train.switch_station(self.__stations[i+1].get_platforms()[0])
-            elif self.__stations[i+1].get_platforms()[0].train is not None:
+            if self.__stations[len(self.__stations) - 1].get_platforms()[0].train is not None:
+                for passenger in self.__stations[len(self.__stations) - 1].get_platforms()[0].train.get_passengers():
+                    passenger.disembark(self.__stations[len(self.__stations) - 1].get_platforms()[0].train)
+                self.__depots[1].pull_into(self.__stations[len(self.__stations) - 1].get_platforms()[0].train)
+                self.__stations[len(self.__stations) - 1].get_platforms()[0].train.platform = None
+                self.__stations[len(self.__stations) - 1].get_platforms()[0].train = None
+                self.__trains_counter -= 1
+            if skip_bool:
+                skip_bool = False
                 continue
-        for i in range(1, len(self.__stations)):
+            if self.__stations[i + 1].get_platforms()[0].train is None and self.__stations[i].get_platforms()[0].train is not None :
+                skip_bool = True
+                self.__stations[i].get_platforms()[0].train.switch_station(self.__stations[i + 1].get_platforms()[0])
+                self.__stations[i].get_platforms()[0].train = None
+                continue
+            elif self.__stations[i + 1].get_platforms()[0].train is not None:
+                continue
+        skip_bool: bool = False
+        for i in range(len(self.__stations) - 1, 0, -1):
             if self.__stations[0].get_platforms()[1].train is not None:
+                for passenger in self.__stations[0].get_platforms()[1].train.get_passengers():
+                    passenger.disembark(self.__stations[0].get_platforms()[1].train)
                 self.__depots[0].pull_into(self.__stations[0].get_platforms()[1].train)
+                self.__stations[0].get_platforms()[1].train.platform = None
                 self.__stations[0].get_platforms()[1].train = None
                 self.__trains_counter -= 1
-
-            if self.__stations[i-1].get_platforms()[1].train is None:
-                self.__stations[i].get_platforms()[1].train.switch_station(self.__stations[i-1].get_platforms()[1])
-            elif self.__stations[i-1].get_platforms()[1].train is not None:
+            if skip_bool:
+                skip_bool = False
                 continue
-
+            if self.__stations[i - 1].get_platforms()[1].train is None and self.__stations[i].get_platforms()[1].train is not None:
+                skip_bool = True
+                self.__stations[i].get_platforms()[1].train.switch_station(self.__stations[i-1].get_platforms()[1])
+                self.__stations[i].get_platforms()[1].train = None
+                continue
+            elif self.__stations[i - 1].get_platforms()[1].train is not None:
+                continue
         self.__start_time += self.__delta_time
-

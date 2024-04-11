@@ -57,11 +57,17 @@ class Passenger(AbstractPassenger):
     def station(self):
         return self.__station
 
+    @station.setter
+    def station(self,station: Station):
+        self.__station = station
+
     def board(self, train: AbstractTrain):
         try:
             if self.__platform is not None and self.__platform.train == train:
                 train.add_passenger(self)
                 self.__station = None
+                self.__platform.remove_passenger(self)
+
             elif self.__platform is None:
                 raise ValueError("Choose a platform!")
             elif self.__platform.train is None:

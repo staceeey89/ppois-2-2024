@@ -12,9 +12,8 @@ from station import Station
 
 def main():
     passengers: List[Passenger] = []
-    trains: List[Train] = []
     bool_is_started: bool = 0
-    global chosen_passenger
+    global chosen_passenger, choose_platf
     chosen_passenger = -1
     global chosen_station
     chosen_station = -1
@@ -94,6 +93,8 @@ def main():
                     break
                 else:
                     print("Такой станции нет.")
+
+            passengers[chosen_passenger].station = stations[chosen_station]
             print("Станция выбрана!")
             continue
         elif choice == 6:
@@ -108,19 +109,23 @@ def main():
         elif choice == 8:
             while True:
                 print("Введите номер платформы: 0 или 1")
-                choose_platf = bool(input())
+                choose_platf = int(input())
                 if choose_platf == 0 or choose_platf == 1:
                     break
             passengers[chosen_passenger].choose_a_platform(stations[chosen_station].get_platforms()[choose_platf])
+            stations[chosen_station].get_platforms()[choose_platf].add_passenger(passengers[chosen_passenger])
             print("Платформа выбрана!")
             continue
         elif choice == 9:
-            passengers[chosen_passenger].board(passengers[chosen_passenger].platform.train)
-            print("Пассажир в поезде!")
+            if schedule.get_stations_list()[chosen_station].get_platforms()[choose_platf].train is not None:
+                passengers[chosen_passenger].board(stations[chosen_station].get_platforms()[passengers[chosen_passenger].platform.number].train)
+                print("Пассажир в поезде!")
+            else:
+                print("Поезда нет")
             continue
 
         elif choice == 10:
-            passengers[chosen_passenger].disembark(passengers[chosen_passenger].platform.train)
+            schedule.get_stations_list()[chosen_station].get_platforms()[choose_platf].train.get_passengers()[chosen_passenger].disembark(schedule.get_stations_list()[chosen_station].get_platforms()[choose_platf].train)
             print("Пассажир покинул поезд!")
             continue
         elif choice == 11:
@@ -130,30 +135,32 @@ def main():
             if len(stations) < 2:
                 print(f"Недостаточно станций для движения ({len(stations)})")
                 continue
-            if len(trains) < 2:
-                print(f"Недостаточно поездов для движения ({len(stations)})")
-                continue
 
             bool_is_started = True
-            for train in trains:
-                schedule.add_train(train)
             schedule.fill_depots()
-            schedule.run_a_train()
-            print("Поезда уже на первых станциях!")
+            print("Поезда готовы к запуску!")
             continue
         elif choice == 12:
             schedule.next_phase()
+            if passengers[chosen_passenger].platform.number == 0 and chosen_station + 1 != len(stations):
+                chosen_station += 1
+            elif passengers[chosen_passenger].platform.number == 1 and chosen_station - 1 != -1:
+                chosen_station -= 1
             print("Поезда уже на следующей станции!")
         elif choice == 13:
             train: Train = Train()
-            trains.append(train)
+            schedule.add_train(train)
             print("Поезд добавлен в список!")
         elif choice == 14:
             schedule.run_a_train()
             print("Поезда запущены в первые станции!")
         elif choice == 15:
             schedule.print_info()
-            print(f"Текущая станция {passengers[chosen_passenger].station}")
+            if passengers[chosen_passenger].station is not None:
+                print(f"Текущая станция {passengers[chosen_passenger].station.number}")
+            else:
+                print(f"Пассажир еще в поезде")
+            continue
         elif choice == -1:
             break
 
