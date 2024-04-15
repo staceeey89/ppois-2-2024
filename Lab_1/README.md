@@ -30,11 +30,11 @@
 
 - После выбора операции пользователь вводит нужные данные и операция завершается.
 
-![[image](\images\03.png)](https://github.com/MoonF1re/ppois-2-2024/blob/new_branch/Lab_1/images/02.png?raw=true)
+![[image](\images\03.png)](https://github.com/MoonF1re/ppois-2-2024/blob/new_branch/Lab_1/images/03.png?raw=true)
 
 - После выполнения всех нужных операций пользователь выходит из программы.
 
-![[image](\images\04.png)](https://github.com/MoonF1re/ppois-2-2024/blob/new_branch/Lab_1/images/03.png?raw=true)
+![[image](\images\04.png)](https://github.com/MoonF1re/ppois-2-2024/blob/new_branch/Lab_1/images/04.png?raw=true)
 
 
 ## Тестирование:
