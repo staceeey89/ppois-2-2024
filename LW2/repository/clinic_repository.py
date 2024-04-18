@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from entity.clinic import PetRecord
 import xml.dom.minidom
 import xml.sax
@@ -63,17 +65,16 @@ class PetRecordHandler(xml.sax.ContentHandler):
 
     def endElement(self, tag):
         if tag == "pet_record":
-            # Очищаем данные от лишних символов
             self.pet_name = self.pet_name.strip()
             self.birth_date = self.birth_date.strip()
             self.last_visit_date = self.last_visit_date.strip()
             self.vet_full_name = self.vet_full_name.strip()
             self.diagnosis = self.diagnosis.strip()
 
-            # Добавляем запись в список
             self.records.append(
-                PetRecord(self.pet_name, self.birth_date, self.last_visit_date, self.vet_full_name, self.diagnosis))
-            # Сбрасываем данные
+                PetRecord(self.pet_name, datetime.strptime(self.birth_date, "%m/%d/%y").date(),
+                          datetime.strptime(self.last_visit_date, "%m/%d/%y").date(), self.vet_full_name,
+                          self.diagnosis))
             self.pet_name = ""
             self.birth_date = ""
             self.last_visit_date = ""
@@ -97,28 +98,25 @@ class PetRecordRepositoryXML:
     @staticmethod
     def write_to_xml_file(records, filename):
         try:
-            # Читаем существующий XML-документ
             doc = xml.dom.minidom.parse(filename)
             root = doc.documentElement
         except FileNotFoundError:
-            # Если файл не найден, создаем новый XML-документ
             doc = xml.dom.minidom.Document()
             root = doc.createElement("pet_records")
             doc.appendChild(root)
 
-        # Добавляем новые записи в XML-документ
         for record in records:
             record_element = doc.createElement("pet_record")
             root.appendChild(record_element)
 
-            # Добавляем атрибуты записи
             PetRecordRepositoryXML.add_text_element(doc, record_element, "pet_name", record.pet_name)
-            PetRecordRepositoryXML.add_text_element(doc, record_element, "birth_date", str(record.birth_date))
-            PetRecordRepositoryXML.add_text_element(doc, record_element, "last_visit_date", str(record.last_visit_date))
+            PetRecordRepositoryXML.add_text_element(doc, record_element, "birth_date",
+                                                    record.birth_date.strftime("%m/%d/%y"))
+            PetRecordRepositoryXML.add_text_element(doc, record_element, "last_visit_date",
+                                                    record.last_visit_date.strftime("%m/%d/%y"))
             PetRecordRepositoryXML.add_text_element(doc, record_element, "vet_full_name", record.vet_full_name)
             PetRecordRepositoryXML.add_text_element(doc, record_element, "diagnosis", record.diagnosis)
 
-        # Записываем XML-документ в файл
         with open(filename, "w") as file:
             file.write(doc.toprettyxml(indent='', newl=''))
 
@@ -141,20 +139,6 @@ class PetRecordRepositoryList:
     def __init__(self):
         self.records = []
 
-        # pet_record_1 = PetRecord("Pet_1", "2022-01-01", "2022-01-10", "Dr. Vet_1", "Diagnosis_1")
-        # pet_record_2 = PetRecord("Pet_2", "2022-01-01", "2022-01-10", "Dr. Vet_2", "Diagnosis_2")
-        # pet_record_3 = PetRecord("Pet_3", "2022-01-01", "2022-01-10", "Dr. Vet_3", "Diagnosis_3")
-        # pet_record_4 = PetRecord("Pet_4", "2022-01-01", "2022-01-10", "Dr. Vet_4", "Diagnosis_4")
-        # pet_record_5 = PetRecord("Pet_5", "2022-01-01", "2022-01-10", "Dr. Vet_5", "Diagnosis_5")
-        # pet_record_6 = PetRecord("Pet_6", "2022-01-01", "2022-01-10", "Dr. Vet_6", "Diagnosis_6")
-        # pet_record_7 = PetRecord("Pet_7", "2022-01-01", "2022-01-10", "Dr. Vet_7", "Diagnosis_7")
-        # pet_record_8 = PetRecord("Pet_8", "2022-01-01", "2022-01-10", "Dr. Vet_8", "Diagnosis_8")
-        # pet_record_9 = PetRecord("Pet_9", "2022-01-01", "2022-01-10", "Dr. Vet_9", "Diagnosis_9")
-        # pet_record_10 = PetRecord("Pet_10", "2022-01-01", "2022-01-10", "Dr. Vet_10", "Diagnosis_10")
-        #
-        # self.records.extend([pet_record_1, pet_record_2, pet_record_3, pet_record_4, pet_record_5,
-        #                      pet_record_6, pet_record_7, pet_record_8, pet_record_9, pet_record_10])
-
     def add_record(self, pet_record: PetRecord):
         self.records.append(pet_record)
 
@@ -171,14 +155,6 @@ class PetRecordRepositoryList:
         else:
             return None
 
-    def search_records(self, criteria):
-        results = []
-        for record in self.records:
-            if criteria.lower() in record.pet_name.lower() or \
-                    criteria.lower() in record.vet_full_name.lower() or \
-                    criteria.lower() in record.diagnosis.lower():
-                results.append(record)
-        return results
 
     def get_all_records(self):
         return self.records
@@ -193,14 +169,15 @@ class PetRecordRepositoryList:
     def find_by_birth_and_name(self, birth_date, name):
         result_records = []
         for record in self.records:
-            if record.pet_name == name and record.birth_date == birth_date:
+            if record.pet_name == name and record.birth_date.strftime("%m/%d/%y") == birth_date.strftime("%m/%d/%y"):
                 result_records.append(record)
         return result_records
 
     def find_by_last_visit_and_vet(self, last_visit_date, vet_full_name):
         result_records = []
         for record in self.records:
-            if record.last_visit_date == last_visit_date and record.vet_full_name == vet_full_name:
+            if record.last_visit_date.strftime("%m/%d/%y") == last_visit_date.strftime(
+                    "%m/%d/%y") and record.vet_full_name == vet_full_name:
                 result_records.append(record)
         return result_records
 
@@ -208,7 +185,7 @@ class PetRecordRepositoryList:
         deleted_count = 0
         records_copy = self.records[:]
         for record in records_copy:
-            if record.pet_name == name and record.birth_date == birth_date:
+            if record.pet_name == name and record.birth_date.strftime("%m/%d/%y") == birth_date.strftime("%m/%d/%y"):
                 self.records.remove(record)
                 deleted_count += 1
         return deleted_count
@@ -217,7 +194,8 @@ class PetRecordRepositoryList:
         deleted_count = 0
         records_copy = self.records[:]
         for record in records_copy:
-            if record.last_visit_date == last_visit_date and record.vet_full_name == vet_full_name:
+            if record.last_visit_date.strftime("%m/%d/%y") == last_visit_date.strftime(
+                    "%m/%d/%y") and record.vet_full_name == vet_full_name:
                 self.records.remove(record)
                 deleted_count += 1
         return deleted_count

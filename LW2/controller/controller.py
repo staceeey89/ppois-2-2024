@@ -1,10 +1,12 @@
+from datetime import datetime
+
 from entity.clinic import PetRecord
 from repository.clinic_repository import PetRecordRepositoryList, PetRecordRepositorySQL, PetRecordRepositoryXML
-from constants import LIMIT
 
 
 class Controller:
-    def __init__(self, list_repository: PetRecordRepositoryList, db_repository: PetRecordRepositorySQL, xml_repository: PetRecordRepositoryXML):
+    def __init__(self, list_repository: PetRecordRepositoryList, db_repository: PetRecordRepositorySQL,
+                 xml_repository: PetRecordRepositoryXML):
         self.list_repository = list_repository
         self.db_repository = db_repository
         self.xml_repository = xml_repository
@@ -12,35 +14,35 @@ class Controller:
     def add_record(self, pet_record: PetRecord):
         self.list_repository.add_record(pet_record)
 
-    def find_by_diagnosis(self, diagnosis: str, offset):
+    def find_by_diagnosis(self, diagnosis: str, offset, limit):
         records = self.list_repository.find_by_diagnosis(diagnosis)
         result_records = []
-        if LIMIT * offset < len(records):
-            for i in range(LIMIT * offset, min(LIMIT * (offset + 1), len(records))):
+        if limit * offset < len(records):
+            for i in range(limit * offset, min(limit * (offset + 1), len(records))):
                 result_records.append(records[i])
         return result_records
 
-    def find_by_birth_and_name(self, value1, value2, offset):
+    def find_by_birth_and_name(self, value1, value2, offset, limit):
         records = self.list_repository.find_by_birth_and_name(value1, value2)
         result_records = []
-        if LIMIT * offset < len(records):
-            for i in range(LIMIT * offset, min(LIMIT * (offset + 1), len(records))):
+        if limit * offset < len(records):
+            for i in range(limit * offset, min(limit * (offset + 1), len(records))):
                 result_records.append(records[i])
         return result_records
 
-    def find_by_last_visit_and_vet(self, value1, value2, offset):
+    def find_by_last_visit_and_vet(self, value1, value2, offset, limit):
         records = self.list_repository.find_by_last_visit_and_vet(value1, value2)
         result_records = []
-        if LIMIT * offset < len(records):
-            for i in range(LIMIT * offset, min(LIMIT * (offset + 1), len(records))):
+        if limit * offset < len(records):
+            for i in range(limit * offset, min(limit * (offset + 1), len(records))):
                 result_records.append(records[i])
         return result_records
 
-    def get_record_with_offset(self, offset):
+    def get_record_with_offset(self, offset, limit):
         result_records = []
         all_records = self.list_repository.get_all_records()
-        if LIMIT * offset < len(all_records):
-            for i in range(LIMIT * offset, min(LIMIT * (offset + 1), len(all_records))):
+        if limit * offset < len(all_records):
+            for i in range(limit * offset, min(limit * (offset + 1), len(all_records))):
                 result_records.append(all_records[i])
         return result_records
 
@@ -68,6 +70,15 @@ class Controller:
     def get_all_records(self):
         return self.list_repository.get_all_records()
 
+    def get_all_records_by_diagnosis(self, diagnosis):
+        return self.list_repository.find_by_diagnosis(diagnosis)
+
+    def get_all_records_by_birth_and_name(self, value1, value2):
+        return self.list_repository.find_by_birth_and_name(value1, value2)
+
+    def get_all_records_by_last_visit_and_vet(self, value1, value2):
+        return self.list_repository.find_by_last_visit_and_vet(value1, value2)
+
     def add_to_db(self):
         records = self.list_repository.get_all_records()
         for record in records:
@@ -77,7 +88,8 @@ class Controller:
         rows = self.db_repository.find_clinic_records()
         records = []
         for row in rows:
-            pet_record = PetRecord(row[0], row[1], row[2], row[3], row[4])
+            pet_record = PetRecord(row[0], datetime.strptime(row[1], "%Y-%m-%d").date(),
+                                   datetime.strptime(row[2], "%Y-%m-%d").date(), row[3], row[4])
             records.append(pet_record)
         self.list_repository.records.extend(records)
 
@@ -87,6 +99,3 @@ class Controller:
 
     def write_to_xml_file(self):
         self.xml_repository.write_to_xml_file(self.list_repository.records, "pet_records.xml")
-
-
-
