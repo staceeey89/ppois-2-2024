@@ -1,13 +1,11 @@
 from enum import Enum
-from enums.position import BasketballPosition, VolleyballPosition, FootballPosition
-from enums.team import Team
-from enums.type_of_sport import TypeOfSport
-from enums.category import Category
+from model.enums import Team, TypeOfSport, Category
 
 
 class Sportsman:
 
-    def __init__(self, name: str, team: Team, position: Enum, titles: int, type_of_sport: TypeOfSport, category: Category):
+    def __init__(self, name: str, team: Team, position: Enum, titles: int, type_of_sport: TypeOfSport,
+                 category: Category):
         self.__name = name
         self.__team = team
         self.__position = position
@@ -38,3 +36,10 @@ class Sportsman:
     @property
     def category(self):
         return self.__category
+
+    def __eq__(self, other):
+        if isinstance(other, Sportsman):
+            return (self.__name == other.__name and self.__team == other.__team and self.__position == other.__position
+                    and self.__titles == other.__titles and self.__type_of_sport == other.__type_of_sport
+                    and self.__category == other.__category)
+        return False
