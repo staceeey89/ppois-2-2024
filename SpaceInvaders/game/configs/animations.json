@@ -1,0 +1,16 @@
+{
+  "animations": {
+    "enemy_explosion": {
+      "sprite": "assets/animations/enemy_explosion.png",
+      "frame_duration": 10
+    },
+    "bullet_explosion": {
+      "sprite": "assets/animations/bullet_explosion.png",
+      "frame_duration": 10
+    },
+    "player_explosion": {
+      "sprite": "assets/animations/player_explosion.png",
+      "frame_duration": 180
+    }
+  }
+}

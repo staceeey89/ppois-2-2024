@@ -1,0 +1,48 @@
+{
+  "weapons": {
+    "player_basic": {
+      "sprite": "assets/bullet.png",
+      "speed": -5,
+      "sound": "basic"
+    },
+    "player_advanced": {
+      "sprite": "assets/advanced.png",
+      "speed": -5,
+      "advanced": true,
+      "sound": "advanced"
+    },
+    "player_boss": {
+      "sprite": "assets/projectile2.png",
+      "speed": -10,
+      "sound": "boss"
+    },
+    "basic": {
+      "sprite": "assets/bullet.png",
+      "speed": 5,
+      "sound": "basic"
+    },
+    "advanced": {
+      "sprite": "assets/advanced.png",
+      "speed": 5,
+      "advanced": true,
+      "sound": "advanced"
+    },
+    "boss": {
+      "sprite": "assets/projectile2.png",
+      "speed": 10,
+      "sound": "boss"
+    },
+    "dropped_basic": {
+      "sprite": "assets/dropped_bullet.png",
+      "speed": 3
+    },
+    "dropped_advanced": {
+      "sprite": "assets/dropped_advanced.png",
+      "speed": 3
+    },
+    "dropped_boss": {
+      "sprite": "assets/dropped_boss.png",
+      "speed": 3
+    }
+  }
+}

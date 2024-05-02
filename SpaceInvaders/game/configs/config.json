@@ -1,0 +1,60 @@
+{
+  "constants": {
+    "SCREEN_WIDTH": 1000,
+    "SCREEN_HEIGHT": 800,
+    "WHITE": [255, 255, 255],
+    "BLACK": [0, 0, 0],
+    "GREEN": [0, 255, 0],
+    "RED": [255, 0, 0],
+    "BLUE": [0, 0, 255],
+    "PLAYER_WIDTH": 64,
+    "PLAYER_HEIGHT": 64,
+    "ENEMY_WIDTH": 50,
+    "ENEMY_HEIGHT": 35,
+    "BULLET_WIDTH": 16,
+    "BULLET_HEIGHT": 32,
+    "BULLET_EXPLOSION_WIDTH": 50,
+    "BULLET_EXPLOSION_HEIGHT": 35,
+    "BRICK_WIDTH": 25,
+    "BRICK_HEIGHT": 25,
+    "SPACING": 10,
+    "FPS": 60,
+    "CAPTION": "Space Invaders"
+  },
+  "paths": {
+    "enemies": "configs/enemies.json",
+    "weapons": "configs/weapons.json",
+    "waves": "configs/waves.json",
+    "animations": "configs/animations.json",
+    "scores": "instance/scores.json"
+  },
+  "images": {
+    "player": "assets/player.png",
+    "enemy": "assets/enemy.png",
+    "bullet": "assets/bullet.png",
+    "brick": [
+      "assets/wall_0.png",
+      "assets/wall_1.png",
+      "assets/wall_2.png",
+      "assets/wall_3.png"
+    ]
+  },
+  "sounds": {
+    "music": "assets/sound/brought-to-you.mp3",
+    "basic": "assets/sound/invaderkilled.wav",
+    "advanced": "assets/sound/advanced.wav",
+    "boss": "assets/sound/shoot.wav",
+    "hit": "assets/sound/fastinvader4.wav",
+    "flagshiphit": "assets/sound/flagshiphit.wav",
+    "flagship": "assets/sound/ufo_lowpitch.wav",
+    "new_wave": "assets/sound/ufo_highpitch.wav",
+    "gameover": "assets/sound/gameover.wav",
+    "gameover_record": "assets/sound/gameover_record.wav",
+    "crash": "assets/sound/crash.wav",
+    "collect": "assets/sound/collect.wav"
+  },
+  "font": {
+    "font_family": "assets/Silkscreen.ttf",
+    "font_size": 45
+  }
+}
