@@ -1,10 +1,9 @@
+import random
 class Ticket:
-    def __init__(self, attraction, cost, session_datetime, ticket_type, additional_info=None):
+    def __init__(self, attraction):
+        self.number = random.randint(1000, 9999)
         self._attraction = attraction
-        self._price = cost
-        self.session_datetime = session_datetime
-        self.ticket_type = ticket_type
-        self.additional_info = additional_info
+
 
     @property
     def attraction(self):
@@ -14,13 +13,6 @@ class Ticket:
     def attraction(self, value):
         self._attraction = value
 
-    @property
-    def price(self):
-        return self._price
-
-    @price.setter
-    def price(self, value):
-        self._price = value
 
 
 

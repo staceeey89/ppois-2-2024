@@ -1,28 +1,28 @@
-
+import random
+import time
 class Queue:
     def __init__(self):
-        self.visitors = []
+        self.count_visitors_attract = random.randint(0, 60)
+        self.count_visitors_ticket = random.randint(0, 20)
 
-    @property
-    def visitors(self):
-        return self._visitors
+    def join_queue_attraction(self, attraction_capacity):
+        while self.count_visitors_attract >= 0:
+            print(f"Number of visitors in queue: {self.count_visitors_attract}")
+            if self.count_visitors_attract >= attraction_capacity:
+                print("The attraction is full. Waiting in the queue...")
+                time.sleep(5)
+                self.count_visitors_attract -= attraction_capacity
+            else:
+                self.count_visitors_attract = 0
+                break
 
-    @visitors.setter
-    def visitors(self, value):
-        self._visitors = value
+    def join_queue_ticket(self):
+        while self.count_visitors_ticket > 0:
+            print(f"Number of visitors in ticket queue: {self.count_visitors_ticket}")
+            print("Waiting in the queue...")
+            time.sleep(1)
+            self.count_visitors_ticket -= 1
+        print("it's your turn to buy a ticket.")
 
-    def display_queue(self):
-        print("Queue:")
-        for i, visitor in enumerate(self.visitors, start=1):
-            print(f"{i}. {visitor.name}")
 
-    def add_visitor(self, visitor, attraction):
-        if len(self.visitors) >= attraction.capacity:
-            raise Exception("Queue is full. Cannot add more visitors.")
-        self.visitors.append(visitor)
 
-    def remove_visitor(self):
-        if self.visitors:
-            return self.visitors.pop(0)
-        else:
-            raise Exception("Queue is empty.")
