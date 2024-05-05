@@ -1,4 +1,4 @@
-# Space Invaders
+# Asteroids
 
 Это реализация классической аркадной игры Asteroids на Python с использованием библиотеки pygame. 
 
