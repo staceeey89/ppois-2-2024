@@ -14,7 +14,7 @@ class Depot:
             if len(self.__trains) != 0:
                 return self.__trains.pop()
             else:
-                raise IndexError("There are no trains in Depot")
+                raise IndexError("В депо нет поездов!")
         except IndexError as e:
             print(e)
 

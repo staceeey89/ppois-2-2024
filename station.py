@@ -45,10 +45,10 @@ class Station:
             if passenger.cash >= self.__ticket.cost:
                 passenger.buy_a_ticket(self.ticket)
             else:
-                raise ValueError(f"Passenger {passenger.name} doesn't have enough money")
+                raise ValueError(f"Пассажир {passenger.name} не имеет достаточно денег для покупки билета")
         except ValueError as e:
             print(e)
-            raise ValueError("Purchase has not been made!")
+            raise ValueError("Покупка не была произведена!")
 
     def get_platforms(self):
         return self.__platforms

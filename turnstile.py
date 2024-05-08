@@ -10,7 +10,7 @@ class Turnstile:
             if ticket is not None:
                 return True
             else:
-                raise ValueError("Passenger didn't buy a ticket!")
+                raise ValueError("У пассажира нет билета!")
         except ValueError as e:
             print(e)
             return False

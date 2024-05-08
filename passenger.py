@@ -14,6 +14,9 @@ class Passenger(AbstractPassenger):
         self.__crossed_a_turnstile: bool = False
 
     @property
+    def crossed_turnstile(self):
+        return self.__crossed_a_turnstile
+    @property
     def platform(self):
         return self.__platform
 
@@ -49,7 +52,7 @@ class Passenger(AbstractPassenger):
             if self.__crossed_a_turnstile:
                 self.__platform = platform
             else:
-                raise RuntimeError(f"Passenger {self.name}, cross a turnstile!")
+                raise RuntimeError(f"Пассажир {self.name}, пройди турникет!")
         except RuntimeError as e:
             print(e)
 
@@ -69,9 +72,9 @@ class Passenger(AbstractPassenger):
                 self.__platform.remove_passenger(self)
 
             elif self.__platform is None:
-                raise ValueError("Choose a platform!")
+                raise ValueError("Выберите платформу!")
             elif self.__platform.train is None:
-                raise ValueError(f"Train is not at your platform!")
+                raise ValueError(f"Поезда нет на платформе!")
         except ValueError as e:
             print(e)
 

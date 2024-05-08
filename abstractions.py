@@ -41,6 +41,10 @@ class AbstractPassenger(ABC):
 
     @property
     @abstractmethod
+    def crossed_turnstile(self):
+        pass
+    @property
+    @abstractmethod
     def cash(self):
         pass
 

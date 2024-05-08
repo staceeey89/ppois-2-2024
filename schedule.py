@@ -23,7 +23,7 @@ class Schedule:
             if len(self.__depots) < 2:
                 self.__depots.append(depot)
             else:
-                raise ValueError("Subway is overfilled by depots!")
+                raise ValueError("Метро переполнено депо")
         except ValueError as e:
             print(e)
 
@@ -32,7 +32,7 @@ class Schedule:
             if 2 * len(self.__stations) > len(self.__trains):
                 self.__trains.append(train)
             else:
-                raise ValueError("Subway is overfilled by trains!")
+                raise ValueError("Метро переполнено поездами!")
         except ValueError as e:
             print(e)
 
@@ -91,13 +91,13 @@ class Schedule:
 
                 self.__trains_counter += 1
             elif self.__stations[0].get_platforms()[0].train is not None:
-                raise ValueError(f"Station {self.__stations[0].number}\n Platform 0 \nAlready has a train")
+                raise ValueError(f"Station {self.__stations[0].number}\n Платформа 0 \nуже имеет поезд")
             if self.__stations[-1].get_platforms()[1].train is None:
                 self.__stations[-1].get_platforms()[1].train = self.__depots[1].pull_out_train()
                 self.__stations[-1].get_platforms()[1].train.platform = self.__stations[-1].get_platforms()[1]
                 self.__trains_counter += 1
             elif self.__stations[-1].get_platforms()[1].train is not None:
-                raise ValueError(f"Station {self.__stations[1].number}\n Platform 1 \nAlready has a train")
+                raise ValueError(f"Station {self.__stations[1].number}\n Платформа 1 \nуже имеет поезд")
         except ValueError as e:
             print(e)
 

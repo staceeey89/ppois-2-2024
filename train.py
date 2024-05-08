@@ -27,7 +27,7 @@ class Train(AbstractTrain):
                 self.__platform = next_platform
                 next_platform.train = self
             else:
-                raise ValueError(f"Next platform ({next_platform.number}) has a train")
+                raise ValueError(f"На следующей платформе ({next_platform.number}) есть поезд ")
         except ValueError as e:
             print(e)
 
