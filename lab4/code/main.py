@@ -16,11 +16,9 @@ def create_initial_state() -> Tuple[Turnstile, Schedule, Ticket]:
     station_a: Station = Station(Station.StationName.STATION_A.value)
     station_b: Station = Station(Station.StationName.STATION_B.value)
     station_c: Station = Station(Station.StationName.STATION_C.value)
-    station_service: Station = Station(Station.StationName.STATION_SERVICE.value)
     schedule.add_station(station_a)
     schedule.add_station(station_b)
     schedule.add_station(station_c)
-    schedule.add_station(station_service)
     ticket_price: float = 0
     try:
         ticket_price: float = float(input("Enter ticket price: "))
@@ -28,7 +26,7 @@ def create_initial_state() -> Tuple[Turnstile, Schedule, Ticket]:
         print("Invalid input. Default value 0")
     ticket: Ticket = Ticket(ticket_price)
     train_number: str = str(input("Enter train number: "))
-    train: Train = Train(train_number, station_service)
+    train: Train = Train(train_number, station_a)
     schedule.add_train(train)
     return turnstile, schedule, ticket
 
