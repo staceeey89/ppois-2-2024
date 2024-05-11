@@ -4,7 +4,8 @@ from Person import Person
 
 
 class Platform:
-    def __init__(self):
+    def __init__(self, name):
+        self.name = name
         self.persons: List[Person] = []
 
     def increase_people_count(self, person: Person) -> None:
@@ -22,8 +23,7 @@ class Station:
         STATION_A: str = "Station A"
         STATION_B: str = "Station B"
         STATION_C: str = "Station C"
-        STATION_SERVICE: str = "Service station"
 
     def __init__(self, station_name: str):
         self.station_name: str = station_name
-        self.platform: Platform = Platform()
+        self.platform: Platform = Platform(station_name)

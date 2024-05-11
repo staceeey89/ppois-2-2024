@@ -19,7 +19,4 @@ class Train:
         for person in persons_to_remove:
             self.persons.remove(person)
             self.station.platform.increase_people_count(person)
-
-    @staticmethod
-    def transportation_services() -> None:
-        print("Maintenance is being carried out...")
+            person.platform = self.station.platform

@@ -25,15 +25,7 @@ class Schedule:
         for i, train in enumerate(self.trains, 1):
             print(f"{i}. Train {train.number} --> {train.station.station_name}")
 
-        train_choice = input("Choose a train by entering its number: ")
-        try:
-            train_index = int(train_choice) - 1
-            chosen_train = self.trains[train_index]
-        except (ValueError, IndexError):
-            print("Invalid choice. Please enter a valid train number.")
-            return
-
-        print(f"You have chosen train: {chosen_train.number}")
+        chosen_train = self.trains[0]
         current_station_index: int = -1
         for index, station in enumerate(self.stations):
             if station == chosen_train.station:
@@ -49,6 +41,3 @@ class Schedule:
         chosen_train.station = next_station
         chosen_train.unload_passenger()
         print(f"Train {chosen_train.number} moved to {next_station.station_name}.")
-
-        if chosen_train.station.station_name == Station.StationName.STATION_SERVICE.value:
-            chosen_train.transportation_services()
