@@ -1,0 +1,90 @@
+@startuml
+
+class Budget{
+    -float money_amount
+    +float get_money_amount()
+    +void set_money_amount(float money_amount)
+}
+
+class Report{
+    -str text
+    -str date
+    +void form_analysis_report(Transaction[] transaction_history, Investment[] investments, str owner_name)
+    +void form_financial_report(float balance, int transactions_amount, int investments_amount, str owner_name)
+}
+
+class Transaction{
+    -float money_amount_spent
+    -str company_or_bank_account_number
+    -bool correct_operation
+    +float get_money_amount_spent()
+    +str get_company_or_bank_account_number()
+    +bool get_correct_operation()
+    +void set_money_amount_spent(int money_amount)
+    +void set_correct_operation(bool correct)
+}
+
+class Investment{
+    -str scope_of_investment
+    -float risk
+    -float price
+    -float profit_ratio
+    +void risk_changing()
+    +void profit_ratio_changing()
+    +float get_price()
+    +float get_risk()
+    +str get_scope_of_investment()
+    +float get_profit_ratio()
+    +void set_price(float price)
+}
+
+class FinancialManagementSystem{
+    -Investment[] possible_investments
+    -Transaction[] possible_transactions
+    +void investment_changing(Investment investment)
+    +Investment[] get_possible_investments()
+    +Transaction[] get_possible_transactions()
+}
+
+class InvestmentPortfolio{
+    -Investment[] investments
+    +void assert_allocation(Investment investment)
+    +void diversification(Investment investment)
+    +void risk_tolerance(Investment investment)
+    +void balance(Investment investment)
+    +float end_investment(Investment investment)
+    +void add_new_investment(Investment investment)
+    +Investment[] get_investments()
+}
+
+class BankAccount{
+    -str unique_number
+    -Budget budget
+    -Transaction[] transaction_history
+    -InvestmentPortfolio investment_portfolio
+    +void deposit(float money_amount)
+    +void withdrawal(float money_amount)
+    +void portfolio_management(Investment investment, str operation_code)
+    +void form_new_budget(bool withdrawing_money)
+    +Report get_analysis()
+    +Report get_financial_report()
+    +void make_transaction(Transaction transaction, float money_amount)
+    +void make_investment(Investment investment, float money_amount)
+    +str get_unique_number()
+    +str get_owner_name()
+    +Transaction[] get_transactions_history()
+    +InvestmentPortfolio get_investment_portfolio()
+    + float get_balance()
+}
+
+BankAccount o-- InvestmentPortfolio
+BankAccount o-- Budget
+BankAccount o-- Transaction
+BankAccount ..> Investment
+FinancialManagementSystem ..> Investment
+FinancialManagementSystem *-- Investment
+FinancialManagementSystem *-- Transaction
+InvestmentPortfolio *-- Investment
+Report ..> Transaction
+
+@enduml
