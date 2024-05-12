@@ -1,0 +1,403 @@
+<?xml version="1.0" ?>
+<players>
+  <player id="1">
+    <full_name>John Smith</full_name>
+    <birth_date>1990-05-15</birth_date>
+    <football_team>FC Barcelona</football_team>
+    <home_city>Moscow</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="2">
+    <full_name>Mike Johnson</full_name>
+    <birth_date>1995-09-20</birth_date>
+    <football_team>Real Madrid</football_team>
+    <home_city>Saint Petersburg</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="3">
+    <full_name>Alex Turner</full_name>
+    <birth_date>1988-12-03</birth_date>
+    <football_team>Manchester United</football_team>
+    <home_city>Kyiv</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="4">
+    <full_name>David Brown</full_name>
+    <birth_date>1992-07-10</birth_date>
+    <football_team>FC Bayern Munich</football_team>
+    <home_city>Minsk</home_city>
+    <team_size>11</team_size>
+    <position>Goalkeeper</position>
+  </player>
+  <player id="5">
+    <full_name>Robert White</full_name>
+    <birth_date>1985-03-25</birth_date>
+    <football_team>Liverpool FC</football_team>
+    <home_city>Tbilisi</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="6">
+    <full_name>Laura Green</full_name>
+    <birth_date>1994-11-28</birth_date>
+    <football_team>Chelsea FC</football_team>
+    <home_city>Odessa</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="7">
+    <full_name>Emily Parker</full_name>
+    <birth_date>1991-08-17</birth_date>
+    <football_team>Paris Saint-Germain FC</football_team>
+    <home_city>Sochi</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="8">
+    <full_name>Matthew Hall</full_name>
+    <birth_date>1989-06-12</birth_date>
+    <football_team>AC Milan</football_team>
+    <home_city>Berlin</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="9">
+    <full_name>Daniel Clark</full_name>
+    <birth_date>1993-02-08</birth_date>
+    <football_team>Juventus FC</football_team>
+    <home_city>Madrid</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="10">
+    <full_name>Sophia Hill</full_name>
+    <birth_date>1987-10-05</birth_date>
+    <football_team>Tottenham Hotspur FC</football_team>
+    <home_city>Lisbon</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="11">
+    <full_name>Ethan Baker</full_name>
+    <birth_date>1996-04-03</birth_date>
+    <football_team>Arsenal FC</football_team>
+    <home_city>Barcelona</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="12">
+    <full_name>Olivia King</full_name>
+    <birth_date>1990-09-19</birth_date>
+    <football_team>Manchester City FC</football_team>
+    <home_city>Rome</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="13">
+    <full_name>Lucas Young</full_name>
+    <birth_date>1995-12-22</birth_date>
+    <football_team>FC Porto</football_team>
+    <home_city>Paris</home_city>
+    <team_size>11</team_size>
+    <position>Goalkeeper</position>
+  </player>
+  <player id="14">
+    <full_name>Chloe Scott</full_name>
+    <birth_date>1992-08-14</birth_date>
+    <football_team>Borussia Dortmund</football_team>
+    <home_city>Hamburg</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="15">
+    <full_name>James Turner</full_name>
+    <birth_date>1986-11-30</birth_date>
+    <football_team>Atletico Madrid</football_team>
+    <home_city>Athens</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="16">
+    <full_name>Emma Rodriguez</full_name>
+    <birth_date>1993-07-06</birth_date>
+    <football_team>Inter Milan</football_team>
+    <home_city>Budapest</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="17">
+    <full_name>Mia Lewis</full_name>
+    <birth_date>1988-01-24</birth_date>
+    <football_team>ACF Fiorentina</football_team>
+    <home_city>Vienna</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="18">
+    <full_name>Ryan Martinez</full_name>
+    <birth_date>1994-05-11</birth_date>
+    <football_team>AS Roma</football_team>
+    <home_city>Amsterdam</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="19">
+    <full_name>Ava Gonzalez</full_name>
+    <birth_date>1991-03-08</birth_date>
+    <football_team>AS Monaco FC</football_team>
+    <home_city>Prague</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="20">
+    <full_name>Noah Hernandez</full_name>
+    <birth_date>1989-09-03</birth_date>
+    <football_team>Olympique Lyonnais</football_team>
+    <home_city>Dublin</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="21">
+    <full_name>Isabella Lee</full_name>
+    <birth_date>1996-02-17</birth_date>
+    <football_team>SSC Napoli</football_team>
+    <home_city>Oslo</home_city>
+    <team_size>11</team_size>
+    <position>Goalkeeper</position>
+  </player>
+  <player id="22">
+    <full_name>Benjamin Perez</full_name>
+    <birth_date>1987-12-09</birth_date>
+    <football_team>Sevilla FC</football_team>
+    <home_city>Stockholm</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="23">
+    <full_name>Avery Wood</full_name>
+    <birth_date>1993-10-27</birth_date>
+    <football_team>Ajax Amsterdam</football_team>
+    <home_city>Warsaw</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="24">
+    <full_name>Michael White</full_name>
+    <birth_date>1985-04-15</birth_date>
+    <football_team>VfL Wolfsburg</football_team>
+    <home_city>Helsinki</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="25">
+    <full_name>Harper Martin</full_name>
+    <birth_date>1990-11-01</birth_date>
+    <football_team>Lazio</football_team>
+    <home_city>Zurich</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="26">
+    <full_name>Evelyn Clark</full_name>
+    <birth_date>1994-06-18</birth_date>
+    <football_team>RB Leipzig</football_team>
+    <home_city>Lyon</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="27">
+    <full_name>Matthew Lee</full_name>
+    <birth_date>1988-02-05</birth_date>
+    <football_team>Bayer Leverkusen</football_team>
+    <home_city>Copenhagen</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="28">
+    <full_name>Grace Perez</full_name>
+    <birth_date>1995-08-23</birth_date>
+    <football_team>Shakhtar Donetsk</football_team>
+    <home_city>Belgrade</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="29">
+    <full_name>Jackson Taylor</full_name>
+    <birth_date>1992-03-10</birth_date>
+    <football_team>FC Zenit Saint Petersburg</football_team>
+    <home_city>Istanbul</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="30">
+    <full_name>Scarlett Hernandez</full_name>
+    <birth_date>1986-09-26</birth_date>
+    <football_team>Leicester City FC</football_team>
+    <home_city>Glasgow</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="31">
+    <full_name>Liam Garcia</full_name>
+    <birth_date>1991-04-14</birth_date>
+    <football_team>Galatasaray SK</football_team>
+    <home_city>Manchester</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="32">
+    <full_name>Aria Martinez</full_name>
+    <birth_date>1996-12-01</birth_date>
+    <football_team>Fenerbahce SK</football_team>
+    <home_city>Barcelona</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="33">
+    <full_name>Logan Rodriguez</full_name>
+    <birth_date>1987-07-19</birth_date>
+    <football_team>SSC Bari</football_team>
+    <home_city>Naples</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="34">
+    <full_name>Aurora Thompson</full_name>
+    <birth_date>1993-01-28</birth_date>
+    <football_team>FC Basel</football_team>
+    <home_city>Berlin</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="35">
+    <full_name>Lucas Mitchell</full_name>
+    <birth_date>1989-05-05</birth_date>
+    <football_team>Wolverhampton Wanderers FC</football_team>
+    <home_city>Paris</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="36">
+    <full_name>Luna King</full_name>
+    <birth_date>1994-10-20</birth_date>
+    <football_team>FC Schalke 04</football_team>
+    <home_city>Rome</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="37">
+    <full_name>Elijah Adams</full_name>
+    <birth_date>1985-06-07</birth_date>
+    <football_team>Everton FC</football_team>
+    <home_city>London</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="38">
+    <full_name>Stella Scott</full_name>
+    <birth_date>1990-12-24</birth_date>
+    <football_team>Feyenoord Rotterdam</football_team>
+    <home_city>Amsterdam</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="39">
+    <full_name>Evan Walker</full_name>
+    <birth_date>1995-08-11</birth_date>
+    <football_team>FC Porto</football_team>
+    <home_city>Lisbon</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="40">
+    <full_name>Lily Perez</full_name>
+    <birth_date>1992-04-03</birth_date>
+    <football_team>Ajax Amsterdam</football_team>
+    <home_city>Madrid</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="41">
+    <full_name>Nathan Reed</full_name>
+    <birth_date>1988-11-30</birth_date>
+    <football_team>RB Leipzig</football_team>
+    <home_city>Berlin</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="42">
+    <full_name>Zoe Morgan</full_name>
+    <birth_date>1993-07-17</birth_date>
+    <football_team>Borussia Dortmund</football_team>
+    <home_city>Hamburg</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="43">
+    <full_name>Dylan Evans</full_name>
+    <birth_date>1986-03-10</birth_date>
+    <football_team>Atletico Madrid</football_team>
+    <home_city>Barcelona</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="44">
+    <full_name>Madison Turner</full_name>
+    <birth_date>1991-09-16</birth_date>
+    <football_team>Inter Milan</football_team>
+    <home_city>Milan</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="45">
+    <full_name>Jackie Scott</full_name>
+    <birth_date>1996-05-02</birth_date>
+    <football_team>ACF Fiorentina</football_team>
+    <home_city>Florence</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="46">
+    <full_name>Nolan Baker</full_name>
+    <birth_date>1987-12-19</birth_date>
+    <football_team>AS Roma</football_team>
+    <home_city>Rome</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="47">
+    <full_name>Victoria Martinez</full_name>
+    <birth_date>1992-07-06</birth_date>
+    <football_team>AS Monaco FC</football_team>
+    <home_city>Monaco</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+  <player id="48">
+    <full_name>Connor Clark</full_name>
+    <birth_date>1989-01-23</birth_date>
+    <football_team>Olympique Lyonnais</football_team>
+    <home_city>Lyon</home_city>
+    <team_size>11</team_size>
+    <position>Midfielder</position>
+  </player>
+  <player id="49">
+    <full_name>Maya Garcia</full_name>
+    <birth_date>1994-10-08</birth_date>
+    <football_team>SSC Napoli</football_team>
+    <home_city>Naples</home_city>
+    <team_size>11</team_size>
+    <position>Defender</position>
+  </player>
+  <player id="50">
+    <full_name>Brayden Thompson</full_name>
+    <birth_date>1985-06-15</birth_date>
+    <football_team>Sevilla FC</football_team>
+    <home_city>Seville</home_city>
+    <team_size>11</team_size>
+    <position>Forward</position>
+  </player>
+</players>
