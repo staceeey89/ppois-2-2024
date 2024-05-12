@@ -1,0 +1,403 @@
+<trains>
+<train>
+  <train_number>1</train_number>
+  <departure_station>Москва</departure_station>
+  <departure_time>2023-05-19 09:00</departure_time>
+  <arrival_station>СанктПетербург</arrival_station>
+  <arrival_time>2023-05-19 15:00</arrival_time>
+  <travel_time>0 days, 6 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>2</train_number>
+  <departure_station>СанктПетербург</departure_station>
+  <departure_time>2023-05-19 10:00</departure_time>
+  <arrival_station>Новосибирск</arrival_station>
+  <arrival_time>2023-05-19 18:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>3</train_number>
+  <departure_station>Новосибирск</departure_station>
+  <departure_time>2023-05-19 11:00</departure_time>
+  <arrival_station>Екатеринбург</arrival_station>
+  <arrival_time>2023-05-19 19:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>4</train_number>
+  <departure_station>Екатеринбург</departure_station>
+  <departure_time>2023-05-19 12:00</departure_time>
+  <arrival_station>НижнийНовгород</arrival_station>
+  <arrival_time>2023-05-19 20:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>5</train_number>
+  <departure_station>НижнийНовгород</departure_station>
+  <departure_time>2023-05-19 13:00</departure_time>
+  <arrival_station>Казань</arrival_station>
+  <arrival_time>2023-05-19 21:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>6</train_number>
+  <departure_station>Казань</departure_station>
+  <departure_time>2023-05-19 14:00</departure_time>
+  <arrival_station>Челябинск</arrival_station>
+  <arrival_time>2023-05-19 22:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>7</train_number>
+  <departure_station>Челябинск</departure_station>
+  <departure_time>2023-05-19 15:00</departure_time>
+  <arrival_station>Омск</arrival_station>
+  <arrival_time>2023-05-19 23:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>8</train_number>
+  <departure_station>Омск</departure_station>
+  <departure_time>2023-05-19 16:00</departure_time>
+  <arrival_station>Самара</arrival_station>
+  <arrival_time>2023-05-20 00:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>9</train_number>
+  <departure_station>Самара</departure_station>
+  <departure_time>2023-05-19 17:00</departure_time>
+  <arrival_station>РостовнаДону</arrival_station>
+  <arrival_time>2023-05-20 01:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>10</train_number>
+  <departure_station>РостовнаДону</departure_station>
+  <departure_time>2023-05-19 18:00</departure_time>
+  <arrival_station>Уфа</arrival_station>
+  <arrival_time>2023-05-20 02:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>11</train_number>
+  <departure_station>Уфа</departure_station>
+  <departure_time>2023-05-19 19:00</departure_time>
+  <arrival_station>Красноярск</arrival_station>
+  <arrival_time>2023-05-20 03:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>12</train_number>
+  <departure_station>Красноярск</departure_station>
+  <departure_time>2023-05-19 20:00</departure_time>
+  <arrival_station>Пермь</arrival_station>
+  <arrival_time>2023-05-20 04:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>13</train_number>
+  <departure_station>Пермь</departure_station>
+  <departure_time>2023-05-19 21:00</departure_time>
+  <arrival_station>Воронеж</arrival_station>
+  <arrival_time>2023-05-20 05:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>14</train_number>
+  <departure_station>Воронеж</departure_station>
+  <departure_time>2023-05-19 22:00</departure_time>
+  <arrival_station>Волгоград</arrival_station>
+  <arrival_time>2023-05-20 06:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>15</train_number>
+  <departure_station>Волгоград</departure_station>
+  <departure_time>2023-05-19 23:00</departure_time>
+  <arrival_station>Краснодар</arrival_station>
+  <arrival_time>2023-05-20 07:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>16</train_number>
+  <departure_station>Краснодар</departure_station>
+  <departure_time>2023-05-20 00:00</departure_time>
+  <arrival_station>Саратов</arrival_station>
+  <arrival_time>2023-05-20 08:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>17</train_number>
+  <departure_station>Саратов</departure_station>
+  <departure_time>2023-05-20 01:00</departure_time>
+  <arrival_station>Тюмень</arrival_station>
+  <arrival_time>2023-05-20 09:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>18</train_number>
+  <departure_station>Тюмень</departure_station>
+  <departure_time>2023-05-20 02:00</departure_time>
+  <arrival_station>Тольятти</arrival_station>
+  <arrival_time>2023-05-20 10:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>19</train_number>
+  <departure_station>Тольятти</departure_station>
+  <departure_time>2023-05-20 03:00</departure_time>
+  <arrival_station>Ижевск</arrival_station>
+  <arrival_time>2023-05-20 11:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>20</train_number>
+  <departure_station>Ижевск</departure_station>
+  <departure_time>2023-05-20 04:00</departure_time>
+  <arrival_station>Москва</arrival_station>
+  <arrival_time>2023-05-20 12:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>21</train_number>
+  <departure_station>Москва</departure_station>
+  <departure_time>2023-05-20 05:00</departure_time>
+  <arrival_station>СанктПетербург</arrival_station>
+  <arrival_time>2023-05-20 13:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>22</train_number>
+  <departure_station>СанктПетербург</departure_station>
+  <departure_time>2023-05-20 06:00</departure_time>
+  <arrival_station>Новосибирск</arrival_station>
+  <arrival_time>2023-05-20 14:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>23</train_number>
+  <departure_station>Новосибирск</departure_station>
+  <departure_time>2023-05-20 07:00</departure_time>
+  <arrival_station>Екатеринбург</arrival_station>
+  <arrival_time>2023-05-20 15:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>24</train_number>
+  <departure_station>Екатеринбург</departure_station>
+  <departure_time>2023-05-20 08:00</departure_time>
+  <arrival_station>НижнийНовгород</arrival_station>
+  <arrival_time>2023-05-20 16:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>25</train_number>
+  <departure_station>НижнийНовгород</departure_station>
+  <departure_time>2023-05-20 09:00</departure_time>
+  <arrival_station>Казань</arrival_station>
+  <arrival_time>2023-05-20 17:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>26</train_number>
+  <departure_station>Казань</departure_station>
+  <departure_time>2023-05-20 10:00</departure_time>
+  <arrival_station>Челябинск</arrival_station>
+  <arrival_time>2023-05-20 18:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>27</train_number>
+  <departure_station>Челябинск</departure_station>
+  <departure_time>2023-05-20 11:00</departure_time>
+  <arrival_station>Омск</arrival_station>
+  <arrival_time>2023-05-20 19:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>28</train_number>
+  <departure_station>Омск</departure_station>
+  <departure_time>2023-05-20 12:00</departure_time>
+  <arrival_station>Самара</arrival_station>
+  <arrival_time>2023-05-20 20:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>29</train_number>
+  <departure_station>Самара</departure_station>
+  <departure_time>2023-05-20 13:00</departure_time>
+  <arrival_station>РостовнаДону</arrival_station>
+  <arrival_time>2023-05-20 21:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>30</train_number>
+  <departure_station>РостовнаДону</departure_station>
+  <departure_time>2023-05-20 14:00</departure_time>
+  <arrival_station>Уфа</arrival_station>
+  <arrival_time>2023-05-20 22:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>31</train_number>
+  <departure_station>Уфа</departure_station>
+  <departure_time>2023-05-20 15:00</departure_time>
+  <arrival_station>Красноярск</arrival_station>
+  <arrival_time>2023-05-20 23:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>32</train_number>
+  <departure_station>Красноярск</departure_station>
+  <departure_time>2023-05-20 16:00</departure_time>
+  <arrival_station>Пермь</arrival_station>
+  <arrival_time>2023-05-20 00:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>33</train_number>
+  <departure_station>Пермь</departure_station>
+  <departure_time>2023-05-20 17:00</departure_time>
+  <arrival_station>Воронеж</arrival_station>
+  <arrival_time>2023-05-20 01:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>34</train_number>
+  <departure_station>Воронеж</departure_station>
+  <departure_time>2023-05-20 18:00</departure_time>
+  <arrival_station>Волгоград</arrival_station>
+  <arrival_time>2023-05-20 02:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>35</train_number>
+  <departure_station>Волгоград</departure_station>
+  <departure_time>2023-05-20 19:00</departure_time>
+  <arrival_station>Краснодар</arrival_station>
+  <arrival_time>2023-05-20 03:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>36</train_number>
+  <departure_station>Краснодар</departure_station>
+  <departure_time>2023-05-20 20:00</departure_time>
+  <arrival_station>Саратов</arrival_station>
+  <arrival_time>2023-05-20 04:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>37</train_number>
+  <departure_station>Саратов</departure_station>
+  <departure_time>2023-05-20 21:00</departure_time>
+  <arrival_station>Тюмень</arrival_station>
+  <arrival_time>2023-05-20 05:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>38</train_number>
+  <departure_station>Тюмень</departure_station>
+  <departure_time>2023-05-20 22:00</departure_time>
+  <arrival_station>Тольятти</arrival_station>
+  <arrival_time>2023-05-20 06:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>39</train_number>
+  <departure_station>Тольятти</departure_station>
+  <departure_time>2023-05-20 23:00</departure_time>
+  <arrival_station>Ижевск</arrival_station>
+  <arrival_time>2023-05-20 07:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>40</train_number>
+  <departure_station>Ижевск</departure_station>
+  <departure_time>2023-05-21 00:00</departure_time>
+  <arrival_station>Москва</arrival_station>
+  <arrival_time>2023-05-21 08:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>41</train_number>
+  <departure_station>Москва</departure_station>
+  <departure_time>2023-05-21 01:00</departure_time>
+  <arrival_station>СанктПетербург</arrival_station>
+  <arrival_time>2023-05-21 09:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>42</train_number>
+  <departure_station>СанктПетербург</departure_station>
+  <departure_time>2023-05-21 02:00</departure_time>
+  <arrival_station>Новосибирск</arrival_station>
+  <arrival_time>2023-05-21 10:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>43</train_number>
+  <departure_station>Новосибирск</departure_station>
+  <departure_time>2023-05-21 03:00</departure_time>
+  <arrival_station>Екатеринбург</arrival_station>
+  <arrival_time>2023-05-21 11:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>44</train_number>
+  <departure_station>Екатеринбург</departure_station>
+  <departure_time>2023-05-21 04:00</departure_time>
+  <arrival_station>НижнийНовгород</arrival_station>
+  <arrival_time>2023-05-21 12:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>45</train_number>
+  <departure_station>НижнийНовгород</departure_station>
+  <departure_time>2023-05-21 05:00</departure_time>
+  <arrival_station>Казань</arrival_station>
+  <arrival_time>2023-05-21 13:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>46</train_number>
+  <departure_station>Казань</departure_station>
+  <departure_time>2023-05-21 06:00</departure_time>
+  <arrival_station>Челябинск</arrival_station>
+  <arrival_time>2023-05-21 14:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>47</train_number>
+  <departure_station>Челябинск</departure_station>
+  <departure_time>2023-05-21 07:00</departure_time>
+  <arrival_station>Омск</arrival_station>
+  <arrival_time>2023-05-21 15:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>48</train_number>
+  <departure_station>Омск</departure_station>
+  <departure_time>2023-05-21 08:00</departure_time>
+  <arrival_station>Самара</arrival_station>
+  <arrival_time>2023-05-21 16:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>49</train_number>
+  <departure_station>Самара</departure_station>
+  <departure_time>2023-05-21 09:00</departure_time>
+  <arrival_station>РостовнаДону</arrival_station>
+  <arrival_time>2023-05-21 17:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+<train>
+  <train_number>50</train_number>
+  <departure_station>РостовнаДону</departure_station>
+  <departure_time>2023-05-21 10:00</departure_time>
+  <arrival_station>Уфа</arrival_station>
+  <arrival_time>2023-05-21 18:00</arrival_time>
+  <travel_time>0 days, 8 hours, 0 minutes</travel_time>
+</train>
+
+</trains>
