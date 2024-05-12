@@ -1,0 +1,12 @@
+modifications:
+  mod_width: 59
+  mod_height: 28
+  mod_speed: 2
+  block_paddle_height: 10
+  block_paddle_width: 1200
+  1_bg_mod: ["img/slow_mod/slow_mod1.png", "img/slow_mod/slow_mod2.png"]
+  2_bg_mod: ["img/enlarge_mod/enlarge_mod1.png", "img/enlarge_mod/enlarge_mod2.png"]
+  3_bg_mod: ["img/reduce_mod/reduce_mod1.png", "img/reduce_mod/reduce_mod2.png"]
+  4_bg_mod: ["img/disruption_mod/disruption_mod1.png", "img/disruption_mod/disruption_mod2.png"]
+  5_bg_mod: ["img/block_mod/block_mod1.png", "img/block_mod/block_mod2.png"]
+

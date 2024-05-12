@@ -1,0 +1,17 @@
+settings:
+  # Общие настройки
+  WIDTH: 1200
+  HEIGHT: 750
+  fps: 60
+  paddle_w: 200
+  paddle_h: 20
+  paddle_speed: 8
+  ball_radius: 10
+  ball_speed: 3
+  ball_rect: 10
+  dx: 1
+  dy: -1
+  block_width: 70
+  block_height: 25
+  mini_img_width: 200
+  mini_img_height: 125

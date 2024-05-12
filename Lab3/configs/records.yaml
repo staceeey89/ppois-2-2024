@@ -1,0 +1,741 @@
+records:
+- 1:
+    int_time: 600
+    name: Dom
+    size: 20
+    time: 00:10:00
+    x_pos: 48
+    y_pos: 85
+  2:
+    int_time: 600
+    name: Dom
+    size: 20
+    time: 00:10:00
+    x_pos: 48
+    y_pos: 120
+  3:
+    int_time: 600
+    name: Dom
+    size: 20
+    time: 00:10:00
+    x_pos: 48
+    y_pos: 155
+  4:
+    int_time: 600
+    name: Dom
+    size: 20
+    time: 00:10:00
+    x_pos: 48
+    y_pos: 190
+  5:
+    int_time: 600
+    name: Sasha
+    size: 20
+    time: 00:10:00
+    x_pos: 48
+    y_pos: 225
+  6:
+    int_time: 600
+    name: Drake
+    size: 20
+    time: 00:10:00
+    x_pos: 48
+    y_pos: 260
+  7:
+    int_time: 600
+    name: Sasha
+    size: 20
+    time: 00:10:00
+    x_pos: 48
+    y_pos: 295
+  8:
+    int_time: 600
+    name: Dima
+    size: 20
+    time: 00:10:00
+    x_pos: 48
+    y_pos: 330
+  9:
+    int_time: 600
+    name: Dasha
+    size: 20
+    time: 00:10:00
+    x_pos: 48
+    y_pos: 365
+  10:
+    int_time: 600
+    name: Sasha
+    size: 20
+    time: 00:10:00
+    x_pos: 48
+    y_pos: 400
+  text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 1"
+  x_pos: 400
+  y_pos: 50
+  size: 40
+- 1:
+    int_time: 600
+    name: Pasha
+    size: 20
+    time: 00:10:00
+    x_pos: 48
+    y_pos: 85
+  2:
+    int_time: 600
+    name: Pasha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 120
+  3:
+    int_time: 600
+    name: Pasha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 155
+  4:
+    int_time: 600
+    name: Pasha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 190
+  5:
+    int_time: 600
+    name: Pasha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 225
+  6:
+    int_time: 600
+    name: Pasha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 260
+  7:
+    int_time: 600
+    name: Pasha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 295
+  8:
+    int_time: 600
+    name: Pasha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 330
+  9:
+    int_time: 600
+    name: Pasha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 365
+  10:
+    int_time: 600
+    name: Pasha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 400
+  text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 2"
+  x_pos: 400
+  y_pos: 50
+  size: 40
+- 1:
+    int_time: 600
+    name: Dima
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 85
+  2:
+    int_time: 600
+    name: Dima
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 120
+  3:
+    int_time: 600
+    name: Dima
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 155
+  4:
+    int_time: 600
+    name: Dima
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 190
+  5:
+    int_time: 600
+    name: Dima
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 225
+  6:
+    int_time: 600
+    name: Dima
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 260
+  7:
+    int_time: 600
+    name: Dima
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 295
+  8:
+    int_time: 600
+    name: Dima
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 330
+  9:
+    int_time: 600
+    name: Dima
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 365
+  10:
+    int_time: 600
+    name: Dima
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 400
+  text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 3"
+  x_pos: 400
+  y_pos: 50
+  size: 40
+- 1:
+    int_time: 600
+    name: Slava
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 85
+  2:
+    int_time: 600
+    name: Slava
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 120
+  3:
+    int_time: 600
+    name: Slava
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 155
+  4:
+    int_time: 600
+    name: Slava
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 190
+  5:
+    int_time: 600
+    name: Slava
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 225
+  6:
+    int_time: 600
+    name: Slava
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 260
+  7:
+    int_time: 600
+    name: Slava
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 295
+  8:
+    int_time: 600
+    name: Slava
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 330
+  9:
+    int_time: 600
+    name: Slava
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 365
+  10:
+    int_time: 600
+    name: Slava
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 400
+  text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 4"
+  x_pos: 400
+  y_pos: 50
+  size: 40
+- 1:
+    int_time: 600
+    name: Katya
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 85
+  2:
+    int_time: 600
+    name: Katya
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 120
+  3:
+    int_time: 600
+    name: Katya
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 155
+  4:
+    int_time: 600
+    name: Katya
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 190
+  5:
+    int_time: 600
+    name: Katya
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 225
+  6:
+    int_time: 600
+    name: Katya
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 260
+  7:
+    int_time: 600
+    name: Katya
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 295
+  8:
+    int_time: 600
+    name: Katya
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 330
+  9:
+    int_time: 600
+    name: Katya
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 365
+  10:
+    int_time: 600
+    name: Katya
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 400
+  text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 5"
+  x_pos: 400
+  y_pos: 50
+  size: 40
+- 1:
+    int_time: 600
+    name: Polina
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 85
+  2:
+    int_time: 600
+    name: Polina
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 120
+  3:
+    int_time: 600
+    name: Polina
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 155
+  4:
+    int_time: 600
+    name: Polina
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 190
+  5:
+    int_time: 600
+    name: Polina
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 225
+  6:
+    int_time: 600
+    name: Polina
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 260
+  7:
+    int_time: 600
+    name: Polina
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 295
+  8:
+    int_time: 600
+    name: Polina
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 330
+  9:
+    int_time: 600
+    name: Polina
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 365
+  10:
+    int_time: 600
+    name: Polina
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 400
+  text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 6"
+  x_pos: 400
+  y_pos: 50
+  size: 40
+- 1:
+    int_time: 202
+    name: Hello
+    size: 20
+    time: 00:03:22
+    x_pos: 48
+    y_pos: 85
+  2:
+    int_time: 600
+    name: Masha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 120
+  3:
+    int_time: 600
+    name: Masha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 155
+  4:
+    int_time: 600
+    name: Masha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 190
+  5:
+    int_time: 600
+    name: Masha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 225
+  6:
+    int_time: 600
+    name: Masha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 260
+  7:
+    int_time: 600
+    name: Masha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 295
+  8:
+    int_time: 600
+    name: Masha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 330
+  9:
+    int_time: 600
+    name: Masha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 365
+  10:
+    int_time: 600
+    name: Masha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 400
+  text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 7"
+  x_pos: 400
+  y_pos: 50
+  size: 40
+- 1:
+    int_time: 600
+    name: Vova
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 85
+  2:
+    int_time: 600
+    name: Vova
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 120
+  3:
+    int_time: 600
+    name: Vova
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 155
+  4:
+    int_time: 600
+    name: Vova
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 190
+  5:
+    int_time: 600
+    name: Vova
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 225
+  6:
+    int_time: 600
+    name: Vova
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 260
+  7:
+    int_time: 600
+    name: Vova
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 295
+  8:
+    int_time: 600
+    name: Vova
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 330
+  9:
+    int_time: 600
+    name: Vova
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 365
+  10:
+    int_time: 600
+    name: Vova
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 400
+  text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 8"
+  x_pos: 400
+  y_pos: 50
+  size: 40
+- 1:
+    int_time: 600
+    name: Gosha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 85
+  2:
+    int_time: 600
+    name: Gosha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 120
+  3:
+    int_time: 600
+    name: Gosha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 155
+  4:
+    int_time: 600
+    name: Gosha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 190
+  5:
+    int_time: 600
+    name: Gosha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 225
+  6:
+    int_time: 600
+    name: Gosha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 260
+  7:
+    int_time: 600
+    name: Gosha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 295
+  8:
+    int_time: 600
+    name: Gosha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 330
+  9:
+    int_time: 600
+    name: Gosha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 365
+  10:
+    int_time: 600
+    name: Gosha
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 400
+  text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 9"
+  x_pos: 400
+  y_pos: 50
+  size: 40
+- 1:
+    int_time: 600
+    name: Vika
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 85
+  2:
+    int_time: 600
+    name: Vika
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 120
+  3:
+    int_time: 600
+    name: Vika
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 155
+  4:
+    int_time: 600
+    name: Vika
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 190
+  5:
+    int_time: 600
+    name: Vika
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 225
+  6:
+    int_time: 600
+    name: Vika
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 260
+  7:
+    int_time: 600
+    name: Vika
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 295
+  8:
+    int_time: 600
+    name: Vika
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 330
+  9:
+    int_time: 600
+    name: Vika
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 365
+  10:
+    int_time: 600
+    name: Vika
+    size: 20
+    time: 01:01:01
+    x_pos: 48
+    y_pos: 400
+  text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 10"
+  x_pos: 400
+  y_pos: 50
+  size: 40
