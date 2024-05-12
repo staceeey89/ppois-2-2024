@@ -1,0 +1,4083 @@
+{
+  "cold_storage": {
+    "name": "\u0425\u0440\u0430\u043d\u0438\u043b\u0438\u0449\u0435",
+    "fish_from_fishing": [
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "bass",
+        "weight": 8,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "salmon",
+        "weight": 7,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "karp",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "TRANSPORTED"
+      }
+    ],
+    "fish_after_processing": [],
+    "frozen_fish": []
+  },
+  "market": {
+    "name": "\u0420\u044b\u043d\u043e\u043a",
+    "fish_on_market": [
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 5,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 3,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 3,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 3,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 5,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 5,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 5,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 5,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 10,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 10,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 6,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 3,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 6,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 5,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 6,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 6,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 10,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 10,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 3,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 3,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 10,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 4,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 9,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 6,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 2,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "pike",
+        "weight": 10,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "bass",
+        "weight": 1,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 8,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "karp",
+        "weight": 3,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "salmon",
+        "weight": 7,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 6,
+        "state": "PROCESSED"
+      },
+      {
+        "species": "trout",
+        "weight": 9,
+        "state": "PROCESSED"
+      }
+    ],
+    "market_event_is_set": true
+  },
+  "fishermen": [
+    {
+      "name": "dworf",
+      "experience": "BEGINNER"
+    },
+    {
+      "name": "st",
+      "experience": "EXPERT"
+    }
+  ],
+  "free_nets": [
+    {
+      "square": 45,
+      "cast_time": "2024-03-03T19:00:28.799550"
+    },
+    {
+      "square": 56,
+      "cast_time": "2024-03-03T19:00:55.751319"
+    },
+    {
+      "square": 23,
+      "cast_time": "2024-03-03T19:00:55.752181"
+    },
+    {
+      "square": 32,
+      "cast_time": "2024-03-03T19:01:17.366748"
+    },
+    {
+      "square": 10,
+      "cast_time": null
+    }
+  ],
+  "ships": [
+    {
+      "name": "rg"
+    },
+    {
+      "name": "qwerty"
+    }
+  ],
+  "borrowed_ships": [],
+  "borrowed_fishermen": [],
+  "borrowed_nets": [
+    {
+      "square": 12,
+      "cast_time": "2024-03-06T01:21:57.602054"
+    }
+  ]
+}
