@@ -1,0 +1,404 @@
+<students>
+    <student>
+        <id>1</id>
+        <fio>Смирнов Иван Петрович</fio>
+        <group>123001</group>
+        <sick_absent>2</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>2</id>
+        <fio>Кузнецова Анна Сергеевна</fio>
+        <group>456002</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>3</unexcused_absent>
+    </student>
+    <student>
+        <id>3</id>
+        <fio>Попов Павел Игоревич</fio>
+        <group>789003</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>2</unexcused_absent>
+    </student>
+    <student>
+        <id>4</id>
+        <fio>Соколова Елена Александровна</fio>
+        <group>012004</group>
+        <sick_absent>3</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>1</unexcused_absent>
+    </student>
+    <student>
+        <id>5</id>
+        <fio>Лебедев Дмитрий Владимирович</fio>
+        <group>345005</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>3</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>6</id>
+        <fio>Егорова Александра Ивановна</fio>
+        <group>678006</group>
+        <sick_absent>2</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>1</unexcused_absent>
+    </student>
+    <student>
+        <id>7</id>
+        <fio>Медведев Илья Алексеевич</fio>
+        <group>901007</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>3</unexcused_absent>
+    </student>
+    <student>
+        <id>8</id>
+        <fio>Соловьева Мария Дмитриевна</fio>
+        <group>234008</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>2</unexcused_absent>
+    </student>
+    <student>
+        <id>9</id>
+        <fio>Волков Никита Сергеевич</fio>
+        <group>567009</group>
+        <sick_absent>2</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>1</unexcused_absent>
+    </student>
+    <student>
+        <id>10</id>
+        <fio>Тихонова Ольга Игоревна</fio>
+        <group>890010</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>3</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>11</id>
+        <fio>Козлова Екатерина Андреевна</fio>
+        <group>234011</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>2</unexcused_absent>
+    </student>
+    <student>
+        <id>12</id>
+        <fio>Морозов Максим Игоревич</fio>
+        <group>567012</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>13</id>
+        <fio>Николаева Анастасия Сергеевна</fio>
+        <group>890013</group>
+        <sick_absent>3</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>1</unexcused_absent>
+    </student>
+    <student>
+        <id>14</id>
+        <fio>Петрова Дарья Александровна</fio>
+        <group>123014</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>3</other_absent>
+        <unexcused_absent>2</unexcused_absent>
+    </student>
+    <student>
+        <id>15</id>
+        <fio>Сергеев Иван Алексеевич</fio>
+        <group>456015</group>
+        <sick_absent>2</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>16</id>
+        <fio>Антонова Ольга Владимировна</fio>
+        <group>789016</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>3</unexcused_absent>
+    </student>
+    <student>
+        <id>17</id>
+        <fio>Григорьева Мария Ивановна</fio>
+        <group>012017</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>1</unexcused_absent>
+    </student>
+    <student>
+        <id>18</id>
+        <fio>Дмитриева Елена Петровна</fio>
+        <group>345018</group>
+        <sick_absent>3</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>19</id>
+        <fio>Павлов Игорь Андреевич</fio>
+        <group>678019</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>2</unexcused_absent>
+    </student>
+    <student>
+        <id>20</id>
+        <fio>Сергеева Анна Сергеевна</fio>
+        <group>901020</group>
+        <sick_absent>2</sick_absent>
+        <other_absent>3</other_absent>
+        <unexcused_absent>1</unexcused_absent>
+    </student>
+    <student>
+        <id>21</id>
+        <fio>Александров Павел Владимирович</fio>
+        <group>123031</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>2</unexcused_absent>
+    </student>
+    <student>
+        <id>22</id>
+        <fio>Григорьев Иван Александрович</fio>
+        <group>456032</group>
+        <sick_absent>2</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>3</unexcused_absent>
+    </student>
+    <student>
+        <id>23</id>
+        <fio>Дмитриева Анастасия Петровна</fio>
+        <group>789033</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>1</unexcused_absent>
+    </student>
+    <student>
+        <id>24</id>
+        <fio>Егоров Максим Сергеевич</fio>
+        <group>012034</group>
+        <sick_absent>3</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>2</unexcused_absent>
+    </student>
+    <student>
+        <id>25</id>
+        <fio>Зайцева Екатерина Александровна</fio>
+        <group>345035</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>3</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>26</id>
+        <fio>Иванов Петр Дмитриевич</fio>
+        <group>678036</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>3</unexcused_absent>
+    </student>
+    <student>
+        <id>27</id>
+        <fio>Козлов Алексей Иванович</fio>
+        <group>901037</group>
+        <sick_absent>2</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>28</id>
+        <fio>Лебедев Игорь Владимирович</fio>
+        <group>234038</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>1</unexcused_absent>
+    </student>
+    <student>
+        <id>29</id>
+        <fio>Морозова Анна Сергеевна</fio>
+        <group>567039</group>
+        <sick_absent>3</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>2</unexcused_absent>
+    </student>
+    <student>
+        <id>30</id>
+        <fio>Новиков Илья Александрович</fio>
+        <group>890040</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>31</id>
+        <fio>Попова Анна Ивановна</fio>
+        <group>123041</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>2</unexcused_absent>
+    </student>
+    <student>
+        <id>32</id>
+        <fio>Романов Иван Петрович</fio>
+        <group>456042</group>
+        <sick_absent>2</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>3</unexcused_absent>
+    </student>
+    <student>
+        <id>33</id>
+        <fio>Сидоров Алексей Сергеевич</fio>
+        <group>789043</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>1</unexcused_absent>
+    </student>
+    <student>
+        <id>34</id>
+        <fio>Тимофеева Екатерина Петровна</fio>
+        <group>012044</group>
+        <sick_absent>3</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>2</unexcused_absent>
+    </student>
+    <student>
+        <id>35</id>
+        <fio>Ульянов Максим Сергеевич</fio>
+        <group>345045</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>3</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>36</id>
+        <fio>Федорова Анастасия Александровна</fio>
+        <group>678046</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>3</unexcused_absent>
+    </student>
+    <student>
+        <id>37</id>
+        <fio>Харитонов Алексей Иванович</fio>
+        <group>901047</group>
+        <sick_absent>2</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>38</id>
+        <fio>Цветков Игорь Владимирович</fio>
+        <group>234048</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>1</unexcused_absent>
+    </student>
+    <student>
+        <id>39</id>
+        <fio>Чернова Анна Сергеевна</fio>
+        <group>567049</group>
+        <sick_absent>3</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>2</unexcused_absent>
+    </student>
+    <student>
+        <id>40</id>
+        <fio>Шестаков Илья Александрович</fio>
+        <group>890050</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>41</id>
+        <fio>Иванова Анна Ивановна</fio>
+        <group>123021</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>42</id>
+        <fio>Петров Иван Петрович</fio>
+        <group>456022</group>
+        <sick_absent>2</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>3</unexcused_absent>
+    </student>
+    <student>
+        <id>43</id>
+        <fio>Сидорова Ольга Петровна</fio>
+        <group>789023</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>3</other_absent>
+        <unexcused_absent>1</unexcused_absent>
+    </student>
+    <student>
+        <id>44</id>
+        <fio>Кузнецов Алексей Сергеевич</fio>
+        <group>012024</group>
+        <sick_absent>3</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>2</unexcused_absent>
+    </student>
+    <student>
+        <id>45</id>
+        <fio>Смирнов Петр Андреевич</fio>
+        <group>345025</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>46</id>
+        <fio>Михайлова Екатерина Игоревна</fio>
+        <group>678026</group>
+        <sick_absent>2</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>1</unexcused_absent>
+    </student>
+    <student>
+        <id>47</id>
+        <fio>Новиков Игорь Дмитриевич</fio>
+        <group>901027</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>1</other_absent>
+        <unexcused_absent>3</unexcused_absent>
+    </student>
+    <student>
+        <id>48</id>
+        <fio>Павлова Анастасия Александровна</fio>
+        <group>234028</group>
+        <sick_absent>1</sick_absent>
+        <other_absent>2</other_absent>
+        <unexcused_absent>0</unexcused_absent>
+    </student>
+    <student>
+        <id>49</id>
+        <fio>Егоров Максим Владимирович</fio>
+        <group>567029</group>
+        <sick_absent>3</sick_absent>
+        <other_absent>0</other_absent>
+        <unexcused_absent>2</unexcused_absent>
+    </student>
+    <student>
+        <id>50</id>
+        <fio>Лебедева Анна Дмитриевна</fio>
+        <group>890030</group>
+        <sick_absent>0</sick_absent>
+        <other_absent>3</other_absent>
+        <unexcused_absent>1</unexcused_absent>
+    </student>
+</students>
+
+
