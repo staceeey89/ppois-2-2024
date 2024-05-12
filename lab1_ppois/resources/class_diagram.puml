@@ -1,0 +1,89 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+class Document {
+    -name: str
+    -content: str
+    -signed: bool
+    +__init__(name: str, content: str)
+    +__str__(): str
+    +fill_content(new_content: str)
+    +sign()
+}
+
+class Client {
+    -name: str
+    -properties_interest: list
+    +__init__(name: str)
+    +add_property_interest(property: RealEstateProperty)
+    +receive_document(document: Document)
+    +__str__(): str
+}
+
+class Agent {
+    -name: str
+    -properties_managed: list
+    +__init__(name: str)
+    +add_property_managed(property: RealEstateProperty)
+    +receive_commission(amount: int)
+    +__str__(): str
+}
+
+class Deal {
+    -property: RealEstateProperty
+    -client: Client
+    -agent: Agent
+    -documents: list
+    +__init__(property: RealEstateProperty, client: Client, agent: Agent, documents: list)
+    +__str__(): str
+}
+
+class RealEstateAgency {
+    -agents: list
+    -clients: list
+    -properties: list
+    -documents: list
+    -deals: list
+    +__init__()
+    +add_agent(agent: Agent)
+    +add_client(client: Client)
+    +add_property(property: RealEstateProperty)
+    +add_document(document: Document)
+    +add_deal(deal: Deal)
+    +search_properties(criteria: dict): list
+    +schedule_viewing(deal: Deal, client: Client)
+    +assess_market_value(property: RealEstateProperty): int
+    +finalize_deal(deal: Deal)
+    +prepare_documents(property: RealEstateProperty, client: Client): list
+    +prepare_document(document: Document): Document
+    +set_agent_for_property(property: RealEstateProperty, agent: Agent)
+    +set_documents_for_property(property: RealEstateProperty, documents: list)
+}
+
+class RealEstateProperty {
+    -address: str
+    -price: int
+    -description: str
+    -num_rooms: int
+    -repair_needed: bool
+    -interested_clients: list
+    -owner: Client
+    +__init__(address: str, price: int, description: str, num_rooms: int, repair_needed: bool)
+    +__str__(): str
+    +add_interested_client(client: Client)
+    +transfer_ownership(new_owner: Client)
+}
+
+Agent "1" -- "many" Deal
+Client "1" -- "many" Deal
+RealEstateProperty "1" -- "many" Deal
+RealEstateProperty "many" *-- "*" Client
+RealEstateProperty "many" *-- "*" Agent
+RealEstateAgency "1" -- "many" Agent
+RealEstateAgency "1" -- "many" Client
+RealEstateAgency "1" -- "many" RealEstateProperty
+RealEstateAgency "1" -- "many" Document
+RealEstateAgency "1" -- "many" Deal
+
+@enduml
