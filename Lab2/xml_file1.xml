@@ -1,0 +1,163 @@
+<?xml version="1.0" ?>
+<catalog>
+  <medical_card id="1">
+    <patient_surname>Худолеев</patient_surname>
+    <patient_name>Олег</patient_name>
+    <registration_address>ул.Ленина, д.29, кв.28</registration_address>
+    <birthday_date>2014-03-29</birthday_date>
+    <appointment_date>2024-03-28</appointment_date>
+    <doctor_surname>Петров</doctor_surname>
+    <doctor_name>Андрей</doctor_name>
+    <doctor_statement>Больной</doctor_statement>
+  </medical_card>
+  <medical_card id="2">
+    <patient_surname>Михалов</patient_surname>
+    <patient_name>Константин</patient_name>
+    <registration_address>ул.Троцкого, д.29, кв.21</registration_address>
+    <birthday_date>2011-11-19</birthday_date>
+    <appointment_date>2024-03-27</appointment_date>
+    <doctor_surname>Петров</doctor_surname>
+    <doctor_name>Андрей</doctor_name>
+    <doctor_statement>Здоров</doctor_statement>
+  </medical_card>
+  <medical_card id="3">
+    <patient_surname>Васича</patient_surname>
+    <patient_name>Алиса</patient_name>
+    <registration_address>ул.Троцкого, д.29, кв.22</registration_address>
+    <birthday_date>2011-11-12</birthday_date>
+    <appointment_date>2024-03-25</appointment_date>
+    <doctor_surname>Александров</doctor_surname>
+    <doctor_name>Алексей</doctor_name>
+    <doctor_statement>Больной</doctor_statement>
+  </medical_card>
+  <medical_card id="4">
+    <patient_surname>Ильин</patient_surname>
+    <patient_name>Иван</patient_name>
+    <registration_address>ул.Ленина, д.29, кв.22</registration_address>
+    <birthday_date>2011-11-20</birthday_date>
+    <appointment_date>2024-03-29</appointment_date>
+    <doctor_surname>Алексеева</doctor_surname>
+    <doctor_name>Анна</doctor_name>
+    <doctor_statement>Здоров</doctor_statement>
+  </medical_card>
+  <medical_card id="5">
+    <patient_surname>Худолеева</patient_surname>
+    <patient_name>Марина</patient_name>
+    <registration_address>ул.Сталина, д.29, кв.22</registration_address>
+    <birthday_date>2024-03-29</birthday_date>
+    <appointment_date>2024-01-28</appointment_date>
+    <doctor_surname>Петрова</doctor_surname>
+    <doctor_name>Ольга</doctor_name>
+    <doctor_statement>Больной</doctor_statement>
+  </medical_card>
+  <medical_card id="6">
+    <patient_surname>Максова</patient_surname>
+    <patient_name>Евгения</patient_name>
+    <registration_address>ул.Ленина, д.29, кв.23</registration_address>
+    <birthday_date>2011-11-11</birthday_date>
+    <appointment_date>2024-02-27</appointment_date>
+    <doctor_surname>Петрова</doctor_surname>
+    <doctor_name>Ольга</doctor_name>
+    <doctor_statement>Здоров</doctor_statement>
+  </medical_card>
+  <medical_card id="7">
+    <patient_surname>Михалова</patient_surname>
+    <patient_name>Революция</patient_name>
+    <registration_address>ул.Ленина, д.29, кв.24</registration_address>
+    <birthday_date>2011-11-11</birthday_date>
+    <appointment_date>2023-03-25</appointment_date>
+    <doctor_surname>Октябрина</doctor_surname>
+    <doctor_name>Людмила</doctor_name>
+    <doctor_statement>Больной</doctor_statement>
+  </medical_card>
+  <medical_card id="8">
+    <patient_surname>Максов</patient_surname>
+    <patient_name>Андрей</patient_name>
+    <registration_address>ул.Ленина, д.29, кв.25</registration_address>
+    <birthday_date>2011-11-17</birthday_date>
+    <appointment_date>2024-03-09</appointment_date>
+    <doctor_surname>Петрова</doctor_surname>
+    <doctor_name>Маргарита</doctor_name>
+    <doctor_statement>Здоров</doctor_statement>
+  </medical_card>
+  <medical_card id="9">
+    <patient_surname>Данилов</patient_surname>
+    <patient_name>Егор</patient_name>
+    <registration_address>ул.Ленина, д.29, кв.26</registration_address>
+    <birthday_date>2024-05-09</birthday_date>
+    <appointment_date>2024-05-09</appointment_date>
+    <doctor_surname>Ильина</doctor_surname>
+    <doctor_name>Александра</doctor_name>
+    <doctor_statement>Здоров</doctor_statement>
+  </medical_card>
+  <medical_card id="10">
+    <patient_surname>Егоров</patient_surname>
+    <patient_name>Олег</patient_name>
+    <registration_address>ул.Ленина, д.27, кв.22</registration_address>
+    <birthday_date>2024-05-09</birthday_date>
+    <appointment_date>2024-05-09</appointment_date>
+    <doctor_surname>Данилова</doctor_surname>
+    <doctor_name>Мария</doctor_name>
+    <doctor_statement>Здоров</doctor_statement>
+  </medical_card>
+  <medical_card id="11">
+    <patient_surname>Захаров</patient_surname>
+    <patient_name>Владимир</patient_name>
+    <registration_address>ул.Маркса, д.29, кв.22</registration_address>
+    <birthday_date>2024-03-29</birthday_date>
+    <appointment_date>2024-03-28</appointment_date>
+    <doctor_surname>Володина</doctor_surname>
+    <doctor_name>Анастасия</doctor_name>
+    <doctor_statement>Больной</doctor_statement>
+  </medical_card>
+  <medical_card id="12">
+    <patient_surname>Машкович</patient_surname>
+    <patient_name>Вячеслав</patient_name>
+    <registration_address>ул.Маркса, д.9, кв.22</registration_address>
+    <birthday_date>2011-11-11</birthday_date>
+    <appointment_date>2024-03-27</appointment_date>
+    <doctor_surname>Павлова</doctor_surname>
+    <doctor_name>Дарья</doctor_name>
+    <doctor_statement>Больной</doctor_statement>
+  </medical_card>
+  <medical_card id="13">
+    <patient_surname>Павлов</patient_surname>
+    <patient_name>Олег</patient_name>
+    <registration_address>ул.Сталина, д.87, кв.72</registration_address>
+    <birthday_date>2011-11-11</birthday_date>
+    <appointment_date>2024-03-25</appointment_date>
+    <doctor_surname>Максов</doctor_surname>
+    <doctor_name>Андрей</doctor_name>
+    <doctor_statement>Больной</doctor_statement>
+  </medical_card>
+  <medical_card id="14">
+    <patient_surname>Иванов</patient_surname>
+    <patient_name>Петр</patient_name>
+    <registration_address>ул.Ленина, д.21, кв.22</registration_address>
+    <birthday_date>2011-11-11</birthday_date>
+    <appointment_date>2024-03-29</appointment_date>
+    <doctor_surname>Худолеева</doctor_surname>
+    <doctor_name>Анна</doctor_name>
+    <doctor_statement>Здоров</doctor_statement>
+  </medical_card>
+   <medical_card id="15">
+    <patient_surname>Егоров</patient_surname>
+    <patient_name>Максим</patient_name>
+    <registration_address>ул.Маркса, д.21, кв.22</registration_address>
+    <birthday_date>2011-11-11</birthday_date>
+    <appointment_date>2024-03-29</appointment_date>
+    <doctor_surname>Худолеева</doctor_surname>
+    <doctor_name>Анна</doctor_name>
+    <doctor_statement>Здоров</doctor_statement>
+  </medical_card>
+   <medical_card id="16">
+    <patient_surname>Иванов</patient_surname>
+    <patient_name>Петр</patient_name>
+    <registration_address>ул.Троцкого, д.21, кв.22</registration_address>
+    <birthday_date>2011-11-11</birthday_date>
+    <appointment_date>2024-03-29</appointment_date>
+    <doctor_surname>Худолеева</doctor_surname>
+    <doctor_name>Анна</doctor_name>
+    <doctor_statement>Здоров</doctor_statement>
+  </medical_card>
+</catalog>
