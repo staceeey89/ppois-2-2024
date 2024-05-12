@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student>
+		<id>44</id>
+		<last_name>Хонский</last_name>
+		<first_name>Сергей</first_name>
+		<middle_name>Иванович</middle_name>
+		<group_name>14</group_name>
+		<sem1_public_works>25</sem1_public_works>
+		<sem2_public_works>35</sem2_public_works>
+		<sem3_public_works>45</sem3_public_works>
+		<sem4_public_works>5</sem4_public_works>
+		<sem5_public_works>0</sem5_public_works>
+		<sem6_public_works>7</sem6_public_works>
+		<sem7_public_works>8</sem7_public_works>
+		<sem8_public_works>95</sem8_public_works>
+	</student>
+</students>
