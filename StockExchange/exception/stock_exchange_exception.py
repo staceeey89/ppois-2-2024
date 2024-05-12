@@ -1,0 +1,2 @@
+class StockExchangeException(Exception):
+    pass

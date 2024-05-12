@@ -1,0 +1,33 @@
+ rep = {
+        Share("AAPL", "Apple Inc.", 150.0),
+        Share("GOOG", "Alphabet Inc.", 200.0),
+        Share("MSFT", "Microsoft Corporation", 180.0),
+        Share("AMZN", "Amazon.com Inc.", 3000.0),
+        Share("FB", "Meta Platforms Inc.", 300.0),
+        Share("NTX", "Netflix Inc.", 350.0),
+        Share("ATN", "Aerotyne Ind.", 350.0),
+        Share("TSLA", "Tesla Inc.", 600.0),
+        Share("JPM", "JPMorgan Chase & Co.", 120.0),
+        Share("JNJ", "Johnson & Johnson", 150.0),
+        Share("V", "Visa Inc.", 220.0),
+        Share("PG", "Procter & Gamble Co.", 130.0),
+        Share("MA", "Mastercard Inc.", 300.0),
+        Share("NVDA", "NVIDIA Corporation", 280.0),
+        Share("UNH", "UnitedHealth Group Inc.", 400.0),
+        Share("HD", "The Home Depot Inc.", 300.0),
+        Share("VZ", "Verizon Communications Inc.", 55.0),
+
+        Bond("BOND1", "Company A Bond", 100.0, date(2025, 1, 1)),
+        Bond("BOND2", "Company B Bond", 120.0, date(2026, 1, 1)),
+        Bond("BOND3", "Company C Bond", 150.0, date(2027, 1, 1)),
+        Bond("BOND4", "Company D Bond", 180.0, date(2028, 1, 1)),
+        Bond("BOND5", "Company E Bond", 200.0, date(2029, 1, 1)),
+        Bond("BOND6", "Company F Bond", 220.0, date(2030, 1, 1)),
+        Bond("BOND7", "Company G Bond", 250.0, date(2031, 1, 1)),
+        Bond("BOND8", "Company H Bond", 280.0, date(2032, 1, 1)),
+        Bond("BOND9", "Company I Bond", 300.0, date(2033, 1, 1)),
+        Bond("BOND10", "Company J Bond", 350.0, date(2034, 1, 1)),
+
+        Currency("USD", "US Dollar", 840, 3.3),
+        Currency("EUR", "Euro", 978, 3.5)
+    }
