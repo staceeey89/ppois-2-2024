@@ -1,0 +1,104 @@
+{
+  "waves": [
+    [
+      {"row": ["crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab"]},
+      {"row": ["crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab"]},
+      {"row": ["crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab"]},
+      {"row": ["crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab"]},
+      {"row": ["crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab", "crab"]}
+    ],
+    [
+      {"row": ["crab", "crab"]},
+      {"row": ["octopus"]},
+      {"row": ["crab", "crab", "crab"]}
+    ],
+    [
+      {"row": ["squid", "squid"]},
+      {"row": ["crab"]},
+      {"row": ["squid", "squid"]}
+    ],
+    [
+      {"row": ["squid"]}
+    ],
+    [
+      {"row": ["bibob"]},
+      {"row": ["happy"]},
+      {"row": ["scull", "scull"]}
+    ],
+    [
+      {"row": ["slime", "slime", "slime"]},
+      {"row": ["octopus", "octopus"]},
+      {"row": ["slime", "slime", "slime"]}
+    ],
+    [
+      {"row": ["robot", "robot", "robot", "robot"]},
+      {"row": ["crab"]},
+      {"row": ["robot", "robot", "robot", "robot"]}
+    ],
+    [
+      {"row": ["crab", "crab", "crab"]},
+      {"row": ["crab", "crab", "crab"]},
+      {"row": ["crab", "crab", "crab"]}
+    ],
+    [
+      {"row": ["crab", "crab"]},
+      {"row": ["octopus"]},
+      {"row": ["crab", "crab"]}
+    ],
+    [
+      {"row": ["squid", "squid", "squid"]},
+      {"row": ["crab"]},
+      {"row": ["squid", "squid", "squid"]}
+    ],
+    [
+      {"row": ["squid", "squid", "squid", "squid"]},
+      {"row": ["crab"]},
+      {"row": ["squid", "squid", "squid", "squid"]}
+    ],
+    [
+      {"row": ["bibob"]},
+      {"row": ["happy"]},
+      {"row": ["scull", "scull", "scull"]}
+    ],
+    [
+      {"row": ["slime", "slime", "slime", "slime"]},
+      {"row": ["octopus", "octopus", "octopus"]},
+      {"row": ["slime", "slime", "slime", "slime"]}
+    ],
+    [
+      {"row": ["robot", "robot", "robot", "robot", "robot"]},
+      {"row": ["crab"]},
+      {"row": ["robot", "robot", "robot", "robot", "robot"]}
+    ],
+    [
+      {"row": ["crab", "crab", "crab", "crab"]},
+      {"row": ["crab", "crab", "crab", "crab"]},
+      {"row": ["crab", "crab", "crab", "crab"]}
+    ],
+    [
+      {"row": ["crab", "crab", "crab"]},
+      {"row": ["octopus", "octopus"]},
+      {"row": ["crab", "crab", "crab"]}
+    ],
+    [
+      {"row": ["squid", "squid", "squid", "squid", "squid"]},
+      {"row": ["crab"]},
+      {"row": ["squid", "squid", "squid", "squid", "squid"]}
+    ],
+    [
+      {"row": ["squid", "squid", "squid", "squid", "squid", "squid"]},
+      {"row": ["crab"]},
+      {"row": ["squid", "squid", "squid", "squid", "squid", "squid"]}
+    ],
+    [
+      {"row": ["bibob", "bibob"]},
+      {"row": ["happy"]},
+      {"row": ["scull", "scull", "scull", "scull"]}
+    ],
+    [
+      {"row": ["slime", "slime", "slime", "slime", "slime"]},
+      {"row": ["octopus", "octopus", "octopus", "octopus"]},
+      {"row": ["slime", "slime", "slime", "slime", "slime"]}
+    ]
+  ]
+}

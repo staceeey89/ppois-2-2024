@@ -1,0 +1,403 @@
+<?xml version="1.0" ?>
+<lecturers>
+  <lecturer id="1">
+    <faculty>Факультет естественных наук</faculty>
+    <department>Кафедра биологии</department>
+    <full_name>Смирнова Елена Викторовна</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат биологических наук</academic_degree>
+    <years_of_experience>12</years_of_experience>
+  </lecturer>
+  <lecturer id="2">
+    <faculty>Факультет гуманитарных наук</faculty>
+    <department>Кафедра истории</department>
+    <full_name>Факультет гуманитарных наук</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор исторических наук</academic_degree>
+    <years_of_experience>20</years_of_experience>
+  </lecturer>
+  <lecturer id="3">
+    <faculty>Факультет технических наук</faculty>
+    <department>Кафедра информационных технологий</department>
+    <full_name>Иванов Петр Сергеевич</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор технических наук</academic_degree>
+    <years_of_experience>15</years_of_experience>
+  </lecturer>
+  <lecturer id="4">
+    <faculty>Факультет медицины</faculty>
+    <department>Кафедра хирургии</department>
+    <full_name>Петров Алексей Иванович</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат медицинских наук</academic_degree>
+    <years_of_experience>10</years_of_experience>
+  </lecturer>
+  <lecturer id="5">
+    <faculty>Факультет экономики</faculty>
+    <department>Кафедра мировой экономики</department>
+    <full_name>Сидорова Мария Андреевна</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор экономических наук</academic_degree>
+    <years_of_experience>18</years_of_experience>
+  </lecturer>
+  <lecturer id="6">
+    <faculty>Факультет естественных наук</faculty>
+    <department>Кафедра физики</department>
+    <full_name>Кузнецов Александр Васильевич</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор физико-математических наук</academic_degree>
+    <years_of_experience>22</years_of_experience>
+  </lecturer>
+  <lecturer id="7">
+    <faculty>Факультет гуманитарных наук</faculty>
+    <department>Кафедра литературы</department>
+    <full_name>Михайлова Ольга Николаевна</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат филологических наук</academic_degree>
+    <years_of_experience>13</years_of_experience>
+  </lecturer>
+  <lecturer id="8">
+    <faculty>Факультет медицины</faculty>
+    <department>Кафедра педиатрии</department>
+    <full_name>Васильева Екатерина Александровна</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор медицинских наук</academic_degree>
+    <years_of_experience>21</years_of_experience>
+  </lecturer>
+  <lecturer id="9">
+    <faculty>Факультет экономики</faculty>
+    <department>Кафедра финансов</department>
+    <full_name>Никитин Дмитрий Владимирович</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат экономических наук</academic_degree>
+    <years_of_experience>11</years_of_experience>
+  </lecturer>
+  <lecturer id="10">
+    <faculty>Факультет технических наук</faculty>
+    <department>Кафедра архитектуры</department>
+    <full_name>Попова Анна Сергеевна</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор архитектуры</academic_degree>
+    <years_of_experience>17</years_of_experience>
+  </lecturer>
+  <lecturer id="11">
+    <faculty>Факультет естественных наук</faculty>
+    <department>Кафедра химии</department>
+    <full_name>Григорьев Владимир Игоревич</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат химических наук</academic_degree>
+    <years_of_experience>14</years_of_experience>
+  </lecturer>
+  <lecturer id="12">
+    <faculty>Факультет гуманитарных наук</faculty>
+    <department>Кафедра иностранных языков</department>
+    <full_name>Тарасова Наталья Сергеевна</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор филологических наук</academic_degree>
+    <years_of_experience>19</years_of_experience>
+  </lecturer>
+  <lecturer id="13">
+    <faculty>Факультет медицины</faculty>
+    <department>Кафедра гинекологии</department>
+    <full_name>Козлова Елена Владимировна</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат медицинских наук</academic_degree>
+    <years_of_experience>12</years_of_experience>
+  </lecturer>
+  <lecturer id="14">
+    <faculty>Факультет экономики</faculty>
+    <department>Кафедра маркетинга</department>
+    <full_name>Иванова Анастасия Олеговна</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор экономических наук</academic_degree>
+    <years_of_experience>16</years_of_experience>
+  </lecturer>
+  <lecturer id="15">
+    <faculty>Факультет технических наук</faculty>
+    <department>Кафедра компьютерных наук</department>
+    <full_name>Соколов Артем Игоревич</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат технических наук</academic_degree>
+    <years_of_experience>13</years_of_experience>
+  </lecturer>
+  <lecturer id="16">
+    <faculty>Факультет естественных наук</faculty>
+    <department>Кафедра географии</department>
+    <full_name>Белов Дмитрий Александрович</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор географических наук</academic_degree>
+    <years_of_experience>20</years_of_experience>
+  </lecturer>
+  <lecturer id="17">
+    <faculty>Факультет гуманитарных наук</faculty>
+    <department>Кафедра философии</department>
+    <full_name>Зайцева Ольга Васильевна</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат философских наук</academic_degree>
+    <years_of_experience>11</years_of_experience>
+  </lecturer>
+  <lecturer id="18">
+    <faculty>Факультет медицины</faculty>
+    <department>Кафедра онкологии</department>
+    <full_name>Волкова Ирина Александровна</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор медицинских наук</academic_degree>
+    <years_of_experience>18</years_of_experience>
+  </lecturer>
+  <lecturer id="19">
+    <faculty>Факультет экономики</faculty>
+    <department>Кафедра экономической теории</department>
+    <full_name>Морозов Алексей Николаевич</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат экономических наук</academic_degree>
+    <years_of_experience>14</years_of_experience>
+  </lecturer>
+  <lecturer id="20">
+    <faculty>Факультет технических наук</faculty>
+    <department>Кафедра электротехники</department>
+    <full_name>Козлов Иван Дмитриевич</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор технических наук</academic_degree>
+    <years_of_experience>23</years_of_experience>
+  </lecturer>
+  <lecturer id="21">
+    <faculty>Факультет естественных наук</faculty>
+    <department>Кафедра биохимии</department>
+    <full_name>Смирнов Андрей Павлович</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат биологических наук</academic_degree>
+    <years_of_experience>16</years_of_experience>
+  </lecturer>
+  <lecturer id="22">
+    <faculty>Факультет гуманитарных наук</faculty>
+    <department>Кафедра психологии</department>
+    <full_name>Игнатьева Елена Александровна</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор психологических наук</academic_degree>
+    <years_of_experience>20</years_of_experience>
+  </lecturer>
+  <lecturer id="23">
+    <faculty>Факультет медицины</faculty>
+    <department>Кафедра неврологии</department>
+    <full_name>Смирнов Игорь Владимирович</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат медицинских наук</academic_degree>
+    <years_of_experience>13</years_of_experience>
+  </lecturer>
+  <lecturer id="24">
+    <faculty>Факультет экономики</faculty>
+    <department>Кафедра бухгалтерского учета</department>
+    <full_name>Алексеева Юлия Владимировна</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор экономических наук</academic_degree>
+    <years_of_experience>19</years_of_experience>
+  </lecturer>
+  <lecturer id="25">
+    <faculty>Факультет технических наук</faculty>
+    <department>Кафедра теплоэнергетики</department>
+    <full_name>Гусев Сергей Викторович</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор технических наук</academic_degree>
+    <years_of_experience>21</years_of_experience>
+  </lecturer>
+  <lecturer id="26">
+    <faculty>Факультет искусств</faculty>
+    <department>Кафедра живописи</department>
+    <full_name>Петрова Анна Ивановна</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор искусствоведения</academic_degree>
+    <years_of_experience>16</years_of_experience>
+  </lecturer>
+  <lecturer id="27">
+    <faculty>Факультет технических наук</faculty>
+    <department>Кафедра электротехники</department>
+    <full_name>Соколов Алексей Петрович</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат технических наук</academic_degree>
+    <years_of_experience>11</years_of_experience>
+  </lecturer>
+  <lecturer id="28">
+    <faculty>Факультет экономики</faculty>
+    <department>Кафедра маркетинга</department>
+    <full_name>Иванов Игорь Андреевич</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор экономических наук</academic_degree>
+    <years_of_experience>23</years_of_experience>
+  </lecturer>
+  <lecturer id="29">
+    <faculty>Факультет гуманитарных наук</faculty>
+    <department>Кафедра философии</department>
+    <full_name>Козлов Александр Владимирович</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат философских наук</academic_degree>
+    <years_of_experience>14</years_of_experience>
+  </lecturer>
+  <lecturer id="30">
+    <faculty>Факультет медицины</faculty>
+    <department>Кафедра онкологии</department>
+    <full_name>Смирнов Иван Павлович</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор медицинских наук</academic_degree>
+    <years_of_experience>25</years_of_experience>
+  </lecturer>
+  <lecturer id="31">
+    <faculty>Факультет естественных наук</faculty>
+    <department>Кафедра геологии</department>
+    <full_name>Белова Екатерина Степановна</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат геологических наук</academic_degree>
+    <years_of_experience>13</years_of_experience>
+  </lecturer>
+  <lecturer id="32">
+    <faculty>Факультет технических наук</faculty>
+    <department>Кафедра строительства</department>
+    <full_name>Андреев Павел Николаевич</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор технических наук</academic_degree>
+    <years_of_experience>18</years_of_experience>
+  </lecturer>
+  <lecturer id="33">
+    <faculty>Факультет экономики</faculty>
+    <department>Кафедра экономической теории</department>
+    <full_name>Гаврилов Владислав Михайлович</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат экономических наук</academic_degree>
+    <years_of_experience>12</years_of_experience>
+  </lecturer>
+  <lecturer id="34">
+    <faculty>Факультет гуманитарных наук</faculty>
+    <department>Кафедра психологии</department>
+    <full_name>Максимова Наталья Васильевна</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор психологических наук</academic_degree>
+    <years_of_experience>20</years_of_experience>
+  </lecturer>
+  <lecturer id="35">
+    <faculty>Факультет медицины</faculty>
+    <department>Кафедра терапии</department>
+    <full_name>Тихонов Антон Сергеевич</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат медицинских наук</academic_degree>
+    <years_of_experience>16</years_of_experience>
+  </lecturer>
+  <lecturer id="36">
+    <faculty>Факультет естественных наук</faculty>
+    <department>Кафедра астрономии</department>
+    <full_name>Шестаков Дмитрий Александрович</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор физико-математических наук</academic_degree>
+    <years_of_experience>19</years_of_experience>
+  </lecturer>
+  <lecturer id="37">
+    <faculty>Факультет искусств</faculty>
+    <department>Кафедра музыки</department>
+    <full_name>Васильев Владимир Дмитриевич</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат искусствоведения</academic_degree>
+    <years_of_experience>15</years_of_experience>
+  </lecturer>
+  <lecturer id="38">
+    <faculty>Факультет технических наук</faculty>
+    <department>Кафедра материаловедения</department>
+    <full_name>Павлов Сергей Игоревич</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор технических наук</academic_degree>
+    <years_of_experience>22</years_of_experience>
+  </lecturer>
+  <lecturer id="39">
+    <faculty>Факультет экономики</faculty>
+    <department>Кафедра бухгалтерского учёта</department>
+    <full_name>Семенова Елена Павловна</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор экономических наук</academic_degree>
+    <years_of_experience>24</years_of_experience>
+  </lecturer>
+  <lecturer id="40">
+    <faculty>Факультет гуманитарных наук</faculty>
+    <department>Кафедра социологии</department>
+    <full_name>Новикова Оксана Викторовна</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат социологических наук</academic_degree>
+    <years_of_experience>11</years_of_experience>
+  </lecturer>
+  <lecturer id="41">
+    <faculty>Факультет медицины</faculty>
+    <department>Кафедра неврологии</department>
+    <full_name>Зайцев Артем Алексеевич</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор медицинских наук</academic_degree>
+    <years_of_experience>26</years_of_experience>
+  </lecturer>
+  <lecturer id="42">
+    <faculty>Факультет естественных наук</faculty>
+    <department>Кафедра биохимии</department>
+    <full_name>Герасимов Михаил Алексеевич</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат химических наук</academic_degree>
+    <years_of_experience>17</years_of_experience>
+  </lecturer>
+  <lecturer id="43">
+    <faculty>Факультет искусств</faculty>
+    <department>Кафедра скульптуры</department>
+    <full_name>Куликов Валерий Владимирович</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор искусствоведения</academic_degree>
+    <years_of_experience>21</years_of_experience>
+  </lecturer>
+  <lecturer id="44">
+    <faculty>Факультет технических наук</faculty>
+    <department>Кафедра компьютерных наук</department>
+    <full_name>Калинин Денис Андреевич</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат технических наук</academic_degree>
+    <years_of_experience>14</years_of_experience>
+  </lecturer>
+  <lecturer id="45">
+    <faculty>Факультет экономики</faculty>
+    <department>Кафедра экономической географии</department>
+    <full_name>Лебедева Елена Игоревна</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор экономических наук</academic_degree>
+    <years_of_experience>20</years_of_experience>
+  </lecturer>
+  <lecturer id="46">
+    <faculty>Факультет гуманитарных наук</faculty>
+    <department>Кафедра религиоведения</department>
+    <full_name>Степанова Анастасия Сергеевна</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат философских наук</academic_degree>
+    <years_of_experience>15</years_of_experience>
+  </lecturer>
+  <lecturer id="47">
+    <faculty>Факультет медицины</faculty>
+    <department>Кафедра аллергологии</department>
+    <full_name>Федорова Елена Дмитриевна</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор медицинских наук</academic_degree>
+    <years_of_experience>27</years_of_experience>
+  </lecturer>
+  <lecturer id="48">
+    <faculty>Факультет естественных наук</faculty>
+    <department>Кафедра генетики</department>
+    <full_name>Воронов Игорь Сергеевич</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор биологических наук</academic_degree>
+    <years_of_experience>20</years_of_experience>
+  </lecturer>
+  <lecturer id="49">
+    <faculty>Факультет искусств</faculty>
+    <department>Кафедра театрального искусства</department>
+    <full_name>Романова Анна Александровна</full_name>
+    <academic_title>Доцент</academic_title>
+    <academic_degree>Кандидат искусствоведения</academic_degree>
+    <years_of_experience>18</years_of_experience>
+  </lecturer>
+  <lecturer id="50">
+    <faculty>Факультет технических наук</faculty>
+    <department>Кафедра автоматики</department>
+    <full_name>Поляков Андрей Валерьевич</full_name>
+    <academic_title>Профессор</academic_title>
+    <academic_degree>Доктор технических наук</academic_degree>
+    <years_of_experience>25</years_of_experience>
+  </lecturer>
+</lecturers>

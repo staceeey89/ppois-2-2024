@@ -1,0 +1,54 @@
+{
+  "enemies": {
+    "crab": {
+      "sprite": "assets/crab.png",
+      "score": 10,
+      "weapon": "basic"
+    },
+    "octopus": {
+      "sprite": "assets/octopus.png",
+      "score": 15,
+      "weapon": "advanced"
+    },
+    "squid": {
+      "sprite": "assets/squid.png",
+      "score": 20,
+      "weapon": "basic"
+    },
+    "flagship": {
+      "sprite": "assets/flagship.png",
+      "score": 50,
+      "weapon": "boss"
+    },
+    "bibob": {
+      "sprite": "assets/bibob.png",
+      "score": 30,
+      "weapon": "boss"
+    },
+    "happy": {
+      "sprite": "assets/bibob.png",
+      "score": 20,
+      "weapon": "basic"
+    },
+    "scull": {
+      "sprite": "assets/scull.png",
+      "score": 25,
+      "weapon": "advanced"
+    },
+    "slime": {
+      "sprite": "assets/slime.png",
+      "score": 20,
+      "weapon": "basic"
+    },
+    "toother": {
+      "sprite": "assets/toother.png",
+      "score": 50,
+      "weapon": "advanced"
+    },
+    "robot": {
+      "sprite": "assets/robot.png",
+      "score": 25,
+      "weapon": "advanced"
+    }
+  }
+}
