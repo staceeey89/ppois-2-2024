@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  studentsdb:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    container_name: StudentsDb
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=y
+      - MSSQL_SA_PASSWORD=StudentsDb123$
+    volumes:
+      - 'students-data:/var/opt/mssql'
+
+volumes:
+ students-data:
+   driver: local
