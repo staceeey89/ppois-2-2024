@@ -1,0 +1,114 @@
+@startuml
+hide empty description
+skinparam line_type polyline
+
+[*] --> view_groups
+
+state view_groups
+
+state add_group  {
+	[*] --> input_group_name
+	input_group_name --> input_group_name : name_invalid
+	input_group_name --> [*]
+}
+
+state view_group
+
+state add_student  {
+	[*] --> input_student_initials
+	input_student_initials --> input_student_initials : initials_invalid
+	input_student_initials --> [*]
+}
+
+state expel_student {
+    [*] -->  input_student_index
+    input_student_index --> input_student_index: invalid_student_index
+    input_student_index --> [*]
+}
+
+view_group --> expel_student: input_expel
+expel_student --> view_group
+
+state exit {
+	[*] --> save_data
+	save_data --> [*]
+}
+
+state add_exam {
+    [*] --> input_exam_name
+    input_exam_name --> input_exam_name : invalid_name
+    input_exam_name --> input_exam_date
+    input_exam_date --> input_exam_date : invalid_date
+    input_exam_date --> input_exam_time
+    input_exam_time --> input_exam_time : invalid_time
+    input_exam_time --> [*]
+}
+
+view_groups --> exit: input_return
+
+view_groups --> view_groups : input_invalid
+view_groups --> view_group : input_index
+add_group --> view_groups
+view_groups --> add_group : input_add
+
+state view_student
+
+view_student --> view_student: input_invalid
+view_student --> view_group: input_return
+
+view_group --> view_group : input_invalid
+view_group --> view_groups : input_return
+view_group --> view_student : input_index
+add_student --> view_group
+view_group --> add_student : input_add
+view_group --> view_exams : input_exams
+
+view_exams --> view_group : input_return
+view_exams --> view_exams : input_invalid
+add_exam --> view_exams
+view_exams --> add_exam : input_add
+
+state choice
+
+view_student --> choice: input_prepare
+choice --> choice: input_invalid
+choice --> prepare_for_exams: input_no
+choice --> in_library: input_yes
+choice --> view_student: input_return
+in_library --> choice
+prepare_for_exams --> choice
+
+state in_library {
+    [*] --> input_subject_index_lb
+    input_subject_index_lb --> input_subject_index_lb: subject_index_lb_invalid
+    input_subject_index_lb --> input_ours_lb
+    input_ours_lb --> input_ours_lb: ours_lb_invalid
+    input_ours_lb --> [*]
+}
+
+
+state prepare_for_exams {
+        [*] --> input_subject_index_pr
+    input_subject_index_pr --> input_subject_index_pr: subject_index_pr_invalid
+    input_subject_index_pr --> input_ours_pr
+    input_ours_pr --> input_ours_pr: ours_pr_invalid
+    input_ours_pr --> [*]
+}
+
+state view_subjects_progress
+
+view_subjects_progress --> view_subjects_progress: input_invalid
+view_student --> view_subjects_progress: input_view_subjects_progress
+view_subjects_progress --> view_student: input_return
+
+state in_university {
+    [*] --> input_number_of_classes
+	input_number_of_classes --> input_number_of_classes : number_of_classes_invalid
+	input_number_of_classes --> [*]
+}
+
+view_student --> in_university: input_in_university
+in_university --> view_student
+exit --> [*]
+
+@enduml
